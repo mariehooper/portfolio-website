@@ -1,7 +1,7 @@
 ---
 layout: projects
-previous: http://localhost:4000/projects/msomearas-multiage
-next: http://localhost:4000/projects/michigan-athletics
+previous: msomearas-multiage
+next: michigan-athletics
 title: hooper-wedding
 name: Hooper Wedding
 role: Role&#58; UI/UX Design, Some Front-End Development
@@ -70,7 +70,9 @@ mobile_image: img/hooper-wedding-mobile.jpg
    </div>
    </div>
  
+<!--
  <div class="wrap-button center-align">
      <a class="button live-site" href="http://msomearasmultiage.com/" target="_blank">View Live Site</a>
 </div>
+-->
 </section>

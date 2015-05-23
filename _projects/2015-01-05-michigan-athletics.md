@@ -1,7 +1,7 @@
 ---
 layout: projects
-previous: http://localhost:4000/projects/hooper-wedding
-next: http://localhost:4000/projects/wgi-buzz
+previous: hooper-wedding
+next: wgi-buzz
 title: michigan-athletics
 name: Michigan Athletics
 role: Role&#58; Process Automation, UI/UX Design, Google App Scripting

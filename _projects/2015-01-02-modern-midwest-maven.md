@@ -1,7 +1,7 @@
 ---
 layout: projects
-previous: http://localhost:4000/projects/wgi-buzz
-next: http://localhost:4000/projects/msomearas-multiage
+previous: wgi-buzz
+next: msomearas-multiage
 title: modern-midwest-maven
 name: Modern Midwest Maven
 role: Role&#58; UI/UX Design, Info Architecture, Front-End Development
