@@ -1,0 +1,670 @@
+---
+---
+
+@import 'reset';
+@import 'grid';
+@import 'font-awesome';
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot?gkq5ew');
+	src:url('/fonts/icomoon.eot?#iefixgkq5ew') format('embedded-opentype'),
+		url('/fonts/icomoon.woff?gkq5ew') format('woff'),
+		url('/fonts/icomoon.ttf?gkq5ew') format('truetype'),
+		url('/fonts/icomoon.svg?gkq5ew#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"], #circles-photoshop .circles-text,
+#circles-illustrator .circles-text,
+#circles-google-drive .circles-text {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-illustrator:before {
+	content: "\e600";
+}
+
+.icon-photoshop:before {
+	content: "\e601";
+}
+
+.icon-screen:before {
+	content: "\e602";
+}
+
+.icon-tablet:before {
+	content: "\e605";
+}
+
+.icon-google-drive:before {
+	content: "\e603";
+}
+
+.icon-browser:before {
+	content: "\e604";
+}
+
+html, body, #wrapper {
+  height: 100%;
+}
+
+header {
+  a {
+    color: white;
+  }
+}
+
+body {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav, .social {
+  a {
+    color: white;
+  }
+  ul {
+    float: right;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 400;
+    &:not(:first-child) {padding-left: 20px};
+    
+  }
+}
+
+.grid-container {
+  box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+#header {
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  .grid-container {
+    box-shadow: none;
+    background-color: lighten(#ffa726, 5%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+#hero {
+  .grid-container {
+    padding-top: 100px;
+    color: white;
+    background-color: lighten(#ffa726, 5%);
+    height: 30%;
+    height: 30vh;
+  }
+}
+.hero-img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.projects-active,
+.about-active,
+.contact-active {
+  text-decoration: underline;
+}
+
+.header-description {
+  font-size: 2.5em;
+  line-height: 1.75em;
+  padding-top: 50px;
+}
+
+.navigation {
+  float: right;
+}
+
+.navigation ul {
+  padding-top: 15px;
+}
+
+.logo {
+  font-size: 3.5em;
+  float: left;
+}
+
+/* ==========================================================================
+   HOME PAGE SECTIONS
+   ========================================================================== */
+
+
+.section-header {
+  margin-bottom: 50px;
+  font-size: 1.25em;
+  color: darken(#aaa, 35%);
+}
+.section {
+  padding-bottom: 50px;
+  padding-top: 80px;
+ h2  {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: darken(#aaa, 35%);
+ }
+ h3  {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    color: darken(#aaa, 25%);
+  }
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: darken(#aaa, 15%);
+  }
+}
+.project-description {
+  padding-top: 10px;
+}
+
+ /* ==========================================================================
+   ABOUT
+   ========================================================================== */
+
+.about {
+  background-color: lighten(#0d47a1, 15%);
+  background-image: url(/img/about-background3.jpg);
+  background-size: cover;
+  h1, h2, p {
+    color: white;
+  }
+}
+
+.about-think, 
+.about-passion, 
+.about-background {
+  margin-bottom: 20px;
+ p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  }
+}
+
+.about-skills {
+  color: white;
+  text-align: center;
+  a {
+    color: white;
+    font-size: 0.75em;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 1.1em;
+  } a:hover {
+    color: #ffa726;
+  }
+}
+
+#circles-html .circles-text:before {
+  content: "\f13b";
+}
+
+#circles-css .circles-text:before {
+  content: "\f13c";
+}
+
+#circles-photoshop .circles-text:before {
+  content: "\e601";
+}
+
+#circles-illustrator .circles-text:before {
+  content: "\e600";
+}
+
+#circles-google-drive .circles-text:before {
+  content: "\e603";
+}
+
+.circle {
+  display: inline-block;
+  &:not(:first-child) {margin-left: 24px};
+  margin-top: 25px;
+}
+
+/* ==========================================================================
+   PROJECT SECTION
+   ========================================================================== */
+
+.project-block {
+  padding-bottom: 40px;
+}
+
+.browser,
+.mobile {
+  display: inline-block;
+}
+
+.mobile {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.browser-window {
+  padding-top: 8px;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.browser-top {
+  width: 90%;
+  margin-left: 45px;
+  margin-bottom:5px;
+  padding-left: 5px;
+  border: 2px solid #bbb;
+  border-radius: 2px;
+  background-color: white;
+  p {
+    font-size: 0.75em;
+    text-align: left;
+  }
+}
+
+.browser-buttons {
+  width: 3px;
+  height: 3px;
+  border: 2px solid #aaa;
+  background-color: #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 8px;
+  float: left;
+  &:first-child {
+    margin-left: 8px;
+  }
+}
+
+.project-image {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.window-screen {
+  border-top: 2px solid #bbb;
+  img {
+    max-width: 100%;
+  }
+}
+
+.iphone-5s {
+  border: 2px solid #bbb;
+  padding: 8px;
+  border-radius: 18px;
+  background-color: white;
+}
+
+.top-phone {
+  height: 1px;
+  width: 30px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  background-color: #aaa;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.screen {
+  border: 1.5px solid #bbb;
+  img {
+    max-width: 100%;
+  }
+}
+
+.bottom-phone {
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  margin-top: 8px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+}
+.center-align {
+  text-align: center;
+}
+
+.button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid lighten(#0d47a1, 5%);
+  border-radius: 5px;
+  color: lighten(#0d47a1, 5%);;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline-block;
+  &:hover {
+    background-color: lighten(#0d47a1, 5%);
+    color: white;
+  } a {
+    color: lighten(#0d47a1, 5%);
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+
+#contact {
+  background-color: #aaa;
+  color: darken(#aaa, 35%);
+  line-height: 1.5em;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  p {
+    text-align: center;
+  }
+}
+
+.social {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 50px;
+  ul {
+    float: right;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 400;
+    &:not(:first-child) {padding-left: 50px};
+  }
+  a {
+    color: darken(#aaa, 35%);
+    &:hover {
+      color: lighten(#ffa726, 5%);
+    }
+  }
+}
+
+/* ==========================================================================
+   PROJECT PAGES
+   ========================================================================== */
+
+.project-page {
+  padding-top: 150px;
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+}
+
+.project-nav {
+  span {
+    color: #aaa;
+    cursor: pointer;
+    padding: 2px 10px;
+    position: relative;
+    &:hover {
+      background-color: #eee;
+    }
+    &.active-project {
+      background-color: #ffb140;
+      color: white;
+      &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent; 
+      border-right: 20px solid transparent; 
+      border-top: 20px solid #ffb140;
+      position: absolute;
+      left: 40%;
+      }
+    } 
+  }
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 400;
+    &:not(:first-child) {padding-left: 20px};
+  }
+  margin-bottom: 40px;
+}
+
+.case-study {
+  padding-top: 10px;
+  border: 1px solid #eee;
+  border-left: none;
+  &:nth-child(3) {border-right: none};
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  p {
+    font-size: 1.1em;
+  }
+}
+
+.overview {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.project-example {
+  margin-bottom: 40px;
+}
+
+.scroll {
+  max-height: 625px;
+  overflow: scroll;
+  img {
+    max-width: 100%;
+  }
+}
+
+.opportunities-project,
+.sales-project {
+  display: none;
+}
+
+.mobile-project-example,
+.mobile-project {
+  display: inline-block;
+  &:not(:last-child) {margin-right: 80px};
+}
+
+.live-site {
+  padding: 20px 50px;
+  font-size: 1.75em;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 80%;
+  }
+  .grid-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #hero .grid-container {
+    padding-top: 50px;
+    height: auto;
+    text-align: center;
+  }
+  .header-description h1 {
+    font-size: 1.75em;
+  }
+  .header-description p {
+    font-size: 0.45em;
+    line-height: 1em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .hero-img {
+    text-align: center;
+    display: inline-block;
+  }
+  .logo,
+  nav ul {
+    text-align: center;
+    float: none;
+  }
+  .navigation ul {
+    padding-top: 5px;
+  }
+  .logo {
+    font-size: 3em;
+  }
+  .section-header {
+  margin-bottom: 25px;
+  }
+  .circle {
+    margin-left: 0 !important;
+  }
+  .case-study {
+    margin: 0px;
+  }
+  .button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  }
+  .project-image {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .browser-window {
+  padding-top: 6px;
+  border: 1.5px solid #bbb;
+  border-radius: 2px;
+}
+  .browser-top {
+    width: 80%;
+    border: 1.5px solid #bbb;
+  } 
+  .browser-buttons {
+    margin-top: 5px;
+  }
+  .window-screen {
+  border-top: 1.5px solid #bbb;
+  }
+  
+  .iphone-5s {
+    border: 1.5px solid #bbb;
+    padding: 2px;
+    border-radius: 8px;
+  }
+  .top-phone {
+    height: .5px;
+    width: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #aaa;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
+  .bottom-phone {
+    height: 10px;
+    width: 10px;
+    margin: 0 auto;
+    margin-top: 3px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+  }
+  .mobile {
+    position: absolute;
+    right: -5%;
+    top: 40%;
+  }
+  .project-page {
+  padding-top: 100px;
+  h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+}
+  .project-nav {
+    li {
+      font-size: 1.25em;
+      &:not(:first-child) {padding-left: 0px};
+      display: block;
+      margin-bottom: 10px;
+    }
+    span {
+    padding: 1px 2px;
+    &:hover {
+      background-color: #eee;
+    }
+    &.active-project {
+      background-color: #ffb140;
+      color: white;
+      &:after {
+      display: none;
+      }
+    } 
+  }
+  }
+  .scroll {
+  max-height: 185px;
+  overflow: scroll;
+  img {
+    max-width: 100%;
+  }
+}
+  .mobile-project-example,
+  .mobile-project {
+  display: block;
+  &:not(:last-child) {margin-right: 0px};
+  }
+} 
+
+@media (max-width: 1024px) {
+  .mobile-project-example {
+  display: block;
+  &:not(:last-child) {margin-right: 0px};
+  }
+  .project-image {
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .header-description p {
+    font-size: .75em;
+  }
+
+}

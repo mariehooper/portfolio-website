@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css"> 
+  </head>
+    <body>
+      <div id="wrapper">
+        <header id="header">
+           <div class="grid-container">
+            <div class="logo grid-20 mobile-grid-100"><a href="http://localhost:4000">&lt;MH&gt;</a></div>
+            <nav class="navigation grid-80 mobile-grid-100">
+              <ul>
+                <li><a href='{{ page.previous }}'>PREVIOUS PROJECT</a></li>
+                <li><a href='{{ page.next }}'>NEXT PROJECT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      
