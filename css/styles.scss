@@ -692,4 +692,11 @@ nav, .social {
   display: block;
   &:not(:last-child) {margin-right: 0px};
   }
+  .project-nav {
+    li {
+      font-size: 1.25em;
+      &:not(:first-child) {padding-left: 0px};
+      margin-bottom: 10px;
+    }
+  }
 }
