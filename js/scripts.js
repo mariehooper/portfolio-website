@@ -5,72 +5,17 @@ $(document).ready(function() {
 
   /* Variables
      ======================================================================== */
-  var windowHeight = $(window).height(),
-      header = $('#header'),
+  var header = $('#header'),
       headerDescription = $('.header-description'),
-      headerHeight = header.height(),
-      about = $('#about'),
+      navProjects = $('.nav-projects'),
+      navAbout = $('.nav-about'),
+      navContact = $('.nav-contact'),
       projects = $('#projects'),
+      about = $('#about'),
       contact = $('#contact');
-
-  $(window).load(function() {
-    windowHeight = $(window).height();
-    updateScenes();
-  })
 
   /* Functions
      ======================================================================== */
-
-  /**
-   * Function that updates the header height stored in headerHeight variable
-   * when called.
-   */
-  function updateHeader() {
-    headerHeight = header.height();
-  }
-
-  /**
-   * Function that the offset of the active home ScrollMagic scene when called.
-   */
-  function updateActiveHomeScene() {
-    activeHomeScene.offset(headerHeight * -1);
-  }
-
-  /**
-   * Function that updates the offset and duration of the
-   * About section ScrollMagic scene when called.
-   */
-  function updateAboutScene() {
-    aboutScene.offset(headerHeight * -1);
-    aboutScene.duration(about.outerHeight() + headerHeight - 1 - (windowHeight - contact.outerHeight()));
-  }
-
-  /**
-   * Function that updates the offset and duration of the
-   * Projects section ScrollMagic scene when called.
-   */
-  function updateProjectsScene() {
-    projectsScene.offset(headerHeight * -1);
-    projectsScene.duration(projects.outerHeight());
-  }
-
-  /**
-   * Function that updates the offset of the
-   * Contact section ScrollMagic scene when called.
-   */
-  function updateContactScene() {
-    contactScene.offset(contact.outerHeight() - 1);
-  }
-
-  /**
-   * Function that runs all updates when called.
-   */
-  function updateScenes() {
-    updateHeader();
-    updateAboutScene();
-    updateProjectsScene();
-    updateContactScene();
-  }
 
   /**
    * Function draws SVG circles for skills when called.
@@ -178,34 +123,75 @@ $(document).ready(function() {
   .setTween(tweenHeaderDescription)
   .addTo(scrollMagicController);
 
-  /* Scene to toggle when scroll is within the Projects section */
-  var projectsScene = new ScrollMagic.Scene({
-      triggerElement: '#projects',
-      triggerHook: 'onLeave', // Start when trigger starts leaving viewport
-      offset: headerHeight * -1, // Offset the start (early) by header height
-      duration: projects.outerHeight()
-    })
-  .setClassToggle(".nav-projects", "projects-active")
-  .addTo(scrollMagicController);
+  /* Waypoints
+     ======================================================================== */
 
-  /* Scene to toggle when scroll is within the About section */
-  var aboutScene = new ScrollMagic.Scene({
-    triggerElement: '#about',
-    triggerHook: 'onLeave', // Start when trigger starts leaving viewport
-    offset: headerHeight * -1, // Offset the start (early) by header height
-    duration: about.outerHeight() + headerHeight - 1 - (windowHeight - contact.outerHeight()) // End when page is at the bottom
-  })
-  .setClassToggle(".nav-about", "about-active")
-  .addTo(scrollMagicController);
+  /**
+   * Toggles active class for Projects
+   */
+  var projectsWaypoint = projects.waypoint(function(direction) {
+    if (direction === 'down') {
+      navProjects.addClass('active');
+      navAbout.removeClass('active');
+      navContact.removeClass('active');
+    }
+    else {
+      navProjects.removeClass('active');
+      navAbout.removeClass('active');
+      navContact.removeClass('active');
+    }
+  },{
+    offset: function() {
+      return header.height();
+    }
+  });
 
-  /* Scene to toggle when scroll is at the Contact section (bottom of page) */
-  var contactScene = new ScrollMagic.Scene({
-    triggerElement: '#contact',
-    triggerHook: 'onEnter', // Start when trigger enters the viewport
-    offset: contact.outerHeight() - 1 // Offset the start (late) by section height - 1
+  /**
+   * Toggles active class for About and remove for About
+   */
+  var aboutWaypoint = about.waypoint(function(direction) {
+    if (direction === 'down') {
+      navProjects.removeClass('active');
+      navAbout.addClass('active');
+      navContact.removeClass('active');
+    }
+    else {
+      navProjects.addClass('active');
+      navAbout.removeClass('active');
+      navContact.removeClass('active');
+    }
+  },{
+    offset: function() {
+      return header.height();
+    }
   })
-  .setClassToggle(".nav-contact", "contact-active")
-  .addTo(scrollMagicController);
+
+  /* Call the function to draw skill circles when you hit About section. */
+  var circlesWaypoint = $('.about-skills').waypoint(function(direction) {
+    drawCircles();
+    this.destroy();
+    Waypoint.refreshAll();
+  }, {
+    offset: 'bottom-in-view'
+  });;
+
+  /**
+   * Toggles active class for Contact and removes for About
+   */
+  var contactWaypoint = contact.waypoint(function(direction) {
+    if (direction === 'down') {
+      navProjects.removeClass('active');
+      navAbout.removeClass('active');
+      navContact.addClass('active');
+    }
+    else {
+      navProjects.removeClass('active');
+      navAbout.addClass('active');
+      navContact.removeClass('active');
+    }
+  },{
+    offset: 'bottom-in-view'
+  });
 
   /* Scripts
      ======================================================================== */
@@ -227,15 +213,6 @@ $(document).ready(function() {
     }
   });
 
-  /* Call the function to draw skill circles when you hit About section. */
-  var waypoints = $('#about').waypoint(function(direction) {
-    drawCircles();
-    updateScenes();
-    this.destroy();
-  }, {
-    offset: '25%'
-  });
-
   /* Hide/shows the appropriate sub-section using secondary nav on a project page. */
   $(".project-nav span").on("click", function() {
     var dataClass = "." + $(this).attr('data-section');
@@ -245,11 +222,11 @@ $(document).ready(function() {
     $(this).addClass("active-project");
   });
 
+  /* Size case studies boxes when document is ready */
   sizeCaseStudies();
 
   /* Run functions when window resizes (only every 100ms) */
   $(window).smartresize(function() {
-    updateScenes();
     sizeCaseStudies();
   });
 

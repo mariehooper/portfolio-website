@@ -132,9 +132,7 @@ nav, .social {
   display: none;
 }
 
-.projects-active,
-.about-active,
-.contact-active {
+.navigation li a.active {
   text-decoration: underline;
 }
 
@@ -658,7 +656,7 @@ nav, .social {
   img {
     max-width: 100%;
   }
-}  
+}
 }
 
 @media (max-width: 667px) {
