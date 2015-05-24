@@ -516,6 +516,31 @@ nav, .social {
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
+@media (max-width: 1024px) {
+  .mobile-project-example {
+  display: block;
+  &:not(:last-child) {margin-right: 0px};
+  }
+  .project-nav {
+    li {
+      font-size: 1.25em;
+      &:not(:first-child) {padding-left: 0px};
+      margin-bottom: 10px;
+    }
+  }
+  .header-description p {
+    font-size: 0.9em;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .button {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  }
+}
+
+
 @media (max-width: 767px) {
   body {
     font-size: 80%;
@@ -529,11 +554,14 @@ nav, .social {
     height: auto;
     text-align: center;
   }
+  .navigation {
+    font-size: 1.1em;
+  }
   .header-description h1 {
     font-size: 1.75em;
   }
   .header-description p {
-    font-size: 0.45em;
+    font-size: 0.5em;
     line-height: 1em;
     padding-top: 5px;
     padding-bottom: 10px;
@@ -561,6 +589,14 @@ nav, .social {
   }
   .case-study {
     margin: 0px;
+    border-top: none;
+    &:nth-child(1) {border-top: 1px solid #eee};
+    p {
+      font-size: 1.25em;
+    }
+  }
+  .project-example {
+    margin-top: 20px;
   }
   .button {
   margin-bottom: 10px;
@@ -685,26 +721,4 @@ nav, .social {
   }
 }
 
-@media (max-width: 1024px) {
-  .mobile-project-example {
-  display: block;
-  &:not(:last-child) {margin-right: 0px};
-  }
-  .project-nav {
-    li {
-      font-size: 1.25em;
-      &:not(:first-child) {padding-left: 0px};
-      margin-bottom: 10px;
-    }
-  }
-  .header-description p {
-    font-size: 0.9em;
-    line-height: 1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .button {
-  margin-bottom: 25px;
-  margin-top: 25px;
-  }
-}
+

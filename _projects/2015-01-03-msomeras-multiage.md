@@ -12,7 +12,7 @@ mobile_image: img/msomeara-mobile.jpg
 ---
 
 <section class="project-page section grid-container">
- <div class="section-header grid-100"><h1>Mrs. O'Meara's Multiage</h1></div>
+ <div class="section-header grid-100"><h1>Ms. O'Meara's Multiage</h1></div>
 
  <div class="omeara-project project-data">
   <div class="case-study challenge grid-33 tablet-grid-33 center-align">
