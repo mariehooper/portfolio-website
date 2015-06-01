@@ -223,6 +223,10 @@ nav, .social {
     font-size: 1.1em;
   } a:hover {
     color: #ffa726;
+    
+    .touch & {
+      color: white;
+    }
   }
 }
 
@@ -369,10 +373,19 @@ nav, .social {
   &:hover {
     background-color: lighten(#0d47a1, 5%);
     color: white;
+    
+    .touch & {
+      background-color: white;
+      color: lighten(#0d47a1, 5%);
+    }
   } a {
     color: lighten(#0d47a1, 5%);
     &:hover {
       color: white;
+      
+      .touch & {
+      color: lighten(#0d47a1, 5%);
+    }
     }
   }
 }
@@ -410,6 +423,10 @@ nav, .social {
     color: darken(#aaa, 35%);
     &:hover {
       color: lighten(#ffa726, 5%);
+      
+      .touch & {
+        color: darken(#aaa, 35%);
+      }
     }
   }
 }
@@ -434,6 +451,10 @@ nav, .social {
     position: relative;
     &:hover {
       background-color: #eee;
+      
+      .touch & {
+        background-color: white;
+      }
     }
     &.active-project {
       background-color: #ffb140;
@@ -668,6 +689,10 @@ nav, .social {
     padding: 1px 2px;
     &:hover {
       background-color: #eee;
+      
+      .touch & {
+        background-color: white;
+      }
     }
     &.active-project {
       background-color: #ffb140;
@@ -708,6 +733,10 @@ nav, .social {
     padding: 1px 2px;
     &:hover {
       background-color: #eee;
+      
+      .touch & {
+        background-color: white;
+      }
     }
     &.active-project {
       background-color: #ffb140;
