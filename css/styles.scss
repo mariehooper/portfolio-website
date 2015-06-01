@@ -741,6 +741,11 @@ nav, .social {
     &.active-project {
       background-color: #ffb140;
       color: white;
+      
+      .touch & {
+        background-color: #ffb140;
+        color: white;
+      }
       &:after {
       content: "";
       display: none;
