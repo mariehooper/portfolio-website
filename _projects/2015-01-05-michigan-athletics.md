@@ -1,7 +1,7 @@
 ---
 layout: projects
 previous: hooper-wedding
-next: wgi-buzz
+next: modern-midwest-maven
 title: michigan-athletics
 name: Michigan Athletics
 role: Role&#58; Process Automation, UI/UX Design, Google App Scripting

@@ -1,6 +1,6 @@
 ---
 layout: projects
-previous: wgi-buzz
+previous: michigan-athletics
 next: msomearas-multiage
 title: modern-midwest-maven
 name: Modern Midwest Maven
