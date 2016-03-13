@@ -16,45 +16,6 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"], #circles-photoshop .circles-text,
-#circles-illustrator .circles-text,
-#circles-google-drive .circles-text {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-illustrator:before {
-  content: "\e600";
-}
-
-.icon-photoshop:before {
-  content: "\e601";
-}
-
-.icon-screen:before {
-  content: "\e602";
-}
-
-.icon-tablet:before {
-  content: "\e605";
-}
-
-.icon-google-drive:before {
-  content: "\e603";
-}
-
-.icon-browser:before {
-  content: "\e604";
-}
 
 html, body, #wrapper {
   height: 100%;
@@ -212,50 +173,6 @@ nav, .social {
   }
 }
 
-.about-skills {
-  color: white;
-  text-align: center;
-  a {
-    color: white;
-    font-size: 0.75em;
-    display: inline-block;
-    margin-top: 40px;
-    font-size: 1.1em;
-  } a:hover {
-    color: #ffa726;
-    
-    .touch & {
-      color: white;
-    }
-  }
-}
-
-#circles-html .circles-text:before {
-  content: "\f13b";
-}
-
-#circles-css .circles-text:before {
-  content: "\f13c";
-}
-
-#circles-photoshop .circles-text:before {
-  content: "\e601";
-}
-
-#circles-illustrator .circles-text:before {
-  content: "\e600";
-}
-
-#circles-google-drive .circles-text:before {
-  content: "\e603";
-}
-
-.circle {
-  display: inline-block;
-  &:not(:first-child) {margin-left: 24px};
-  margin-top: 25px;
-  height: 91px;
-}
 
 /* ==========================================================================
    PROJECT SECTION
@@ -373,7 +290,7 @@ nav, .social {
   &:hover {
     background-color: lighten(#0d47a1, 5%);
     color: white;
-    
+
     .touch & {
       background-color: white;
       color: lighten(#0d47a1, 5%);
@@ -382,7 +299,7 @@ nav, .social {
     color: lighten(#0d47a1, 5%);
     &:hover {
       color: white;
-      
+
       .touch & {
       color: lighten(#0d47a1, 5%);
     }
@@ -423,7 +340,7 @@ nav, .social {
     color: darken(#aaa, 35%);
     &:hover {
       color: lighten(#ffa726, 5%);
-      
+
       .touch & {
         color: darken(#aaa, 35%);
       }
@@ -451,7 +368,7 @@ nav, .social {
     position: relative;
     &:hover {
       background-color: #eee;
-      
+
       .touch & {
         background-color: white;
       }
@@ -689,7 +606,7 @@ nav, .social {
     padding: 1px 2px;
     &:hover {
       background-color: #eee;
-      
+
       .touch & {
         background-color: white;
       }
@@ -733,7 +650,7 @@ nav, .social {
     padding: 1px 2px;
     &:hover {
       background-color: #eee;
-      
+
       .touch & {
         background-color: white;
       }
@@ -741,7 +658,7 @@ nav, .social {
     &.active-project {
       background-color: #ffb140;
       color: white;
-      
+
       .touch & {
         background-color: #ffb140;
         color: white;
@@ -754,5 +671,3 @@ nav, .social {
   }
   }
 }
-
-
