@@ -30,22 +30,22 @@ mobile_image: img/hooper-wedding-mobile.jpg
    <div class="project-example grid-100 center-align">
     <div class="browser browser-window">
       <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
-        <div class="browser-top"><p>msomearasmultiage.com</p></div>
+        <div class="browser-top"><p>jahlehandpatrick.hoopr.io</p></div>
         <div class="window-screen scroll"><img src="/img/wedding-example.jpg"></div>
         </div>
    </div>
   </div>
- 
+
  <div class="project-example project-data">
    <div class="project-example grid-100 center-align">
     <div class="browser browser-window">
       <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
-        <div class="browser-top"><p>msomearasmultiage.com/parents</p></div>
+        <div class="browser-top"><p>jahlehandpatrick.hoopr.io/wedding</p></div>
         <div class="window-screen scroll"><img src="/img/wedding-example2.jpg"></div>
         </div>
    </div>
   </div>
- 
+
   <div class="center-align mobile-project-example-wrap grid-100 mobile-grid-100">
    <div class="mobile-project-example mobile-grid-33 tablet-grid-33">
      <div class="mobile-project iphone-5s">
@@ -69,7 +69,7 @@ mobile_image: img/hooper-wedding-mobile.jpg
           </div>
    </div>
    </div>
- 
+
 <!--
  <div class="wrap-button center-align">
      <a class="button live-site" href="http://msomearasmultiage.com/" target="_blank">View Live Site</a>
