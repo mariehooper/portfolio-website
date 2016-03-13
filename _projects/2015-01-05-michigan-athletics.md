@@ -20,7 +20,7 @@ mobile_image: none
      <li><span data-section="ross-project">Ross Academic Center</span></li>
    </ul>
  </div>
- 
+
  <div class="intranet-project project-data">
    <div class="case-study challenge grid-33 tablet-grid-33 center-align">
       <h2>Challenge</h2>
@@ -28,7 +28,7 @@ mobile_image: none
     </div>
     <div class="case-study solution grid-33 tablet-grid-33 center-align">
       <h2>Solution</h2>
-      <p>I designed and built the intranet using Google Sites (the University had recently transitioned to Google), so it was the best way to use the technology we had and get our employees familiar with Google products at the same time.</p>
+      <p>I designed and built the intranet using Google Sites. The University had recently transitioned to Google, so it was the best way to use the technology we had and get our employees familiar with Google products at the same time.</p>
     </div>
     <div class="case-study result grid-33 tablet-grid-33 center-align">
       <h2>Result</h2>
@@ -49,7 +49,7 @@ mobile_image: none
           </div>
     </div>
   </div>
- 
+
  <div class="hr-project project-data">
     <div class="case-study challenge grid-33 tablet-grid-33 center-align">
         <h2>Challenge</h2>
@@ -71,7 +71,7 @@ mobile_image: none
         </div>
    </div>
  </div>
- 
+
  <div class="ross-project project-data">
      <div class="case-study challenge grid-33 tablet-grid-33 center-align">
           <h2>Challenge</h2>
@@ -100,5 +100,5 @@ mobile_image: none
      </div>
      </div>
  </div>
-  
+
 </section>
