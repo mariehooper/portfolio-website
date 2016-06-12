@@ -22,13 +22,25 @@
     background-color: lighten(#ffa726, 5%);
     height: 30%;
     height: 30vh;
+
+    @include breakpoint($mq-medium) {
+      padding-top: 50px;
+      height: auto;
+      text-align: center;
+    }
   }
 }
+
 .hero-img {
   border-radius: 50%;
   height: 100px;
   width: 100px;
   display: none;
+
+  @include breakpoint($mq-medium) {
+    text-align: center;
+    display: inline-block;
+  }
 }
 
 .navigation li a.active {
@@ -39,14 +51,39 @@
   font-size: 2.5em;
   line-height: 1.75em;
   padding-top: 50px;
+
+  h1 {
+    @include breakpoint($mq-medium) {
+      font-size: 1.75em;
+    }
+  }
+
+  p {
+    @include breakpoint($mq-large) {
+      font-size: 0.9em;
+      line-height: 1em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    @include breakpoint($mq-medium) {
+      font-size: 0.5em;
+      line-height: 1em;
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .navigation {
   float: right;
-}
 
-.navigation ul {
-  padding-top: 15px;
+  @include breakpoint($mq-medium) {
+    font-size: 1.1em;
+  }
+
+  ul {
+    padding-top: 15px;
+  }
 }
 
 .logo {

@@ -11,6 +11,10 @@ header {
 body {
   font-family: 'News Cycle', sans-serif;
   font-size: 100%;
+
+  @include breakpoint($mq-medium) {
+    font-size: 80%;
+  }
 }
 
 a {

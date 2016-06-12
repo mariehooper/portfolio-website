@@ -169,6 +169,12 @@ p {
  font-size: 1.2em;
  text-align: center;
  display: inline-block;
+
+ @include breakpoint($mq-large) {
+   margin-bottom: 25px;
+   margin-top: 25px;
+ }
+
  &:hover {
    background-color: lighten($blue, 5%);
    color: $white;
@@ -185,6 +191,6 @@ p {
      .touch & {
      color: lighten($blue, 5%);
    }
-   }
+  }
  }
 }

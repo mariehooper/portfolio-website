@@ -29,11 +29,7 @@
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
-@media (max-width: 1024px) {
-  .mobile-project-example {
-  display: block;
-  &:not(:last-child) {margin-right: 0px};
-  }
+@include breakpoint($mq-large) {
   .project-nav {
     li {
       font-size: 1.25em;
@@ -41,48 +37,15 @@
       margin-bottom: 10px;
     }
   }
-  .header-description p {
-    font-size: 0.9em;
-    line-height: 1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .button {
-  margin-bottom: 25px;
-  margin-top: 25px;
-  }
 }
 
 
-@media (max-width: $medium-max) {
-  body {
-    font-size: 80%;
-  }
+@include breakpoint($mq-medium) {
   .grid-container {
     padding-left: 0;
     padding-right: 0;
   }
-  #hero .grid-container {
-    padding-top: 50px;
-    height: auto;
-    text-align: center;
-  }
-  .navigation {
-    font-size: 1.1em;
-  }
-  .header-description h1 {
-    font-size: 1.75em;
-  }
-  .header-description p {
-    font-size: 0.5em;
-    line-height: 1em;
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-  .hero-img {
-    text-align: center;
-    display: inline-block;
-  }
+
   .logo,
   nav ul {
     text-align: center;
@@ -98,14 +61,6 @@
   margin-bottom: 25px;
   }
 
-  .case-study {
-    margin: 0px;
-    border-top: none;
-    &:nth-child(1) {border-top: 1px solid #eee};
-    p {
-      font-size: 1.25em;
-    }
-  }
   .project-example {
     margin-top: 20px;
   }
@@ -210,7 +165,7 @@
 }
 }
 
-@media (max-width: $small-max) {
+@include breakpoint($mq-small) {
 .project-nav {
     li {
       font-size: 1.25em;

@@ -52,12 +52,32 @@
   padding-top: 10px;
   border: 1px solid #eee;
   border-left: none;
-  &:nth-child(3) {border-right: none};
   margin-top: 40px;
   margin-bottom: 40px;
+
+  @include breakpoint($mq-medium) {
+    margin: 0px;
+    border-top: none;
+  }
+
+  &:nth-child(1) {
+    @include breakpoint($mq-medium) {
+      border-top: 1px solid #eee;
+    }
+  }
+
+  &:nth-child(3) {
+    border-right: none;
+  }
+
   p {
     font-size: 1.1em;
+
+    @include breakpoint($mq-medium) {
+      font-size: 1.25em;
+    }
   }
+
   a {
     color: $orange;
   }
@@ -89,10 +109,16 @@
   display: none;
 }
 
-.mobile-project-example,
-.mobile-project {
+.mobile-project-example {
   display: inline-block;
   &:not(:last-child) {margin-right: 80px};
+
+  @media (max-width: $large-max) {
+    display: block;
+    &:not(:last-child) {
+      margin-right: 0px
+    };
+  }
 }
 
 .live-site {
