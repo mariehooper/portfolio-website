@@ -1,7 +1,7 @@
 ---
 layout: projects
-previous: michigan-athletics
-next: ms-omearas-multiage
+previous_url: michigan-athletics
+next_url: ms-omearas-multiage
 title: modern-midwest-maven
 name: Modern Midwest Maven
 role: Role&#58; UI/UX Design, Info Architecture, Front-End Development

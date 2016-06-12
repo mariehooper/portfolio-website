@@ -1,7 +1,7 @@
 ---
 layout: projects
-previous: modern-midwest-maven
-next: hooper-wedding
+previous_url: modern-midwest-maven
+next_url: hooper-wedding
 title: ms-omearas-multiage
 name: Ms. O'Meara's Multiage
 role: Role&#58; UI/UX Design, Info Architecture, Front-End Dev, Logo Design

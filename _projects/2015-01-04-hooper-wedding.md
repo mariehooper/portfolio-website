@@ -1,7 +1,7 @@
 ---
 layout: projects
-previous: ms-omearas-multiage
-next: michigan-athletics
+previous_url: ms-omearas-multiage
+next_url: michigan-athletics
 title: hooper-wedding
 name: Hooper Wedding
 role: Role&#58; UI/UX Design, Some Front-End Development
