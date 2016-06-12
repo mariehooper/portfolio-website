@@ -1,5 +1,5 @@
 name: "Marie Hooper"
-description: "Portfolio Site"
+description: "Portfolio Site for Marie Hooper"
 
 url: "http://marie.hoopr.io"
 
@@ -10,9 +10,9 @@ permalink: pretty
 
 sass:
   style: :compressed
-collections: 
-  home: 
+collections:
+  home:
     output: false
-  projects: 
+  projects:
     output: true
     permalink: /projects/:title/
