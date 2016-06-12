@@ -1,0 +1,190 @@
+/* ==========================================================================
+   HOME PAGE SECTIONS
+   ========================================================================== */
+
+
+.section-header {
+  margin-bottom: 50px;
+  font-size: 1.25em;
+  color: darken(#aaa, 35%);
+}
+.section {
+  padding-bottom: 50px;
+  padding-top: 80px;
+ h2  {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: darken(#aaa, 35%);
+ }
+ h3  {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    color: darken(#aaa, 25%);
+  }
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: darken(#aaa, 15%);
+  }
+}
+.project-description {
+  padding-top: 10px;
+}
+
+/* ==========================================================================
+  ABOUT
+  ========================================================================== */
+
+.about {
+ background-color: lighten(#0d47a1, 15%);
+ background-image: url(/img/about-background3.jpg);
+ background-size: cover;
+ h1, h2, p {
+   color: white;
+ }
+}
+
+.about-think,
+.about-passion,
+.about-background {
+ margin-bottom: 20px;
+p {
+ font-size: 1.2em;
+ line-height: 1.5em;
+ }
+}
+
+
+/* ==========================================================================
+  PROJECT SECTION
+  ========================================================================== */
+
+.project-block {
+ padding-bottom: 40px;
+}
+
+.browser,
+.mobile {
+ display: inline-block;
+}
+
+.mobile {
+ position: absolute;
+ right: 5%;
+ top: 30%;
+}
+
+.browser-window {
+ padding-top: 8px;
+ border: 2px solid #bbb;
+ border-radius: 5px;
+ background-color: #ddd;
+}
+
+.browser-top {
+ width: 90%;
+ margin-left: 45px;
+ margin-bottom:5px;
+ padding-left: 5px;
+ border: 2px solid #bbb;
+ border-radius: 2px;
+ background-color: white;
+ p {
+   font-size: 0.75em;
+   text-align: left;
+ }
+}
+
+.browser-buttons {
+ width: 3px;
+ height: 3px;
+ border: 2px solid #aaa;
+ background-color: #aaa;
+ border-radius: 50%;
+ display: inline-block;
+ margin-left: 5px;
+ margin-top: 8px;
+ float: left;
+ &:first-child {
+   margin-left: 8px;
+ }
+}
+
+.project-image {
+ position: relative;
+ margin-bottom: 60px;
+}
+
+.window-screen {
+ border-top: 2px solid #bbb;
+ img {
+   max-width: 100%;
+ }
+}
+
+.iphone-5s {
+ border: 2px solid #bbb;
+ padding: 8px;
+ border-radius: 18px;
+ background-color: white;
+}
+
+.top-phone {
+ height: 1px;
+ width: 30px;
+ border: 2px solid #aaa;
+ border-radius: 5px;
+ background-color: #aaa;
+ margin: 0 auto;
+ margin-bottom: 10px;
+ margin-top: 18px;
+}
+
+.screen {
+ border: 1.5px solid #bbb;
+ img {
+   max-width: 100%;
+ }
+}
+
+.bottom-phone {
+ height: 25px;
+ width: 25px;
+ margin: 0 auto;
+ margin-top: 8px;
+ border: 2px solid #bbb;
+ border-radius: 50%;
+}
+.center-align {
+ text-align: center;
+}
+
+.button {
+ margin-top: 30px;
+ padding: 10px 30px;
+ border: 2px solid lighten(#0d47a1, 5%);
+ border-radius: 5px;
+ color: lighten(#0d47a1, 5%);;
+ font-size: 1.2em;
+ text-align: center;
+ display: inline-block;
+ &:hover {
+   background-color: lighten(#0d47a1, 5%);
+   color: white;
+
+   .touch & {
+     background-color: white;
+     color: lighten(#0d47a1, 5%);
+   }
+ } a {
+   color: lighten(#0d47a1, 5%);
+   &:hover {
+     color: white;
+
+     .touch & {
+     color: lighten(#0d47a1, 5%);
+   }
+   }
+ }
+}

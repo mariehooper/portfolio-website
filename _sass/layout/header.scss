@@ -1,0 +1,55 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+#header {
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  .grid-container {
+    box-shadow: none;
+    background-color: lighten(#ffa726, 5%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+#hero {
+  .grid-container {
+    padding-top: 100px;
+    color: white;
+    background-color: lighten(#ffa726, 5%);
+    height: 30%;
+    height: 30vh;
+  }
+}
+.hero-img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.navigation li a.active {
+  text-decoration: underline;
+}
+
+.header-description {
+  font-size: 2.5em;
+  line-height: 1.75em;
+  padding-top: 50px;
+}
+
+.navigation {
+  float: right;
+}
+
+.navigation ul {
+  padding-top: 15px;
+}
+
+.logo {
+  font-size: 3.5em;
+  float: left;
+}
