@@ -20,12 +20,12 @@
       background-color: #eee;
 
       .touch & {
-        background-color: white;
+        background-color: $white;
       }
     }
     &.active-project {
-      background-color: #ffb140;
-      color: white;
+      background-color: $orange;
+      color: $white;
       &:after {
       content: "";
       display: block;
@@ -33,7 +33,7 @@
       height: 0;
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
-      border-top: 20px solid #ffb140;
+      border-top: 20px solid $orange;
       position: absolute;
       left: 40%;
       }
@@ -59,7 +59,7 @@
     font-size: 1.1em;
   }
   a {
-    color: #ffb140;
+    color: $orange;
   }
 }
 

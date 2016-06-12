@@ -4,7 +4,7 @@ html, body, #wrapper {
 
 header {
   a {
-    color: white;
+    color: $white;
   }
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 nav, .social {
   a {
-    color: white;
+    color: $white;
   }
   ul {
     float: right;

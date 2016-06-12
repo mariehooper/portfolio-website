@@ -37,11 +37,11 @@
   ========================================================================== */
 
 .about {
- background-color: lighten(#0d47a1, 15%);
+ background-color: lighten($blue, 15%);
  background-image: url(/img/about-background3.jpg);
  background-size: cover;
  h1, h2, p {
-   color: white;
+   color: $white;
  }
 }
 
@@ -89,7 +89,7 @@ p {
  padding-left: 5px;
  border: 2px solid #bbb;
  border-radius: 2px;
- background-color: white;
+ background-color: $white;
  p {
    font-size: 0.75em;
    text-align: left;
@@ -127,7 +127,7 @@ p {
  border: 2px solid #bbb;
  padding: 8px;
  border-radius: 18px;
- background-color: white;
+ background-color: $white;
 }
 
 .top-phone {
@@ -163,27 +163,27 @@ p {
 .button {
  margin-top: 30px;
  padding: 10px 30px;
- border: 2px solid lighten(#0d47a1, 5%);
+ border: 2px solid lighten($blue, 5%);
  border-radius: 5px;
- color: lighten(#0d47a1, 5%);;
+ color: lighten($blue, 5%);;
  font-size: 1.2em;
  text-align: center;
  display: inline-block;
  &:hover {
-   background-color: lighten(#0d47a1, 5%);
-   color: white;
+   background-color: lighten($blue, 5%);
+   color: $white;
 
    .touch & {
-     background-color: white;
-     color: lighten(#0d47a1, 5%);
+     background-color: $white;
+     color: lighten($blue, 5%);
    }
  } a {
-   color: lighten(#0d47a1, 5%);
+   color: lighten($blue, 5%);
    &:hover {
-     color: white;
+     color: $white;
 
      .touch & {
-     color: lighten(#0d47a1, 5%);
+     color: lighten($blue, 5%);
    }
    }
  }
