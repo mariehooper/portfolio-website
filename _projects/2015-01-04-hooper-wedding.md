@@ -1,6 +1,6 @@
 ---
 layout: projects
-previous: msomearas-multiage
+previous: ms-omearas-multiage
 next: michigan-athletics
 title: hooper-wedding
 name: Hooper Wedding

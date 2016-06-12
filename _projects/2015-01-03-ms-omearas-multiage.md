@@ -2,7 +2,7 @@
 layout: projects
 previous: modern-midwest-maven
 next: hooper-wedding
-title: msomearas-multiage
+title: ms-omearas-multiage
 name: Ms. O'Meara's Multiage
 role: Role&#58; UI/UX Design, Info Architecture, Front-End Dev, Logo Design
 overview: Overview&#58; This site provides a place where both students and parents of Ms. O’Meara’s classroom can find resources for the school year. With varying needs from each group, the design had to be intuitive for ages 6 and up!
@@ -35,7 +35,7 @@ mobile_image: img/msomeara-mobile.jpg
         </div>
    </div>
   </div>
- 
+
  <div class="project-example project-data">
    <div class="project-example grid-100 center-align">
     <div class="browser browser-window">
@@ -45,7 +45,7 @@ mobile_image: img/msomeara-mobile.jpg
         </div>
    </div>
   </div>
- 
+
   <div class="center-align mobile-project-example-wrap grid-100 mobile-grid-100">
    <div class="mobile-project-example mobile-grid-33 tablet-grid-33">
      <div class="mobile-project iphone-5s">
@@ -69,7 +69,7 @@ mobile_image: img/msomeara-mobile.jpg
           </div>
    </div>
    </div>
- 
+
  <div class="wrap-button center-align">
      <a class="button live-site" href="http://msomearasmultiage.com/" target="_blank">View Live Site</a>
 </div>
