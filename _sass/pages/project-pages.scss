@@ -37,15 +37,21 @@
       background-color: $orange;
       color: $white;
       &:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid $orange;
-      position: absolute;
-      left: 40%;
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $orange;
+        position: absolute;
+        left: 40%;
+
+      // @include breakpoint($mq-medium) {
+      //   border-left: 10px solid transparent;
+      //   border-right: 10px solid transparent;
+      //   border-top: 10px solid $orange;
+      //   }
       }
     }
   }
@@ -58,6 +64,11 @@
       font-size: 1.25em;
       margin-bottom: 10px;
     }
+
+    // @include breakpoint($mq-medium) {
+    //   display: block;
+    //   margin-bottom: 10px;
+    // }
 
     &:not(:first-child) {
       padding-left: 20px;
