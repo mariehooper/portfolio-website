@@ -83,10 +83,22 @@
 
   ul {
     padding-top: 15px;
+
+    @include breakpoint($mq-medium) {
+      padding-top: 5px;
+      text-align: center;
+      float: none;
+    }
   }
 }
 
 .logo {
   font-size: 3.5em;
   float: left;
+
+  @include breakpoint($mq-medium) {
+    font-size: 3em;
+    float: none;
+    text-align: center;
+  }
 }

@@ -7,6 +7,10 @@
   margin-bottom: 50px;
   font-size: 1.25em;
   color: darken(#aaa, 35%);
+
+  @include breakpoint($mq-medium) {
+  margin-bottom: 25px;
+  }
 }
 .section {
   padding-bottom: 50px;
@@ -61,129 +65,190 @@ p {
   ========================================================================== */
 
 .project-block {
- padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .browser,
 .mobile {
- display: inline-block;
+  display: inline-block;
 }
 
 .mobile {
- position: absolute;
- right: 5%;
- top: 30%;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+
+  @include breakpoint($mq-medium) {
+    position: absolute;
+    right: -5%;
+    top: 40%;
+  }
 }
 
 .browser-window {
- padding-top: 8px;
- border: 2px solid #bbb;
- border-radius: 5px;
- background-color: #ddd;
+  padding-top: 8px;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  background-color: #ddd;
+
+  @include breakpoint($mq-medium) {
+    padding-top: 6px;
+    border: 1.5px solid #bbb;
+    border-radius: 2px;
+  }
 }
 
 .browser-top {
- width: 90%;
- margin-left: 45px;
- margin-bottom:5px;
- padding-left: 5px;
- border: 2px solid #bbb;
- border-radius: 2px;
- background-color: $white;
- p {
-   font-size: 0.75em;
-   text-align: left;
- }
+  width: 90%;
+  margin-left: 45px;
+  margin-bottom:5px;
+  padding-left: 5px;
+  border: 2px solid #bbb;
+  border-radius: 2px;
+  background-color: $white;
+
+  @include breakpoint($mq-medium) {
+    width: 80%;
+    border: 1.5px solid #bbb;
+  }
+
+  p {
+    font-size: 0.75em;
+    text-align: left;
+  }
 }
 
 .browser-buttons {
- width: 3px;
- height: 3px;
- border: 2px solid #aaa;
- background-color: #aaa;
- border-radius: 50%;
- display: inline-block;
- margin-left: 5px;
- margin-top: 8px;
- float: left;
- &:first-child {
-   margin-left: 8px;
- }
+  width: 3px;
+  height: 3px;
+  border: 2px solid #aaa;
+  background-color: #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 8px;
+  float: left;
+
+  @include breakpoint($mq-medium) {
+    margin-top: 5px;
+  }
+
+  &:first-child {
+    margin-left: 8px;
+  }
 }
 
 .project-image {
- position: relative;
- margin-bottom: 60px;
+  position: relative;
+  margin-bottom: 60px;
+
+  @include breakpoint($mq-medium) {
+   padding-left: 0;
+   padding-right: 0;
+  }
 }
 
 .window-screen {
- border-top: 2px solid #bbb;
- img {
-   max-width: 100%;
+  border-top: 2px solid #bbb;
+
+  @include breakpoint($mq-medium) {
+    border-top: 1.5px solid #bbb;
+  }
+
+  img {
+    max-width: 100%;
  }
 }
 
 .iphone-5s {
- border: 2px solid #bbb;
- padding: 8px;
- border-radius: 18px;
- background-color: $white;
+  border: 2px solid #bbb;
+  padding: 8px;
+  border-radius: 18px;
+  background-color: $white;
+
+  @include breakpoint($mq-medium) {
+    border: 1.5px solid #bbb;
+    padding: 2px;
+    border-radius: 8px;
+  }
 }
 
 .top-phone {
- height: 1px;
- width: 30px;
- border: 2px solid #aaa;
- border-radius: 5px;
- background-color: #aaa;
- margin: 0 auto;
- margin-bottom: 10px;
- margin-top: 18px;
+  height: 1px;
+  width: 30px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  background-color: #aaa;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 18px;
+
+  @include breakpoint($mq-medium) {
+    height: .5px;
+    width: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
 }
 
 .screen {
- border: 1.5px solid #bbb;
- img {
-   max-width: 100%;
- }
+  border: 1.5px solid #bbb;
+  img {
+    max-width: 100%;
+  }
 }
 
 .bottom-phone {
- height: 25px;
- width: 25px;
- margin: 0 auto;
- margin-top: 8px;
- border: 2px solid #bbb;
- border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  margin-top: 8px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+
+  @include breakpoint($mq-medium) {
+    height: 10px;
+    width: 10px;
+    margin-top: 3px;
+    border: 1px solid #bbb;
+  }
 }
+
 .center-align {
- text-align: center;
+  text-align: center;
 }
 
 .button {
- margin-top: 30px;
- padding: 10px 30px;
- border: 2px solid lighten($blue, 5%);
- border-radius: 5px;
- color: lighten($blue, 5%);;
- font-size: 1.2em;
- text-align: center;
- display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid lighten($blue, 5%);
+  border-radius: 5px;
+  color: lighten($blue, 5%);;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline-block;
 
- @include breakpoint($mq-large) {
-   margin-bottom: 25px;
-   margin-top: 25px;
+  @include breakpoint($mq-large) {
+    margin-bottom: 25px;
+    margin-top: 25px;
  }
 
- &:hover {
-   background-color: lighten($blue, 5%);
-   color: $white;
+  @include breakpoint($mq-medium) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  &:hover {
+    background-color: lighten($blue, 5%);
+    color: $white;
 
    .touch & {
      background-color: $white;
      color: lighten($blue, 5%);
    }
- } a {
+  } a {
    color: lighten($blue, 5%);
    &:hover {
      color: $white;
@@ -192,5 +257,5 @@ p {
      color: lighten($blue, 5%);
    }
   }
- }
-}
+  }
+  }

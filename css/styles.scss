@@ -29,15 +29,6 @@
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
-@include breakpoint($mq-large) {
-  .project-nav {
-    li {
-      font-size: 1.25em;
-      &:not(:first-child) {padding-left: 0px};
-      margin-bottom: 10px;
-    }
-  }
-}
 
 
 @include breakpoint($mq-medium) {
@@ -46,83 +37,6 @@
     padding-right: 0;
   }
 
-  .logo,
-  nav ul {
-    text-align: center;
-    float: none;
-  }
-  .navigation ul {
-    padding-top: 5px;
-  }
-  .logo {
-    font-size: 3em;
-  }
-  .section-header {
-  margin-bottom: 25px;
-  }
-
-  .project-example {
-    margin-top: 20px;
-  }
-  .button {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  }
-  .project-image {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .browser-window {
-  padding-top: 6px;
-  border: 1.5px solid #bbb;
-  border-radius: 2px;
-}
-  .browser-top {
-    width: 80%;
-    border: 1.5px solid #bbb;
-  }
-  .browser-buttons {
-    margin-top: 5px;
-  }
-  .window-screen {
-  border-top: 1.5px solid #bbb;
-  }
-
-  .iphone-5s {
-    border: 1.5px solid #bbb;
-    padding: 2px;
-    border-radius: 8px;
-  }
-  .top-phone {
-    height: .5px;
-    width: 12px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    background-color: #aaa;
-    margin: 0 auto;
-    margin-bottom: 4px;
-    margin-top: 8px;
-  }
-  .bottom-phone {
-    height: 10px;
-    width: 10px;
-    margin: 0 auto;
-    margin-top: 3px;
-    border: 1px solid #bbb;
-    border-radius: 50%;
-  }
-  .mobile {
-    position: absolute;
-    right: -5%;
-    top: 40%;
-  }
-  .project-page {
-  padding-top: 100px;
-  h1 {
-    text-align: center;
-    font-size: 3em;
-  }
-}
   .project-nav {
     li {
       font-size: 1.25em;
