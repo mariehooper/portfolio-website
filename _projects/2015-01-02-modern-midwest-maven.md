@@ -3,9 +3,9 @@ layout: projects
 previous_url: michigan-athletics
 next_url: ms-omearas-multiage
 title: modern-midwest-maven
-name: Modern Midwest Maven
+name: GradeCraft Homepage Redesign
 role: Role&#58; UI/UX Design, Info Architecture, Front-End Development
-overview: Overview&#58; Redesigning my best friend's fashion blog was a new experience with web design. Large photos and many galleries of clothing and accessories allowed me to experiement with new design layouts.
+overview: Overview&#58; Redesigning my best friend's fashion blog was a new experience with web design. Large photos and many galleries of clothing and accessories allowed me to experiment with new design layouts.
 browser_url: modernmidwestmaven.com
 browser_image: img/mmm.jpg
 mobile_image: img/mmm-mobile.jpg
