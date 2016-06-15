@@ -26,6 +26,11 @@
     cursor: pointer;
     padding: 2px 10px;
     position: relative;
+
+    @include breakpoint($mq-medium) {
+      padding: 1px 2px;
+    }
+
     &:hover {
       background-color: #eee;
 
@@ -47,11 +52,10 @@
         position: absolute;
         left: 40%;
 
-      // @include breakpoint($mq-medium) {
-      //   border-left: 10px solid transparent;
-      //   border-right: 10px solid transparent;
-      //   border-top: 10px solid $orange;
-      //   }
+        @include breakpoint($mq-medium) {
+          content: "";
+          display: none;
+        }
       }
     }
   }

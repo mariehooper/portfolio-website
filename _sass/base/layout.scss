@@ -43,4 +43,9 @@ nav, .social {
 
 .grid-container {
   box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
+
+  @include breakpoint($mq-medium) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
