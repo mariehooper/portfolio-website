@@ -1,0 +1,40 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+
+#contact {
+  background-color: #aaa;
+  color: darken(#aaa, 35%);
+  line-height: 1.5em;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  p {
+    text-align: center;
+  }
+}
+
+.social {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 50px;
+  ul {
+    float: right;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 400;
+    &:not(:first-child) {padding-left: 50px};
+  }
+  a {
+    color: darken(#aaa, 35%);
+    &:hover {
+      color: lighten(#ffa726, 5%);
+
+      .touch & {
+        color: darken(#aaa, 35%);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+$orange: #ffb140;
+$blue: #0d47a1;
+$white: #fff;
+
+/* Media Queries */
+
+$small-max: 41.75rem; // 48 * 16 = 668px
+$medium-max: 48rem; // 768px
+$large-max: 64rem; // 1024px
+
+$mq-small: max-width $small-max; // @media (max-width: 41.75rem)
+$mq-medium: max-width $medium-max; // @media (max-width: 48rem)
+$mq-large: max-width $large-max; // @media (max-width: 64rem)

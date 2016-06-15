@@ -1,0 +1,51 @@
+html, body, #wrapper {
+  height: 100%;
+}
+
+header {
+  a {
+    color: $white;
+  }
+}
+
+body {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 100%;
+
+  @include breakpoint($mq-medium) {
+    font-size: 80%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav, .social {
+  a {
+    color: $white;
+  }
+  ul {
+    float: right;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 400;
+    &:not(:first-child) {padding-left: 20px};
+
+  }
+}
+
+.grid-container {
+  box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
+
+  @include breakpoint($mq-medium) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
