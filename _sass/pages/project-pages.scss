@@ -65,10 +65,9 @@
       margin-bottom: 10px;
     }
 
-    // @include breakpoint($mq-medium) {
-    //   display: block;
-    //   margin-bottom: 10px;
-    // }
+    @include breakpoint($mq-medium) {
+      display: block;
+    }
 
     &:not(:first-child) {
       padding-left: 20px;
