@@ -16,24 +16,6 @@ $(document).ready(function() {
 
   /* Functions
      ======================================================================== */
-  /**
-   * Function to make case study boxes equal sizes.
-   */
-  function sizeCaseStudies() {
-    var thisStudy = $('.case-study');
-    var maxHeight = 0;
-    thisStudy.each(function() {
-      var thisH2Height = $(this).find('h2').height();
-      var thisPHeight = $(this).find('p').height();
-      var thisHeight = thisH2Height + thisPHeight + 25;
-
-      if (thisHeight > maxHeight) {
-        maxHeight = thisHeight;
-      }
-    });
-
-    thisStudy.height(maxHeight);
-  }
 
   /* GSAP Tweens
      ======================================================================== */
