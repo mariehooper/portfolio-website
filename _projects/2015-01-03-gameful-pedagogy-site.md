@@ -22,8 +22,8 @@ mobile_image: img/gameful-pedagogy-mobile.jpg
     <h2>Process</h2>
     <p>The first step in this process was gathering and organizing the materials and resources we currently had and brainstorming what else might be helpful for our intended audience. We then did a card sort to come up with larger categories in which these materials would live and came up with a structure for the site that I hoped would be simple enough to navigate to find an answer to a specific question and inviting enough for people to stay and browse. I then sketched the page designs on a whiteboard and then a more refined version on graph paper before creating high fidelity mockups in Sketch with a final clickable prototype in InVision. I solicited feedback at every interval I could to make sure that our final product was accomplishing the intended goal for use and that it was inline with what my client (project lead) had in mind!</p>
 
-    <img class="project-sketch grid-50 mobile-grid-100" src="/img/gameful-pedagogy-drawing.jpg">
-    <img class="project-sketch grid-50 mobile-grid-100" src="/img/gameful-pedagogy-sketch.jpg">
+    <img class="project-sketch grid-50 tablet-grid-50 mobile-grid-100" src="/img/gameful-pedagogy-drawing.jpg">
+    <img class="project-sketch grid-50 tablet-grid-50 mobile-grid-100" src="/img/gameful-pedagogy-sketch.jpg">
 
     <h2>Solution</h2>
     <p>I decided that Jekyll was the perfect solution for a static site like this one. Each of the text heavy pages are written in markdown and can easily be updated by the non-technical members of my team, and the liquid templating system helped minimize the code and styling needed when rendering data. I kept styles inline with current GradeCraft brand guidelines and used simple graphics and info visuals to help break up large amounts of text and illustrate takeaways. Our resources were sorted into 4 large categories: (1) What is Gameful, (2) Getting Started, (3) FAQs and (4) Example Syllabi. I had to go through several iterations of designs based on changing content, but ended up with an organized site of resources that helps spread the word about gameful pedagogy.</p>

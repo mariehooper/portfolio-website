@@ -122,14 +122,4 @@ $(document).ready(function() {
     }
   });
 
-  /* Hide/shows the appropriate sub-section using secondary nav on a project page. */
-  $(".project-nav span").on("click", function() {
-    var dataClass = "." + $(this).attr('data-section');
-    $(".project-data").hide();
-    $(dataClass).show();
-    $(".project-nav span").removeClass("active-project");
-    $(this).addClass("active-project");
-  });
-
-
 });
