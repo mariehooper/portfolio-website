@@ -11,7 +11,7 @@
 
   h1 {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3em;
 
     @include breakpoint($mq-medium) {
       font-size: 3em;
@@ -19,76 +19,10 @@
   }
 }
 
-.project-nav {
-  margin-bottom: 40px;
-  span {
-    color: #aaa;
-    cursor: pointer;
-    padding: 2px 10px;
-    position: relative;
-
-    @include breakpoint($mq-medium) {
-      padding: 1px 2px;
-    }
-
-    &:hover {
-      background-color: #eee;
-
-      .touch & {
-        background-color: $white;
-      }
-    }
-    &.active-project {
-      background-color: $orange;
-      color: $white;
-      &:after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid $orange;
-        position: absolute;
-        left: 40%;
-
-        @include breakpoint($mq-medium) {
-          content: "";
-          display: none;
-        }
-      }
-    }
-  }
-  li {
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: 400;
-
-    @include breakpoint($mq-large) {
-      font-size: 1.25em;
-      margin-bottom: 10px;
-    }
-
-    @include breakpoint($mq-medium) {
-      display: block;
-    }
-
-    &:not(:first-child) {
-      padding-left: 20px;
-
-      @include breakpoint($mq-large) {
-        padding-left: 0px;
-      }
-    }
-  }
-}
-
 .case-study {
+  max-width: 960px;
+  margin: 0 auto;
   padding-top: 10px;
-  border: 1px solid #eee;
-  border-left: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
 
   @include breakpoint($mq-medium) {
     margin: 0px;
@@ -101,12 +35,10 @@
     }
   }
 
-  &:nth-child(3) {
-    border-right: none;
-  }
 
   p {
     font-size: 1.1em;
+    margin-bottom: 2rem;
 
     @include breakpoint($mq-medium) {
       font-size: 1.25em;
@@ -130,6 +62,11 @@
   @include breakpoint($mq-medium) {
     margin-top: 20px;
   }
+}
+
+.project-sketch {
+  margin: 0 auto 2rem auto;
+  display: block;
 }
 
 .scroll {
@@ -161,6 +98,7 @@
 }
 
 .live-site {
-  padding: 20px 50px;
-  font-size: 1.75em;
+  padding: 0.75rem 2rem;
+  font-size: 1.5em;
+  margin-top: 40px;
 }

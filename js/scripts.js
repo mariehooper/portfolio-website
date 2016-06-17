@@ -16,24 +16,6 @@ $(document).ready(function() {
 
   /* Functions
      ======================================================================== */
-  /**
-   * Function to make case study boxes equal sizes.
-   */
-  function sizeCaseStudies() {
-    var thisStudy = $('.case-study');
-    var maxHeight = 0;
-    thisStudy.each(function() {
-      var thisH2Height = $(this).find('h2').height();
-      var thisPHeight = $(this).find('p').height();
-      var thisHeight = thisH2Height + thisPHeight + 25;
-
-      if (thisHeight > maxHeight) {
-        maxHeight = thisHeight;
-      }
-    });
-
-    thisStudy.height(maxHeight);
-  }
 
   /* GSAP Tweens
      ======================================================================== */
@@ -138,23 +120,6 @@ $(document).ready(function() {
         history.pushState("", document.title, id);
       }
     }
-  });
-
-  /* Hide/shows the appropriate sub-section using secondary nav on a project page. */
-  $(".project-nav span").on("click", function() {
-    var dataClass = "." + $(this).attr('data-section');
-    $(".project-data").hide();
-    $(dataClass).show();
-    $(".project-nav span").removeClass("active-project");
-    $(this).addClass("active-project");
-  });
-
-  /* Size case studies boxes when document is ready */
-  sizeCaseStudies();
-
-  /* Run functions when window resizes (only every 100ms) */
-  $(window).smartresize(function() {
-    sizeCaseStudies();
   });
 
 });
