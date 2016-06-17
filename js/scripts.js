@@ -131,12 +131,5 @@ $(document).ready(function() {
     $(this).addClass("active-project");
   });
 
-  /* Size case studies boxes when document is ready */
-  sizeCaseStudies();
-
-  /* Run functions when window resizes (only every 100ms) */
-  $(window).smartresize(function() {
-    sizeCaseStudies();
-  });
 
 });
