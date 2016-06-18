@@ -14,7 +14,7 @@ mobile_image: img/gameful-pedagogy-mobile.jpg
 <section class="project-page section grid-container">
  <div class="section-header grid-100"><h1>Gameful Pedagogy Site</h1></div>
 
- <div class="omeara-project project-data">
+ <div class="project-data">
   <div class="case-study challenge grid-100 tablet-grid-100">
     <h2>Challenge</h2>
     <p>The underlying theory of GradeCraft is a pedagogical approach called gameful, which was brought to life by Barry Fishman and Caitlin Holman. Since gameful can indeed exist without GradeCraft (albeit less seamlessly), I was tasked with providing a site that would function as a repository of resources and educational materials for instructors who were interested in incorporating gameful elements into their course design. This would also prove a wonderful resource for instructors who were interested in learning more about how to use GradeCraft to its fullest potential.</p>
@@ -31,7 +31,7 @@ mobile_image: img/gameful-pedagogy-mobile.jpg
    <div class="project-example grid-100 center-align">
     <div class="browser browser-window">
       <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
-        <div class="browser-top"><p>msomearasmultiage.com</p></div>
+        <div class="browser-top"><p>gamefulpedagogy.com</p></div>
         <div class="window-screen"><img src="/img/gameful-pedagogy-desktop-600.jpg"></div>
         </div>
    </div>
