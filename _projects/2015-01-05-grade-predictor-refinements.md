@@ -45,6 +45,4 @@ mobile_image: none
           </div>
     </div>
   </div>
-
-
 </section>
