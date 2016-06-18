@@ -29,13 +29,6 @@
     border-top: none;
   }
 
-  &:nth-child(1) {
-    @include breakpoint($mq-medium) {
-      border-top: 1px solid #eee;
-    }
-  }
-
-
   p {
     font-size: 1.1em;
     margin-bottom: 2rem;
