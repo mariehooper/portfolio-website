@@ -7,7 +7,7 @@ name: Grade Predictor Refinements
 role: Role&#58; UI/UX Design
 overview: Overview&#58; Sometimes small changes make a world of difference for the users of your application. These changes to the grade predictor were exactly that.
 browser_url: gradecraft.com/predictor
-browser_image: img/grade-predictor-default-600.jpg
+browser_image: img/grade-predictor-default.jpg
 mobile_image: none
 ---
 
@@ -34,14 +34,14 @@ mobile_image: none
       <div class="browser browser-window">
         <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
         <div class="browser-top"><p>gradecraft.com/predictor</p></div>
-        <div class="window-screen"><img src="/img/grade-predictor-default-600.jpg"></div>
+        <div class="window-screen"><img src="/img/grade-predictor-default.jpg"></div>
       </div>
     </div>
     <div class="project-example grade-predictor grid-100 center-align">
       <div class="browser browser-window">
         <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
           <div class="browser-top"><p>gradecraft.com/predictor</p></div>
-          <div class="window-screen"><img src="/img/grade-predictor-viewing-600.jpg"></div>
+          <div class="window-screen"><img src="/img/grade-predictor-viewing.jpg"></div>
           </div>
     </div>
   </div>

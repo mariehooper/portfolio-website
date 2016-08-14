@@ -7,7 +7,7 @@ name: Gameful Pedagogy Site
 role: Role&#58; Design, Information Architecture, Front-End Development
 overview: Overview&#58; This site is a resource for anyone who wants to learn more about gameful pedagogy and how to implement elements of good games in their course design.
 browser_url: gamefulpedagogy.com
-browser_image: img/gameful-pedagogy-desktop-600.jpg
+browser_image: img/gameful-pedagogy-desktop.jpg
 mobile_image: img/gameful-pedagogy-mobile.jpg
 ---
 
@@ -32,7 +32,7 @@ mobile_image: img/gameful-pedagogy-mobile.jpg
     <div class="browser browser-window">
       <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
         <div class="browser-top"><p>gamefulpedagogy.com</p></div>
-        <div class="window-screen"><img src="/img/gameful-pedagogy-desktop-600.jpg"></div>
+        <div class="window-screen"><img src="/img/gameful-pedagogy-desktop.jpg"></div>
         </div>
    </div>
   </div>

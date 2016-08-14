@@ -7,7 +7,7 @@ name: Rubric Grading Process
 role: Role&#58; UI/UX Design, Front-End Development
 overview: Overview&#58; Usability testing identified some clarity issues around rubric feedback from students. This prompted us to reexamine and refine the process for both instructors and students.
 browser_url: gradecraft/assignment1
-browser_image: img/student-rubric-600.jpg
+browser_image: img/student-rubric.jpg
 mobile_image: img/student-rubric-mobile.jpg
 ---
 
@@ -35,7 +35,7 @@ mobile_image: img/student-rubric-mobile.jpg
       <div class="browser browser-window">
         <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
         <div class="browser-top"><p>gradecraft.com/assignment1</p></div>
-        <div class="window-screen"><img src="/img/student-rubric-600.jpg"></div>
+        <div class="window-screen"><img src="/img/student-rubric.jpg"></div>
       </div>
     </div>
 
@@ -43,7 +43,7 @@ mobile_image: img/student-rubric-mobile.jpg
       <div class="browser browser-window">
         <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
         <div class="browser-top"><p>gradecraft.com/assignment1</p></div>
-        <div class="window-screen"><img src="/img/instructor-rubric-600.jpg"></div>
+        <div class="window-screen"><img src="/img/instructor-rubric.jpg"></div>
       </div>
     </div>
   </div>
