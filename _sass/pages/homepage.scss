@@ -260,3 +260,15 @@ p {
   }
   }
   }
+
+.resume {
+  text-align: center;
+  margin-top: 2.5rem;
+  .button {
+    border: 1px solid $white;
+    color: $white;
+    &:hover {
+      background-color: transparentize($white, 0.8);
+    }
+  }
+}
