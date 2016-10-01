@@ -1,0 +1,77 @@
+/* ==========================================================================
+   HOME PAGE SECTIONS
+   ========================================================================== */
+
+.section-header {
+  margin-bottom: 50px;
+  font-size: 1.25em;
+  color: darken(#aaa, 35%);
+
+  @include breakpoint($mq-medium) {
+  margin-bottom: 25px;
+  }
+}
+.section {
+  padding-bottom: 50px;
+  padding-top: 80px;
+ h2  {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: darken(#aaa, 35%);
+ }
+ h3  {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    color: darken(#aaa, 25%);
+  }
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: darken(#aaa, 15%);
+  }
+}
+.project-description {
+  padding: 0;
+}
+
+/* ==========================================================================
+  ABOUT
+  ========================================================================== */
+
+.about {
+ background-color: lighten($blue, 15%);
+ background-image: url(/img/about-background3.jpg);
+ background-size: cover;
+ h1, h2, p {
+   color: $white;
+ }
+}
+
+.about-think,
+.about-passion,
+.about-background {
+ margin-bottom: 20px;
+p {
+ font-size: 1.2em;
+ line-height: 1.5em;
+ }
+}
+
+
+/* ==========================================================================
+  PROJECT SECTION
+  ========================================================================== */
+
+.project-block {
+  padding-bottom: 40px;
+}
+
+.browser,
+.mobile {
+  display: inline-block;
+}
+
+.center-align {
+  text-align: center;
+}

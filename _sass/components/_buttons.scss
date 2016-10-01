@@ -1,0 +1,51 @@
+.button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid lighten($blue, 5%);
+  border-radius: 5px;
+  color: lighten($blue, 5%);;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline-block;
+
+  @include breakpoint($mq-large) {
+    margin-bottom: 25px;
+    margin-top: 25px;
+ }
+
+  @include breakpoint($mq-medium) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  &:hover {
+    background-color: lighten($blue, 5%);
+    color: $white;
+
+   .touch & {
+     background-color: $white;
+     color: lighten($blue, 5%);
+   }
+  } a {
+   color: lighten($blue, 5%);
+   &:hover {
+     color: $white;
+
+     .touch & {
+     color: lighten($blue, 5%);
+     }
+    }
+  }
+}
+  
+.resume {
+  text-align: center;
+  margin-top: 2.5rem;
+  .button {
+    border: 1px solid $white;
+    color: $white;
+    &:hover {
+      background-color: transparentize($white, 0.8);
+    }
+  }
+}

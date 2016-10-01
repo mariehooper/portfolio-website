@@ -1,0 +1,67 @@
+.mobile {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+
+  @include breakpoint($mq-medium) {
+    position: absolute;
+    right: -5%;
+    top: 40%;
+  }
+}
+
+.iphone-5s {
+  border: 2px solid #bbb;
+  padding: 8px;
+  border-radius: 18px;
+  background-color: $white;
+
+  @include breakpoint($mq-medium) {
+    border: 1.5px solid #bbb;
+    padding: 2px;
+    border-radius: 8px;
+  }
+}
+
+.top-phone {
+  height: 1px;
+  width: 30px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  background-color: #aaa;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 18px;
+
+  @include breakpoint($mq-medium) {
+    height: .5px;
+    width: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
+}
+
+.screen {
+  border: 1.5px solid #bbb;
+  img {
+    max-width: 100%;
+  }
+}
+
+.bottom-phone {
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  margin-top: 8px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+
+  @include breakpoint($mq-medium) {
+    height: 10px;
+    width: 10px;
+    margin-top: 3px;
+    border: 1px solid #bbb;
+  }
+}
