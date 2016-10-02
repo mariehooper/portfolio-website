@@ -10,17 +10,18 @@
   .grid-container {
     box-shadow: none;
     background-color: lighten(#ffa726, 5%);
-    padding: .5em 0;
+    padding: .25em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 #hero {
   .grid-container {
     padding-top: 100px;
-    color: $white;
-    background-color: lighten(#ffa726, 5%);
-    height: 30%;
-    height: 30vh;
+    color: lighten(#ffa726, 5%);
 
     @include breakpoint($mq-medium) {
       padding-top: 50px;
@@ -48,8 +49,8 @@
 
 .header-description {
   font-size: 2.5em;
-  line-height: 1.75em;
-  padding-top: 50px;
+  line-height: 1.2em;
+  width: 60%;
 
   h1 {
     @include breakpoint($mq-medium) {
@@ -74,30 +75,22 @@
 }
 
 .navigation {
-  float: right;
-
   @include breakpoint($mq-medium) {
     font-size: 1.1em;
   }
 
   ul {
-    padding-top: 15px;
-
     @include breakpoint($mq-medium) {
-      padding-top: 5px;
       text-align: center;
-      float: none;
     }
   }
 }
 
 .logo {
-  font-size: 3em;
-  float: left;
+  font-size: 2em;
 
   @include breakpoint($mq-medium) {
-    font-size: 2.5em;
-    float: none;
+    font-size: 1.5em;
     text-align: center;
   }
 }
