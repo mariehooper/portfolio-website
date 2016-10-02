@@ -40,21 +40,11 @@
   ========================================================================== */
 
 .about {
- background-color: lighten($blue, 15%);
- background-image: url(/img/about-background3.jpg);
- background-size: cover;
- h1, h2, p {
-   color: $white;
- }
-}
-
-.about-think,
-.about-passion,
-.about-background {
  margin-bottom: 20px;
+ margin: 0 auto;
 p {
- font-size: 1.2em;
- line-height: 1.5em;
+ font-size: 1em;
+ margin-bottom: 0.5em;
  }
 }
 
