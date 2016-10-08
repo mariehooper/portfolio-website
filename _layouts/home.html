@@ -8,20 +8,18 @@ layout: default
   {% if section.title == "projects" %}
   <section class="projects section grid-container" id="projects">
     <div class="section-header grid-100"><h1>Projects</h1></div>
-    <div class="project-grid">
+    <ul class="project-grid">
       {% for project in site.projects %}
-      <div class="projects-{{ project.title }} project-block">
-        <h2>{{ project.name }}</h2>
-        <div class="project-description on-hover">
-          <h3>{{ project.role }}</h3>
-          <p>{{ project.overview }}</p>
-          <div class="center-align">
-            <a href="{{ project.url }}" class="button">View Project</a>
-          </div>
-        </div>
-       </div>
+
+        <li class="projects-{{ project.title }} project-block">
+          <a href="{{ project.url }}">
+            <h2>{{ project.name }}</h2>
+            <p class="project-description on-hover">
+              {{ project.overview }}
+            </p>
+          </a>
+        </li>
       {% endfor %}
-    </div>
     </section>
   {% else %}
     {{ section.content }}

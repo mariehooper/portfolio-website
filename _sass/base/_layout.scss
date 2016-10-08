@@ -4,13 +4,14 @@ html, body, #wrapper {
 
 header {
   a {
-    color: $white;
+    color: lighten(#ffa726, 5%);
   }
 }
 
 body {
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 100%;
+  color: #3e3e3e;
 
   @include breakpoint($mq-medium) {
     font-size: 80%;
@@ -21,11 +22,17 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 2em;
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  color: lighten(#ffa726, 5%);
 }
 
-nav, .social {
+h1 {
+  font-size: 2em;
+  color: #262626;
+}
+
+.social {
   a {
     color: $white;
   }

@@ -32,7 +32,6 @@
   p {
     font-size: 1.25em;
     line-height: 1.5em;
-    color: darken(#aaa, 15%);
   }
 }
 .project-description {
@@ -66,16 +65,27 @@ p {
 
 
 .project-block {
-  width: 300px;
-  height: 300px;
   background-color: #eee;
   margin: 0.5em;
-  padding: 2em;
+  a {
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding: 2em;
+    position: relative;
+    &:hover > .on-hover {
+      visibility: visible;
+    }
+  }
 }
 
 .on-hover {
-  display: none
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.9em;
 }
+
 .center-align {
   text-align: center;
 }
