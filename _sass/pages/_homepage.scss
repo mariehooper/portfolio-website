@@ -17,17 +17,12 @@
  h2  {
     margin-bottom: 15px;
     font-size: 2em;
-    color: darken(#aaa, 35%);
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
  }
  h3  {
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 1.25em;
-    color: darken(#aaa, 25%);
   }
   p {
     font-size: 1.25em;
@@ -36,6 +31,12 @@
 }
 .project-description {
   padding: 0;
+}
+
+.project-block h2 {
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 /* ==========================================================================

@@ -11,7 +11,7 @@
   .grid-container {
     box-shadow: none;
     background-color: #fff;
-    padding: .25em 1em;
+    padding: .75em 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,8 +44,15 @@
   }
 }
 
-.navigation li a.active {
-  text-decoration: underline;
+.navigation li {
+  display: inline-block;
+  margin-right: 1em;
+  &:last-child {
+    margin-right: 0;
+  }
+  a.active {
+    text-decoration: underline;
+  }
 }
 
 .header-description {
