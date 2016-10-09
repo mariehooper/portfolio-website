@@ -24,10 +24,6 @@
     margin-bottom: 10px;
     font-size: 1.25em;
   }
-  p {
-    font-size: 1.25em;
-    line-height: 1.5em;
-  }
 }
 .project-description {
   padding: 0;
@@ -46,10 +42,11 @@
 .about {
  margin-bottom: 20px;
  margin: 0 auto;
-p {
- font-size: 1em;
- margin-bottom: 0.5em;
- }
+  p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.5rem;
+  }
 }
 
 
@@ -67,10 +64,17 @@ p {
 
 .project-block {
   background-color: #eee;
+  opacity: 0.8;
   margin: 0.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover{
+    opacity: 1;
+  }
   a {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     display: block;
     padding: 2em;
     position: relative;
@@ -84,9 +88,47 @@ p {
   visibility: hidden;
   position: absolute;
   bottom: 0px;
-  font-size: 0.9em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  right: 0px;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #3e3e3e;
+  width: 100%;
 }
 
 .center-align {
   text-align: center;
+}
+
+.projects-gradecraft-site-redesign {
+  background-color: #8ED0FF;
+  background-image: url('../img/gradecraft-site.png');
+
+}
+
+.projects-gameful-pedagogy-site {
+  background-color: #FEF283;
+  background-image: url('../img/pedagogy-site.png');
+}
+
+.projects-grade-predictor-refinements {
+  background-color: #DDCDF5;
+  background-image: url('../img/grade-predictor.png');
+}
+
+.projects-rubric-grading-process {
+  background-color: #FFCF8B;
+  background-image: url('../img/rubric-grading.png');
+}
+
+.projects-dashboards {
+  background-color: #F98795;
+  background-image: url('../img/dashboard.png');
+}
+
+.projects-gradecraft-poster {
+  background-color: #B8E986;
+  background-image: url('../img/gradecraft-poster.png');
 }
