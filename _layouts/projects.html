@@ -1,6 +1,68 @@
 ---
 layout: default
 ---
+{% assign page_data = site.data[page.slug] %}
 
 {% include header-projects.html %}
-{{ content }}
+
+<section class="project-page section grid-container">
+  <div class="section-header grid-100"><h1>{{page_data.name}}</h1>
+    <ul class="project-roles">
+      {% for item in page_data.role %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+
+  <div class="project-data">
+    <div class="case-study challenge grid-100 mobile-grid-100 tablet-grid-100">
+      <h2>Challenge</h2>
+      <p>{{page_data.challenge}}</p>
+
+      <h2>Process</h2>
+      <p>{{page_data.process}}</p>
+
+      <img class="project-sketch grid-50 tablet-grid-50 mobile-grid-100" src="/img/{{page_data.project_image_1}}">
+      <img class="project-sketch grid-50 tablet-grid-50 mobile-grid-100" src="/img/{{page_data.project_image_2}}">
+
+      <h2>Solution</h2>
+      <p>{{page_data.solution}}</p>
+    </div>
+    <div class="project-example grid-100 center-align">
+      <div class="browser browser-window">
+        <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
+          <div class="browser-top"><p>{{page_data.browser_url}}</p></div>
+          <div class="window-screen"><img src="/img/{{page_data.browser_image}}"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="center-align mobile-project-example-wrap grid-100 mobile-grid-100 tablet-grid-100">
+      <div class="mobile-project-example mobile-grid-33 tablet-grid-33">
+        <div class="mobile-project iphone-5s">
+        <div class="top-phone"></div>
+        <div class="screen"><img src="/img/{{page_data.mobile_image_1}}"></div>
+        <div class="bottom-phone"></div>
+      </div>
+     </div>
+       <div class="mobile-project-example mobile-grid-33 tablet-grid-33">
+        <div class="mobile-project iphone-5s">
+          <div class="top-phone"></div>
+          <div class="screen"><img src="/img/{{page_data.mobile_image_2}}"></div>
+          <div class="bottom-phone"></div>
+        </div>
+      </div>
+      <div class="mobile-project-example mobile-grid-33 tablet-grid-33">
+        <div class="mobile-project iphone-5s">
+          <div class="top-phone"></div>
+          <div class="screen"><img src="/img/{{page_data.mobile_image_3}}"></div>
+          <div class="bottom-phone"></div>
+        </div>
+      </div>
+  </div>
+
+    <div class="wrap-button center-align">
+      <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
+    </div>
+</section>
