@@ -8,9 +8,9 @@ live_site: http://gradecraft.com/
 
 #images
 browser_url: gradecraft/assignment1
-browser_image: student-rubric.jpg
+browser_image: student-graded-rubric.png
 browser_image_2: student-rubric.jpg
-mobile_image_1: student-rubric-mobile.jpg
+mobile_image_1: mobile-graded-rubric.png
 mobile_image_2: none
 mobile_image_3: none
 project_image_1: usability-testing.jpg

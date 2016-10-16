@@ -9,10 +9,10 @@ live_site: none
 #images
 browser_url: gradecraft.com/predictor
 browser_image: grade-predictor-default.jpg
-browser_image_2: grade-predictor-viewing.jpg
-mobile_image_1: none
-mobile_image_2: none
-mobile_image_3: none
+browser_image_2: grade-predictor-viewing.png
+mobile_image_1: grade-predictor-mobile.png
+mobile_image_2: grade-predictor-mobile2.png
+mobile_image_3: grade-predictor-mobile3.png
 project_image_1: gc-feature-priority.jpg
 project_image_2: grade-predictor-whiteboard.jpg
 
