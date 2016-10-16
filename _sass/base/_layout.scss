@@ -8,14 +8,14 @@ html, body, #wrapper {
 
 header {
   a {
-    color: lighten(#ffa726, 5%);
+    color: $accent-blue;
   }
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
-  color: #3e3e3e;
+  color: $text-gray;
 
   @include breakpoint($mq-medium) {
     font-size: 80%;
@@ -28,18 +28,15 @@ a {
 
 h1, h2, h3 {
   font-family: 'Lato', sans-serif;
-  color: lighten(#ffa726, 5%);
+  color: $accent-blue;
 }
 
 h1 {
   font-size: 2em;
-  color: #262626;
+  color: $header-gray;
 }
 
 .social {
-  a {
-    color: $white;
-  }
   ul {
     float: right;
   }

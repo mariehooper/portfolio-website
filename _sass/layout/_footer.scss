@@ -24,13 +24,13 @@
     &:not(:first-child) {padding-left: 40px};
   }
   a {
-    color: darken(#aaa, 35%);
+    color: $text-gray;
     transition: all 0.5s ease;
     &:hover {
       color: lighten(#ffa726, 5%);
 
       .touch & {
-        color: darken(#aaa, 35%);
+        color: $text-gray;
       }
     }
   }

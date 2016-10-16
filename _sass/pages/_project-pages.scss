@@ -50,11 +50,11 @@
   li {
     display: inline-block;
     margin-right: 0.5em;
-    background-color: #8ED0FF;
+    background-color: $lightblue;
     padding: 0.5em 0.75em;
     border-radius: 3px;
     font-size: 0.8em;
-    color: #fff;
+    color: $text-gray;
   }
 }
 

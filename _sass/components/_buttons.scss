@@ -1,9 +1,9 @@
 .button {
   margin-top: 30px;
   padding: 10px 30px;
-  border: 2px solid lighten($blue, 5%);
+  border: 2px solid $blue;
   border-radius: 5px;
-  color: lighten($blue, 5%);
+  color: $blue;
   font-size: 1.2em;
   text-align: center;
   display: inline-block;
@@ -20,20 +20,20 @@
   }
 
   &:hover {
-    background-color: lighten($blue, 5%);
+    background-color: $blue;
     color: $white;
 
    .touch & {
      background-color: $white;
-     color: lighten($blue, 5%);
+     color: $blue;
    }
   } a {
-   color: lighten($blue, 5%);
+   color: $blue;
    &:hover {
      color: $white;
 
      .touch & {
-     color: lighten($blue, 5%);
+     color: $blue;
      }
     }
   }

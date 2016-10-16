@@ -3,7 +3,7 @@
    ========================================================================== */
 
 #header {
-  color: lighten(#ffa726, 5%);
+  color: $accent-blue;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -21,8 +21,8 @@
 
 #hero {
   .grid-container {
-    padding-top: 100px;
-    color: lighten(#ffa726, 5%);
+    padding-top: 80px;
+    color: lighten(#333, 5%);
 
     @include breakpoint($mq-medium) {
       padding-top: 50px;
@@ -36,12 +36,6 @@
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  display: none;
-
-  @include breakpoint($mq-medium) {
-    text-align: center;
-    display: inline-block;
-  }
 }
 
 .navigation li {
@@ -59,6 +53,8 @@
   font-size: 2.5em;
   line-height: 1.2em;
   width: 60%;
+  margin: 0 auto;
+  text-align: center;
 
   h1 {
     @include breakpoint($mq-medium) {
