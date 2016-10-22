@@ -3,18 +3,18 @@ name: Rubric Grading Process
 role: 
   - UI/UX Design 
   - Front-End Development
-overview: Overview&#58; Usability testing identified some clarity issues around rubric feedback from students. This prompted us to reexamine and refine the process for both instructors and students.
-live_site: http://gradecraft.com/
+overview: Usability testing identified some clarity issues around rubric feedback from students. This prompted us to reexamine and refine the process for both instructors and students.
+
 
 #images
-browser_url: gradecraft/assignment1
-browser_image: student-graded-rubric.png
+browser_url: www.gradecraft.com/assignments
+browser_image: assignment-index-browser.png
 browser_image_2: student-rubric.jpg
-mobile_image_1: mobile-graded-rubric.png
-mobile_image_2: none
-mobile_image_3: none
+mobile_image_1: mobile-assignment-index-1.png
+mobile_image_2: mobile-assignment-index-2.png
+mobile_image_3: mobile-assignment-index-3.png
 project_image_1: usability-testing.jpg
-project_image_2: student-rubric-sketch.jpg
+project_image_2: assignment-index-sketch.png
 
 #content
 challenge: During a round of usability testing with students who were both familiar and not with the GradeCraft application, I found that students were having a hard time understanding their grade and feedback on a rubric graded assignment. Since instructors are able to build custom rubrics with varying numbers of levels for each criterion, the grid was unable to present the information back to students in way that made sense. Students needed a way to see what level they earned on each criterion, comments left by the instructor, a less-emphasized or opt-out feature for viewing how other students performed on the assignment, and a better mobile experience for anyone checking their grade on the go.

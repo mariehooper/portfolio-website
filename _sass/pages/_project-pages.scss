@@ -72,9 +72,22 @@
   }
 }
 
-.project-sketch {
+.project-sketch-images {
   margin: 0 auto 2rem auto;
   display: block;
+  img {
+    display: inline;
+    width: 48%;
+    margin: 0.25em;
+  }
+}
+
+.project-photo {
+  max-width: 960px;
+  margin: 0 auto;
+  img {
+    width: 100%
+  }
 }
 
 .scroll {

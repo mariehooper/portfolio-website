@@ -11,11 +11,11 @@ browser_image: student-dashboard.png
 mobile_image_1: student-dashboard-mobile.png
 mobile_image_2: student-dashboard-mobile2.png
 mobile_image_3: student-dashboard-mobile3.png
-project_image_1: gc-feature-priority.jpg
-project_image_2: grade-predictor-whiteboard.jpg
+project_image_1: student-dashboard-whiteboard.png
+project_image_2: student-dashboard-sketch.png
 
 #content
-challenge: The GradeCraft student homepage was utilizing [timeline.js](https://timeline.knightlab.com/index.html) which we were learning was slightly confusing to students in gameful courses where many assignments and events could be occurring on the same day, thus cluttering the timeline and making it hard to see what was important. With an eye towards making the interface more modern and highlighting the information we have available to students, I thought a dashboard design was the best approach. 
+challenge: The GradeCraft student homepage was utilizing <a href="https://timeline.knightlab.com/index.html" target="_blank">timeline.js</a> which we were learning was slightly confusing to students in gameful courses where many assignments and events could be occurring on the same day, thus cluttering the timeline and making it hard to see what was important. With an eye towards making the interface more modern and highlighting the information we have available to students, I thought a dashboard design was the best approach. 
 
 process: I reviewed materials gathered in the most recent round of usability testing and determined that students were looking for an easier way to quickly see how they are doing and a better way to visualize and track what was due in their course. I reviewed many other dashboards (the most motivating for me are FitBit and Nike+ apps for iPhone) and decided that small but meaningful snippets of information are often the most motivating and engaging. Information that was currently being captured and presented back to students via a right sidebar was a box plot for the class, their current level and number of total points, badges earned and a list of assignments that were due in the next seven days. I decided that the removal of the sidebar would allow for better use of the screen real estate and that the stats shown there could easily be shown on the dashboard instead. 
 

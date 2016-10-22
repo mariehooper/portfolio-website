@@ -23,8 +23,10 @@ layout: default
       <h2>Process</h2>
       <p>{{page_data.process}}</p>
 
-      <img class="project-sketch grid-50 tablet-grid-50 mobile-grid-100" src="/img/{{page_data.project_image_1}}">
-      <img class="project-sketch grid-50 tablet-grid-50 mobile-grid-100" src="/img/{{page_data.project_image_2}}">
+      <div class="project-sketch-images">
+        <img src="/img/{{page_data.project_image_1}}">
+        <img src="/img/{{page_data.project_image_2}}">
+      </div>
 
       <h2>Solution</h2>
       <p>{{page_data.solution}}</p>
@@ -62,7 +64,9 @@ layout: default
       </div>
   </div>
 
-    <div class="wrap-button center-align">
-      <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
-    </div>
+    {% if page_data.live_site %}
+      <div class="wrap-button center-align">
+        <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
+      </div>
+    {% endif %}
 </section>

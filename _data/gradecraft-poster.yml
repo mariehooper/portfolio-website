@@ -3,21 +3,9 @@ name: GradeCraft Poster
 role: 
   - Visual Design
   - Print Design
-overview: Overview&#58; Usability testing identified some clarity issues around rubric feedback from students. This prompted us to reexamine and refine the process for both instructors and students.
-live_site: http://gradecraft.com/
+overview: The GradeCraft team won a Campus Technology Award and I made a poster to take to the ceremony.
+
 
 #images
-browser_url: gradecraft/assignment1
-browser_image: student-rubric.jpg
-mobile_image_1: student-rubric-mobile.jpg
-mobile_image_2: gradecraft-mobile-2.jpg
-mobile_image_3: gradecraft-mobile-3.jpg
-project_image_1: gc-feature-priority.jpg
-project_image_2: grade-predictor-whiteboard.jpg
-
-#content
-challenge: 
-
-process: 
-
-solution: 
+project_image_1: gradecraft-poster-large.png
+project_image_2: 

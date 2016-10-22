@@ -4,11 +4,11 @@ role:
   - UI/UX Design
   - Front-End Development
 overview: Overview&#58; Sometimes small changes make a world of difference for the users of your application. These changes to the grade predictor were exactly that.
-live_site: none
+
 
 #images
 browser_url: gradecraft.com/predictor
-browser_image: grade-predictor-default.jpg
+browser_image: grade-predictor-viewing.png
 browser_image_2: grade-predictor-viewing.png
 mobile_image_1: grade-predictor-mobile.png
 mobile_image_2: grade-predictor-mobile2.png
