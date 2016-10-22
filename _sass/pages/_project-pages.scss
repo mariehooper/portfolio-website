@@ -3,18 +3,12 @@
    ========================================================================== */
 
 .project-page {
-  padding-top: 100px;
-  
-  @include breakpoint($mq-medium) {
-    padding-top: 100px;
-  }
-
   h1 {
     text-align: center;
     font-size: 3em;
 
     @include breakpoint($mq-medium) {
-      font-size: 3em;
+      font-size: 2.25em;
     }
   }
 }
@@ -24,19 +18,10 @@
   margin: 0 auto;
   padding-top: 10px;
 
-  @include breakpoint($mq-medium) {
-    margin: 0px;
-    border-top: none;
-  }
-
   p {
     font-size: 1em;
     margin-bottom: 2rem;
     line-height: 1.6em;
-
-    @include breakpoint($mq-medium) {
-      font-size: 1.25em;
-    }
   }
 
   a {
@@ -55,6 +40,11 @@
     border-radius: 3px;
     font-size: 0.8em;
     color: $text-gray;
+    @include breakpoint($mq-small) {
+      margin-right: 0.25em;
+      padding: 0.5em;
+      font-size: 0.75em;
+    }
   }
 }
 
@@ -79,6 +69,10 @@
     display: inline;
     width: 48%;
     margin: 0.25em;
+    @include breakpoint($mq-small) {
+      display: block;
+      width: 100%
+    }
   }
 }
 
@@ -104,9 +98,9 @@
   &:not(:last-child) {margin-right: 80px};
 
   @media (max-width: $large-max) {
-    display: block;
+    width: 30%;
     &:not(:last-child) {
-      margin-right: 0px
+      margin-right: 8px
     };
   }
 }

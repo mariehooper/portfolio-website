@@ -8,16 +8,22 @@
   text-align: center;
 
   @include breakpoint($mq-medium) {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 }
 .section {
-  padding-bottom: 50px;
-  padding-top: 80px;
+  padding: 80px 8px 50px 8px;
+  @include breakpoint($mq-small) {
+    padding: 60px 8px 40px 8px;
+  }
+
  h2  {
     margin-bottom: 15px;
     font-size: 2em;
     position: relative;
+    @include breakpoint($mq-small) {
+      font-size: 1.75em;
+    }
  }
  h3  {
     font-weight: 600;

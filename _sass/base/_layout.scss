@@ -59,21 +59,24 @@ h1 {
 }
 
 .grid-100 {
-  width: 100%
+  width: 100%;
 }
 
 .grid-80 {
-  width: 80%
+  width: 80%;
 }
 
 .grid-50 {
-  width: 50%
+  width: 50%;
+  @include breakpoint($mq-small) {
+    width: 100%;
+  }
 }
 
 .grid-25 {
-  width: 25%
+  width: 25%;
 }
 
 .grid-20 {
-  width: 20%
+  width: 20%;
 }
