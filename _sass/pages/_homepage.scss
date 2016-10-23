@@ -12,9 +12,9 @@
   }
 }
 .section {
-  padding: 80px 8px 50px 8px;
+  padding: 80px 8px 8px 8px;
   @include breakpoint($mq-small) {
-    padding: 60px 8px 40px 8px;
+    padding: 60px 8px 8px 8px;
   }
 
  h2  {
@@ -51,7 +51,7 @@
   p {
     font-size: 1em;
     margin-bottom: 0.5em;
-    line-height: 1.5rem;
+    line-height: 1.5em;
   }
 }
 
@@ -124,9 +124,9 @@
   background-image: url('../img/grade-predictor.png');
 }
 
-.projects-rubric-grading-process {
+.projects-student-assignment-index {
   background-color: #FFCF8B;
-  background-image: url('../img/rubric-grading.png');
+  background-image: url('../img/student-assignment-index.png');
 }
 
 .projects-dashboards {

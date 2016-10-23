@@ -55,26 +55,10 @@
   width: 60%;
   margin: 0 auto;
   text-align: center;
-
-  h1 {
-    @include breakpoint($mq-medium) {
-      font-size: 1.75em;
-    }
-  }
-
-  p {
-    @include breakpoint($mq-large) {
-      font-size: 0.9em;
-      line-height: 1em;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    @include breakpoint($mq-medium) {
-      font-size: 0.5em;
-      line-height: 1em;
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
+  @include breakpoint($mq-small) {
+    width: 100%;
+    font-size: 1.75em;
+    padding: 1em;
   }
 }
 
