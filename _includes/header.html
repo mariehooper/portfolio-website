@@ -13,8 +13,8 @@
           <li><a class="nav-projects" href='#projects'>Projects</a></li>
           <li><a class="nav-about" href='#about'>About</a></li>
         {% elsif page.layout == "projects" or page.layout == "default" %}
-          <li><a href='{{ site.url }}/projects/{{ page.previous_url }}'>Previous Project</a></li>
-          <li><a href='{{ site.url }}/projects/{{ page.next_url }}'>Next Project</a></li>
+          <li><a href='{{ site.url }}/projects/{{ page.previous_url }}'>Previous <span>Project</span></a></li>
+          <li><a href='{{ site.url }}/projects/{{ page.next_url }}'>Next <span>Project</span></a></li>
         {% endif %}
       </ul>
     </nav>
