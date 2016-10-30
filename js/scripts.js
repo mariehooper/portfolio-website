@@ -9,8 +9,10 @@ $(document).ready(function() {
       headerDescription = $('.header-description'),
       navProjects = $('.nav-projects'),
       navAbout = $('.nav-about'),
+      lastNavItem = null,
       projects = $('#projects'),
-      about = $('#about');
+      about = $('#about'),
+      footer = $('#contact');
 
   /* Functions
      ======================================================================== */
@@ -33,10 +35,12 @@ $(document).ready(function() {
     if (direction === 'down') {
       navProjects.addClass('active');
       navAbout.removeClass('active');
+      lastNavItem = navProjects;
     }
     else {
       navProjects.removeClass('active');
       navAbout.removeClass('active');
+      lastNavItem = null;
     }
   },{
     offset: function() {
@@ -51,10 +55,12 @@ $(document).ready(function() {
     if (direction === 'down') {
       navProjects.removeClass('active');
       navAbout.addClass('active');
+      lastNavItem = navAbout;
     }
     else {
       navProjects.addClass('active');
       navAbout.removeClass('active');
+      lastNavItem = navProjects;
     }
   },{
     offset: function() {
@@ -62,23 +68,22 @@ $(document).ready(function() {
     }
   })
 
-  // /**
-  //  * Toggles active class for Contact and removes for About
-  //  */
-  // var contactWaypoint = contact.waypoint(function(direction) {
-  //   if (direction === 'down') {
-  //     navProjects.removeClass('active');
-  //     navAbout.removeClass('active');
-  //     navContact.addClass('active');
-  //   }
-  //   else {
-  //     navProjects.removeClass('active');
-  //     navAbout.addClass('active');
-  //     navContact.removeClass('active');
-  //   }
-  // },{
-  //   offset: 'bottom-in-view'
-  // });
+  /**
+   * Toggles active class for Contact and removes for About
+   */
+  var contactWaypoint = footer.waypoint(function(direction) {
+    if (direction === 'down') {
+      navProjects.removeClass('active');
+      navAbout.addClass('active');
+    }
+    else {
+      navProjects.removeClass('active');
+      navAbout.removeClass('active');
+      lastNavItem.addClass('active');
+    }
+  },{
+    offset: '100%'
+  });
 
   /* Scripts
      ======================================================================== */
