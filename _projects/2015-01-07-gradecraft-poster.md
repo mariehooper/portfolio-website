@@ -7,9 +7,7 @@ name: GradeCraft Poster
 ---
 {% assign page_data = site.data[page.slug] %}
 
-{% include header-projects.html %}
-
-<section class="project-page section grid-container">
+<section class="project-page section">
   <div class="section-header grid-100"><h1>{{page_data.name}}</h1>
     <ul class="project-roles">
       {% for item in page_data.role %}

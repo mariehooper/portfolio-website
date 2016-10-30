@@ -37,6 +37,10 @@ h1 {
   color: $header-gray;
 }
 
+main {
+  padding: 2.75em 1em;
+}
+
 .social {
   ul {
     float: right;
@@ -50,14 +54,14 @@ h1 {
   }
 }
 
-.grid-container {
-  box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
-
-  @include breakpoint($mq-medium) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+// .grid-container {
+//   box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
+// 
+//   @include breakpoint($mq-medium) {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
 
 .grid-100 {
   width: 100%;

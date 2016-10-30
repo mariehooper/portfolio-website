@@ -22,7 +22,11 @@
     <!-- End Google Tag Manager -->
 
     <div id="wrapper">
-      {{ content }}
+      {% include header.html %}
+
+      <main>
+        {{ content }}
+      </main>
 
       {% include footer.html %}
     </div>

@@ -12,9 +12,9 @@
   }
 }
 .section {
-  padding: 80px 8px 8px 8px;
+  margin-top: 2.5em;
   @include breakpoint($mq-small) {
-    padding: 60px 16px 16px 16px;
+    margin-top: 2em;
   }
 
  h2  {
