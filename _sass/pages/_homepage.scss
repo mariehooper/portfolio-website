@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 1.5em;
   color: darken(#aaa, 35%);
   text-align: center;
 
@@ -46,12 +46,10 @@
   ========================================================================== */
 
 .about {
- margin-bottom: 20px;
- margin: 0 auto;
   p {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.6em;
   }
 }
 
@@ -144,18 +142,6 @@
 }
 
 .about-wrapper {
-  display: flex;
-  max-width: 960px;
+  max-width: 600px;
   margin: 0 auto;
-  @include breakpoint($mq-small) {
-    display: block;
-  }
-}
-
-.about-column {
-  margin: 1em;
-  flex: 1;
-  @include breakpoint($mq-small) {
-    margin: 0;
-  }
 }

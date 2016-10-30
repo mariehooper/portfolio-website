@@ -53,35 +53,3 @@ main {
 
   }
 }
-
-// .grid-container {
-//   box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
-// 
-//   @include breakpoint($mq-medium) {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
-// }
-
-.grid-100 {
-  width: 100%;
-}
-
-.grid-80 {
-  width: 80%;
-}
-
-.grid-50 {
-  width: 50%;
-  @include breakpoint($mq-small) {
-    width: 100%;
-  }
-}
-
-.grid-25 {
-  width: 25%;
-}
-
-.grid-20 {
-  width: 20%;
-}

@@ -8,7 +8,7 @@ name: GradeCraft Poster
 {% assign page_data = site.data[page.slug] %}
 
 <section class="project-page section">
-  <div class="section-header grid-100"><h1>{{page_data.name}}</h1>
+  <div class="section-header"><h1>{{page_data.name}}</h1>
     <ul class="project-roles">
       {% for item in page_data.role %}
         <li>{{ item }}</li>
@@ -17,7 +17,7 @@ name: GradeCraft Poster
   </div>
 
   <div class="project-data">
-    <div class="case-study challenge grid-100 mobile-grid-100 tablet-grid-100">
+    <div class="case-study challenge">
       <h2>Overview</h2>
       <p>{{page_data.overview}}</p>
     </div>
