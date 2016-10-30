@@ -14,7 +14,7 @@
 .section {
   padding: 80px 8px 8px 8px;
   @include breakpoint($mq-small) {
-    padding: 60px 8px 8px 8px;
+    padding: 60px 16px 16px 16px;
   }
 
  h2  {
@@ -76,6 +76,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  @include breakpoint($mq-small) {
+    margin: 0.5em 0;
+    max-width: inherit;
+  }
   &:hover{
     opacity: 1;
   }
@@ -143,9 +147,15 @@
   display: flex;
   max-width: 960px;
   margin: 0 auto;
+  @include breakpoint($mq-small) {
+    display: block;
+  }
 }
 
 .about-column {
   margin: 1em;
   flex: 1;
+  @include breakpoint($mq-small) {
+    margin: 0;
+  }
 }

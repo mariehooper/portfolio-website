@@ -41,6 +41,9 @@
 .navigation li {
   display: inline-block;
   margin-right: 1em;
+  @include breakpoint($mq-small) {
+    margin-right: 0.5em;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -58,7 +61,6 @@
   @include breakpoint($mq-small) {
     width: 100%;
     font-size: 1.75em;
-    padding: 1em;
   }
 }
 
