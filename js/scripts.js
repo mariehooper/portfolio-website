@@ -9,23 +9,14 @@ $(document).ready(function() {
       headerDescription = $('.header-description'),
       navProjects = $('.nav-projects'),
       navAbout = $('.nav-about'),
-      navContact = $('.nav-contact'),
+      lastNavItem = null,
       projects = $('#projects'),
       about = $('#about'),
-      contact = $('#contact');
+      footer = $('#contact');
 
   /* Functions
      ======================================================================== */
 
-  /* GSAP Tweens
-     ======================================================================== */
-
-  /**
-   * Tween to fade header description to no opacity.
-   */
-  var tweenHeaderDescription = TweenMax.to(headerDescription, 0.5, {
-    opacity: 0
-  });
 
   /* ScrollMagic Scenes
      ======================================================================== */
@@ -33,13 +24,6 @@ $(document).ready(function() {
   /* ScrollMagic Controller to handle scenes */
   var scrollMagicController = new ScrollMagic.Controller();
 
-  /* Scene to fade header description. Lasts over duration of 20% of the height. */
-  var heroScene = new ScrollMagic.Scene({
-    triggerElement: headerDescription,
-    duration: '20%'
-  })
-  .setTween(tweenHeaderDescription)
-  .addTo(scrollMagicController);
 
   /* Waypoints
      ======================================================================== */
@@ -51,12 +35,12 @@ $(document).ready(function() {
     if (direction === 'down') {
       navProjects.addClass('active');
       navAbout.removeClass('active');
-      navContact.removeClass('active');
+      lastNavItem = navProjects;
     }
     else {
       navProjects.removeClass('active');
       navAbout.removeClass('active');
-      navContact.removeClass('active');
+      lastNavItem = null;
     }
   },{
     offset: function() {
@@ -71,12 +55,12 @@ $(document).ready(function() {
     if (direction === 'down') {
       navProjects.removeClass('active');
       navAbout.addClass('active');
-      navContact.removeClass('active');
+      lastNavItem = navAbout;
     }
     else {
       navProjects.addClass('active');
       navAbout.removeClass('active');
-      navContact.removeClass('active');
+      lastNavItem = navProjects;
     }
   },{
     offset: function() {
@@ -87,19 +71,18 @@ $(document).ready(function() {
   /**
    * Toggles active class for Contact and removes for About
    */
-  var contactWaypoint = contact.waypoint(function(direction) {
+  var contactWaypoint = footer.waypoint(function(direction) {
     if (direction === 'down') {
       navProjects.removeClass('active');
-      navAbout.removeClass('active');
-      navContact.addClass('active');
+      navAbout.addClass('active');
     }
     else {
       navProjects.removeClass('active');
-      navAbout.addClass('active');
-      navContact.removeClass('active');
+      navAbout.removeClass('active');
+      lastNavItem.addClass('active');
     }
   },{
-    offset: 'bottom-in-view'
+    offset: '100%'
   });
 
   /* Scripts

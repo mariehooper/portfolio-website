@@ -2,35 +2,20 @@
 layout: default
 ---
 
-{% include header.html %}
-
 {% for section in site.home %}
   {% if section.title == "projects" %}
-  <section class="projects section grid-container" id="projects">
-    <div class="section-header grid-100"><h1>Projects</h1></div>
+  <section class="projects section" id="projects">
+    <div class="section-header"><h1>Projects</h1></div>
+    <ul class="project-grid">
       {% for project in site.projects %}
-      <div class="projects-{{ project.title }} project-block grid-100 mobile-grid-100">
-        <div class="project-description grid-40 mobile-grid-100">
-          <h2>{{ project.name }}</h2>
-          <h3>{{ project.role }}</h3>
-          <p>{{ project.overview }}</p>
-          <div class="center-align"><a href="{{ project.url }}" class="button">View Project</a></div>
-        </div>
-        <div class="project-image center-align grid-60 mobile-grid-95">
-          <div class="browser browser-window">
-            <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
-            <div class="browser-top"><p>{{ project.browser_url }}</p></div>
-            <div class="window-screen"><img src="{{ project.browser_image }}"></div>
-          </div>
-          {% if project.mobile_image != "none" %}
-           <div class="mobile iphone-5s grid-20 mobile-grid-25">
-            <div class="top-phone"></div>
-            <div class="screen"><img src="{{ project.mobile_image }}"></div>
-            <div class="bottom-phone"></div>
-          </div>
-          {% endif %}
-        </div>
-       </div>
+
+        <li class="projects-{{ project.title }} project-block">
+          <a href="{{ project.url }}">
+            <p class="project-description on-hover">
+              {{ project.name }}
+            </p>
+          </a>
+        </li>
       {% endfor %}
     </section>
   {% else %}

@@ -3,43 +3,47 @@
    ========================================================================== */
 
 .project-page {
-  padding-top: 150px;
-
-  @include breakpoint($mq-medium) {
-    padding-top: 100px;
-  }
-
   h1 {
     text-align: center;
     font-size: 3em;
 
     @include breakpoint($mq-medium) {
-      font-size: 3em;
+      font-size: 2.25em;
     }
   }
 }
 
 .case-study {
-  max-width: 960px;
+  max-width: 720px;
   margin: 0 auto;
-  padding-top: 10px;
-
-  @include breakpoint($mq-medium) {
-    margin: 0px;
-    border-top: none;
-  }
 
   p {
     font-size: 1.1em;
     margin-bottom: 2rem;
-
-    @include breakpoint($mq-medium) {
-      font-size: 1.25em;
-    }
+    line-height: 1.6em;
   }
 
   a {
     color: $orange;
+  }
+}
+
+.project-roles {
+  text-align: center;
+  margin-top: 0.5em;
+  li {
+    display: inline-block;
+    margin-right: 0.5em;
+    background-color: $lightblue;
+    padding: 0.5em 0.75em;
+    border-radius: 3px;
+    font-size: 0.8em;
+    color: $text-gray;
+    @include breakpoint($mq-small) {
+      margin-right: 0.25em;
+      padding: 0.5em;
+      font-size: 0.75em;
+    }
   }
 }
 
@@ -57,9 +61,26 @@
   }
 }
 
-.project-sketch {
+.project-sketch-images {
   margin: 0 auto 2rem auto;
   display: block;
+  img {
+    display: inline;
+    width: 48%;
+    margin: 0.25em;
+    @include breakpoint($mq-small) {
+      display: block;
+      width: 100%
+    }
+  }
+}
+
+.project-photo {
+  max-width: 960px;
+  margin: 0 auto;
+  img {
+    width: 100%
+  }
 }
 
 .scroll {
@@ -70,22 +91,15 @@
   }
 }
 
-.PIF-project,
-.opportunities-project,
-.sales-project,
-.hr-project,
-.ross-project {
-  display: none;
-}
 
 .mobile-project-example {
   display: inline-block;
   &:not(:last-child) {margin-right: 80px};
 
   @media (max-width: $large-max) {
-    display: block;
+    width: 30%;
     &:not(:last-child) {
-      margin-right: 0px
+      margin-right: 8px
     };
   }
 }

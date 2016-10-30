@@ -1,0 +1,76 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+#header {
+  color: $blue;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+  font-size: 1.2em;
+  .grid-container {
+    box-shadow: none;
+    background-color: #fff;
+    padding: 0 .5em 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#hero {
+  .grid-container {
+    padding-top: 80px;
+    color: lighten(#333, 5%);
+
+    @include breakpoint($mq-medium) {
+      padding-top: 50px;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
+
+.hero-img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.navigation li {
+  display: inline-block;
+  &:last-child {
+    margin-right: 0;
+  }
+  a {
+    display: inline-block;
+    padding: 0.75em 0.5em;
+    border-bottom: 2px solid transparent;
+    @include breakpoint($mq-small) {
+      padding: 0.75em 0.3em;
+    }
+    &:hover, &.active {
+      border-bottom: 2px solid $blue;
+    }
+  }
+  span {
+    display: inline-block;
+    @include breakpoint($mq-small) {
+      display: none;
+    }
+  }
+}
+
+.header-description {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  @include breakpoint($mq-small) {
+    width: 100%;
+    font-size: 1.75em;
+  }
+}

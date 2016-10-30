@@ -1,0 +1,77 @@
+.browser-window {
+  padding-top: 8px;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  background-color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include breakpoint($mq-medium) {
+    padding-top: 6px;
+    border: 1.5px solid #bbb;
+    border-radius: 2px;
+  }
+}
+
+.browser-top {
+  width: 90%;
+  margin-left: 45px;
+  margin-bottom:5px;
+  padding-left: 5px;
+  border: 2px solid #bbb;
+  border-radius: 2px;
+  background-color: $white;
+
+  @include breakpoint($mq-medium) {
+    width: 80%;
+    border: 1.5px solid #bbb;
+  }
+
+  p {
+    font-size: 0.75em;
+    text-align: left;
+  }
+}
+
+.browser-buttons {
+  width: 3px;
+  height: 3px;
+  border: 2px solid #aaa;
+  background-color: #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 8px;
+  float: left;
+
+  @include breakpoint($mq-medium) {
+    margin-top: 5px;
+  }
+
+  &:first-child {
+    margin-left: 8px;
+  }
+}
+
+.project-image {
+  position: relative;
+  margin-bottom: 60px;
+
+  @include breakpoint($mq-medium) {
+   padding-left: 0;
+   padding-right: 0;
+  }
+}
+
+.window-screen {
+  border-top: 2px solid #bbb;
+
+  @include breakpoint($mq-medium) {
+    border-top: 1.5px solid #bbb;
+  }
+
+  img {
+    max-width: 600px;
+    width: 100%;
+ }
+}

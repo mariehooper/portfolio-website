@@ -4,20 +4,18 @@
 
 
 #contact {
-  background-color: #aaa;
-  color: darken(#aaa, 35%);
   line-height: 1.5em;
-  padding-top: 50px;
-  padding-bottom: 25px;
+  margin-top: 50px;
   p {
     text-align: center;
+    padding-bottom: 1em;
   }
 }
 
 .social {
   text-align: center;
-  font-size: 1.5em;
-  padding-bottom: 50px;
+  font-size: 1em;
+  padding-bottom: 20px;
   ul {
     float: right;
   }
@@ -28,12 +26,13 @@
     &:not(:first-child) {padding-left: 40px};
   }
   a {
-    color: darken(#aaa, 35%);
+    color: $text-gray;
+    transition: all 0.5s ease;
     &:hover {
       color: lighten(#ffa726, 5%);
 
       .touch & {
-        color: darken(#aaa, 35%);
+        color: $text-gray;
       }
     }
   }

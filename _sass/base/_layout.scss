@@ -1,34 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, #wrapper {
   height: 100%;
 }
 
 header {
   a {
-    color: $white;
+    color: $blue;
   }
 }
 
 body {
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 100%;
+  color: $text-gray;
 
   @include breakpoint($mq-medium) {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
 a {
   text-decoration: none;
+  color: $orange;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  color: $accent-blue;
 }
 
 h1 {
   font-size: 2em;
+  color: $header-gray;
 }
 
-nav, .social {
-  a {
-    color: $white;
-  }
+main {
+  padding: 3.125em 1em;
+}
+
+.social {
   ul {
     float: right;
   }
@@ -38,14 +51,5 @@ nav, .social {
     font-weight: 400;
     &:not(:first-child) {padding-left: 20px};
 
-  }
-}
-
-.grid-container {
-  box-shadow: 10px 0 rgba(0, 0, 0, 0.075), -10px 0 rgba(0, 0, 0, 0.075);
-
-  @include breakpoint($mq-medium) {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
