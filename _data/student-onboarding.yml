@@ -1,0 +1,25 @@
+#project info
+name: Student Onboarding
+role: 
+  - Design Lead
+  - Front-End Development
+overview: Students needed a quick way to learn the fundamentals of GradeCraft and which features were applicable to their course.
+
+
+#images
+browser_url: www.gradecraft.com/dashboard
+browser_image: assignment-index-browser.png
+browser_image_2: student-rubric.jpg
+mobile_image_1: mobile-assignment-index-1.png
+mobile_image_2: mobile-assignment-index-2.png
+mobile_image_3: mobile-assignment-index-3.png
+project_image_1: usability-testing.jpg
+project_image_2: assignment-index-sketch.png
+
+#content
+challenge: Students in GradeCraft courses were having trouble understanding the basic differences between GradeCraft and any other learning management system they were familiar with. We thought an onboarding modal was the perfect way to present a gist of the GradeCraft fundamentals as well as display the features that were relevant to the specific course.
+
+process: We started this task several different times in the past year, but never felt that we found the perfect solution
+
+
+solution: I wanted to get away from the use of HTML tables altogether on the student side after hearing what these sounded like on a screen reader, so I implemented my mockup with divs for each assignment and assignment type container instead of table rows. I added a graphical representation of the points earned in each category and a light grey background behind the assignments when the accordions were open to make the design feel more cohesive. I used flag icons to represent predicted assignments like I use in the dashboard module so students would realize which assignments they had planned to complete and styled graded assignments with a green checkmark. Tearing out the tables made a huge improvement on the mobile experience and made the sections easily scannable and much more parsable to students.
