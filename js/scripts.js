@@ -31,59 +31,61 @@ $(document).ready(function() {
   /**
    * Toggles active class for Projects
    */
-  var projectsWaypoint = projects.waypoint(function(direction) {
-    if (direction === 'down') {
-      navProjects.addClass('active');
-      navAbout.removeClass('active');
-      lastNavItem = navProjects;
-    }
-    else {
-      navProjects.removeClass('active');
-      navAbout.removeClass('active');
-      lastNavItem = null;
-    }
-  },{
-    offset: function() {
-      return header.height();
-    }
-  });
+  if ($('main').hasClass('home-page')) {
+    var projectsWaypoint = projects.waypoint(function(direction) {
+      if (direction === 'down') {
+        navProjects.addClass('active');
+        navAbout.removeClass('active');
+        lastNavItem = navProjects;
+      }
+      else {
+        navProjects.removeClass('active');
+        navAbout.removeClass('active');
+        lastNavItem = null;
+      }
+    },{
+      offset: function() {
+        return header.height();
+      }
+    });
 
-  /**
-   * Toggles active class for About and remove for About
-   */
-  var aboutWaypoint = about.waypoint(function(direction) {
-    if (direction === 'down') {
-      navProjects.removeClass('active');
-      navAbout.addClass('active');
-      lastNavItem = navAbout;
-    }
-    else {
-      navProjects.addClass('active');
-      navAbout.removeClass('active');
-      lastNavItem = navProjects;
-    }
-  },{
-    offset: function() {
-      return header.height();
-    }
-  })
+    /**
+     * Toggles active class for About and remove for About
+     */
+    var aboutWaypoint = about.waypoint(function(direction) {
+      if (direction === 'down') {
+        navProjects.removeClass('active');
+        navAbout.addClass('active');
+        lastNavItem = navAbout;
+      }
+      else {
+        navProjects.addClass('active');
+        navAbout.removeClass('active');
+        lastNavItem = navProjects;
+      }
+    },{
+      offset: function() {
+        return header.height();
+      }
+    })
 
-  /**
-   * Toggles active class for Contact and removes for About
-   */
-  var contactWaypoint = footer.waypoint(function(direction) {
-    if (direction === 'down') {
-      navProjects.removeClass('active');
-      navAbout.addClass('active');
-    }
-    else {
-      navProjects.removeClass('active');
-      navAbout.removeClass('active');
-      lastNavItem.addClass('active');
-    }
-  },{
-    offset: '100%'
-  });
+    /**
+     * Toggles active class for Contact and removes for About
+     */
+    var contactWaypoint = footer.waypoint(function(direction) {
+      if (direction === 'down') {
+        navProjects.removeClass('active');
+        navAbout.addClass('active');
+      }
+      else {
+        navProjects.removeClass('active');
+        navAbout.removeClass('active');
+        lastNavItem.addClass('active');
+      }
+    },{
+      offset: '100%'
+    });
+  }
 
   /* Scripts
      ======================================================================== */

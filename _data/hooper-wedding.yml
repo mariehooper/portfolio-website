@@ -3,16 +3,17 @@ name: Hooper Wedding
 role:
   - Visual Design
   - Some Front-End Development
-overview: Usability testing identified some clarity issues around the assignment index page for students.
+overview: What better way to announce an upcoming wedding of two front-end developers than a website!
+live_site: http://jahlehandpatrick.hoopr.io/
 
 
 #images
-browser_url: www.gradecraft.com/assignments
+browser_url: jahlehandpatrick.hoopr.io
 browser_image: assignment-index-browser.png
 browser_image_2: student-rubric.jpg
-mobile_image_1: mobile-assignment-index-1.png
-mobile_image_2: mobile-assignment-index-2.png
-mobile_image_3: mobile-assignment-index-3.png
+mobile_image_1: wedding-mobile-1.png
+mobile_image_2: wedding-mobile-2.png
+mobile_image_3: wedding-mobile-3.png
 project_image_1: usability-testing.jpg
 project_image_2: assignment-index-sketch.png
 
