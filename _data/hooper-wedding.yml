@@ -1,0 +1,26 @@
+#project info
+name: Hooper Wedding
+role:
+  - Visual Design
+  - Some Front-End Development
+overview: What better way to announce an upcoming wedding of two front-end developers than a website!
+live_site: http://jahlehandpatrick.hoopr.io/
+
+
+#images
+browser_url: jahlehandpatrick.hoopr.io
+browser_image: hooper-wedding-desktop.png
+
+mobile_image_1: wedding-mobile-1.png
+mobile_image_2: wedding-mobile-2.png
+mobile_image_3: wedding-mobile-3.png
+
+
+#content
+challenge: My husband, Patrick, and I got engaged in February of 2014 and thought a website was the best way to help our guests keep track of details related to our November wedding. We needed a reliable way to collect RSVPs, a way to share photos, details, and travel information about the wedding venue and a digital guestbook.
+
+
+process: This was one of my first real web development projects after teaching myself the basics of HTML and CSS. My husband was more versed in these and JavaScript than I was so I did a lot of the design and implementation of the basic structure and styling and he added the intended interactivity to the pages. After looking through many wedding websites online to get an idea for the types of content we wanted to share and potential layouts, I started a sketch design on paper to organize our ideas.
+
+
+solution: We sent ‘save the date’ cards to all our guests with our URL and a unique code to RSVP. From there, our guests were able to access our website which had a visual timeline of some of our favorite photos as well as information about the beach house we were renting on Anna Maria Island and a place to enter their code to RSVP. This was a fun way to practice what I had learned about HTML and Sass and was my first experience using a static site generator like Jekyll. Patrick used Firebase as the database for our guestbook and RSVP pages and set up Gulp for the workflow. It is fun for me to look back on this site and realize how far I have come in my own learning.

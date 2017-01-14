@@ -1,0 +1,25 @@
+#project info
+name: Student Onboarding
+role:
+  - Design Lead
+  - Front-End Development
+overview: Students needed a quick way to learn the fundamentals of GradeCraft and which features were applicable to their course.
+
+
+#images
+browser_url: www.gradecraft.com/dashboard
+browser_image: student-onboarding-desktop.png
+
+mobile_image_1: student-onboarding-mobile-1.png
+mobile_image_2: student-onboarding-mobile-2.png
+mobile_image_3: student-onboarding-mobile-3.png
+project_image_1: student-onboarding-whiteboard.png
+project_image_2: student-onboarding-sketch.png
+
+#content
+challenge: Students in GradeCraft courses were having trouble understanding the basic differences between GradeCraft and any other learning management system they were familiar with. We thought an onboarding modal was the perfect way to present a gist of the GradeCraft fundamentals as well as display the features that were relevant to the specific course.
+
+process: We started this task several different times in the past year, but never felt that we found the perfect solution. My UX intern and I spent a lot of time doing competitive analysis and researching what makes a good onboarding process. We decided we liked onboarding that was short but meaningful, dismissable and recallable. I thought a modal embodied all the features we liked and allowed us to be creative with the associated graphics. One concern I had was how accessible modals were, but I found a great article by Scott O’Hara for Smashing Magazine that helped me create a modal that was usable for all.
+
+
+solution: In the fall of 2016, I had the perfect duo of student interns on my team - one with extensive prior GradeCraft experience as a student and a grader in courses using GradeCraft and one with no prior knowledge of the tool whatsoever. I linked all the work that had been done on the subject to a Trello card with a short list of design requirements per our earlier research and gave them complete autonomy over what the best solution would look like. Each week we met to review progress and I provided a bit of art direction to make sure that the graphics and color scheme matched the look and feel we had going on the application. The end product was a slider modal with 5 or 6 slides. The sixth slide held optional features that were specific to each course. While implementing the design, I added a presenter that held methods to determine which features, if any, each course was using and used flexbox for a layout that looked good no matter how many features were enabled.

@@ -33,10 +33,6 @@ h3  {
   font-size: 1.25em;
 }
 
-.project-description {
-  padding: 0;
-}
-
 .project-block h2 {
   top: 50%;
   transform: translateY(-50%);
@@ -101,14 +97,10 @@ h3  {
     display: block;
     padding-bottom: 100%;
     position: relative;
-    &:hover > .on-hover {
-      visibility: visible;
-    }
   }
 }
 
-.on-hover {
-  visibility: hidden;
+.project-description {
   position: absolute;
   bottom: 0px;
   font-size: 1.2em;
@@ -154,6 +146,21 @@ h3  {
 .projects-gradecraft-poster {
   background-color: #B8E986;
   background-image: url('../img/gradecraft-poster.png');
+}
+
+.projects-student-onboarding {
+  background-color: #8DD6CC;
+  background-image: url('../img/student-onboarding.png');
+}
+
+.projects-policymaker {
+  background-color: #8E8EC7;
+  background-image: url('../img/policymaker.png');
+}
+
+.projects-hooper-wedding {
+  background-color: #B1EDF6;
+  background-image: url('../img/hooper-wedding.png');
 }
 
 .about-wrapper {
