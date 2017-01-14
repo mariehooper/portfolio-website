@@ -4,6 +4,7 @@ previous_url: dashboards
 next_url: gradecraft-site-redesign
 title: gradecraft-poster
 name: GradeCraft Poster
+additional-class: projects-page
 ---
 {% assign page_data = site.data[page.slug] %}
 
