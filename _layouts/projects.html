@@ -21,10 +21,12 @@ layout: default
       <h2>Process</h2>
       <p>{{page_data.process}}</p>
 
+    {% if page_data.project_image_1 %}
       <div class="project-sketch-images">
         <img src="/img/{{page_data.project_image_1}}">
         <img src="/img/{{page_data.project_image_2}}">
       </div>
+    {% endif %}
 
       <h2>Solution</h2>
       <p>{{page_data.solution}}</p>
@@ -34,9 +36,9 @@ layout: default
         <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
           <div class="browser-top"><p>{{page_data.browser_url}}</p></div>
           <div class="window-screen"><img src="/img/{{page_data.browser_image}}"></div>
-          </div>
-        </div>
       </div>
+    </div>
+  </div>
 
     <div class="center-align mobile-project-example-wrap">
       <div class="mobile-project-example">

@@ -10,12 +10,11 @@ live_site: http://jahlehandpatrick.hoopr.io/
 #images
 browser_url: jahlehandpatrick.hoopr.io
 browser_image: hooper-wedding-desktop.png
-browser_image_2: student-rubric.jpg
+
 mobile_image_1: wedding-mobile-1.png
 mobile_image_2: wedding-mobile-2.png
 mobile_image_3: wedding-mobile-3.png
-project_image_1: usability-testing.jpg
-project_image_2: assignment-index-sketch.png
+
 
 #content
 challenge: My husband, Patrick, and I got engaged in February of 2014 and thought a website was the best way to help our guests keep track of details related to our November wedding. We needed a reliable way to collect RSVPs, a way to share photos, details, and travel information about the wedding venue and a digital guestbook.
