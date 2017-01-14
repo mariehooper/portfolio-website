@@ -33,10 +33,6 @@ h3  {
   font-size: 1.25em;
 }
 
-.project-description {
-  padding: 0;
-}
-
 .project-block h2 {
   top: 50%;
   transform: translateY(-50%);
@@ -101,14 +97,10 @@ h3  {
     display: block;
     padding-bottom: 100%;
     position: relative;
-    &:hover > .on-hover {
-      visibility: visible;
-    }
   }
 }
 
-.on-hover {
-  visibility: hidden;
+.project-description {
   position: absolute;
   bottom: 0px;
   font-size: 1.2em;

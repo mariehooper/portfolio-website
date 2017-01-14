@@ -8,13 +8,13 @@ overview: PolicyMaker participant console redesign.
 
 #images
 browser_url: policymaker.ai.umich.edu
-browser_image: assignment-index-browser.png
-browser_image_2: student-rubric.jpg
-mobile_image_1: mobile-assignment-index-1.png
-mobile_image_2: mobile-assignment-index-2.png
-mobile_image_3: mobile-assignment-index-3.png
-project_image_1: usability-testing.jpg
-project_image_2: assignment-index-sketch.png
+browser_image: policymaker-dashboard.png
+
+mobile_image_1: policymaker-mobile-1.png
+mobile_image_2: policymaker-mobile-2.png
+mobile_image_3: policymaker-mobile-3.png
+project_image_1: policymaker-site-map.png
+project_image_2: policymaker-schedule-sketch.png
 
 #content
 challenge: PolicyMaker is an application that was developed to facilitate simulation exercises for students in the U-M Ford School of Public Policy. The application was in an MVP state when I began working on it in the fall of 2016. The participant console needed a redesign after focus groups and a July simulation event provided tangible user research to incorporate into the next iteration.
