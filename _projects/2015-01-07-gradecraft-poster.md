@@ -1,7 +1,7 @@
 ---
 layout: default
 previous_url: dashboards
-next_url: gradecraft-site-redesign
+next_url: student-onboarding
 title: gradecraft-poster
 name: GradeCraft Poster
 additional-class: projects-page
