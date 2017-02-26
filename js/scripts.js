@@ -1,5 +1,5 @@
 /* ==========================================================================
-   marie.hoopr.io JavaScript / jQuery
+   mariehooper.me JavaScript / jQuery
    ========================================================================== */
 $(document).ready(function() {
 
