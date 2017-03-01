@@ -4,11 +4,11 @@ role:
   - Visual Design
   - Some Front-End Development
 overview: What better way to announce an upcoming wedding of two front-end developers than a website!
-live_site: http://jahlehandpatrick.hoopr.io/
+live_site: https://jahlehandpatrick.netlify.com/
 
 
 #images
-browser_url: jahlehandpatrick.hoopr.io
+browser_url: jahlehandpatrick.netlify.com
 browser_image: hooper-wedding-desktop.png
 
 mobile_image_1: wedding-mobile-1.png
