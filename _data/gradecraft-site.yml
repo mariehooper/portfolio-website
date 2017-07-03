@@ -1,8 +1,11 @@
 #project info
 name: GradeCraft Public Site
-role: 
-  - Visual Design 
-  - Front-End Development
+tech: 
+  - Ruby on Rails
+  - AngularJS
+  - jQuery
+  - Sass
+  - CSS animation
 overview: Redesigning the GradeCraft homepage to reflect the playful style of the app was a great first project on the GradeCraft team!
 live_site: http://gradecraft.com/
 

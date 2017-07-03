@@ -1,8 +1,11 @@
 #project info
 name: GradeCraft
-role: 
-  - Visual Design
-  - Front-End Development
+tech: 
+  - Ruby on Rails
+  - AngularJS
+  - jQuery
+  - Sass
+  - CSS animation
 overview: GradeCraft is a learning management system designed to support gameful courses that is being developed at the University of Michigan.
 live_site: https://gradecraft.com/
 github_repo: https://github.com/UM-USElab/gradecraft-development

@@ -1,8 +1,6 @@
 #project info
 name: Accessibility Reference Guide
-role: 
-  - Visual Design 
-  - Front-End Development
+
 overview: The purpose of this reference is to help developers understand how to make their web applications more accessible and more compatible with assistive technology.
 live_site: https://github.com/mariehooper/accessibility-reference
 

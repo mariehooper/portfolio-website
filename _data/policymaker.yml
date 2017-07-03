@@ -1,8 +1,11 @@
 #project info
 name: Policymaker
-role:
-  - Design Lead
-  - Front-End Development
+tech:
+  - Python/Django
+  - jQuery
+  - Less.js
+  - CSS animation
+  - SVG
 overview: Policymaker is a Django application that was developed to facilitate simulation exercises for students at the University of Michigan.
 
 

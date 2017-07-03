@@ -5,27 +5,39 @@ layout: default
 
 <section>
   <div class="project-section-header">
-    <div class="section-header-col">
-      <h1>{{page_data.name}}</h1>
-      <ul class="project-roles">
-        {% for item in page_data.role %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-      <p class="project-overview">{{page_data.overview}}</p>
-    </div>
-    <div class="section-header-col">
-      <img class="section-header-img" src="{{page_data.header_img}}" alt="">
+    <div class="flex-wrapper">
+      <div class="section-header-col">
+        <h1>{{page_data.name}}</h1>
+        <ul class="project-tech">
+          {% for item in page_data.tech %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        <p class="project-overview">{{page_data.overview}}</p>
+        <div class="button-block center-align">
+          {% if page_data.live_site %}
+            <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
+          {% endif %}
+          {% if page_data.github_repo %}
+            <a class="button live-site" href="{{page_data.github_repo}}" target="_blank">View on GitHub</a>
+          {% endif %}
+        </div>
+      </div>
+      {% if page_data.header_img %}
+      <div class="section-header-col col-2">
+        <img class="section-header-img" src="{{page_data.header_img}}" alt="">
+      </div>
+      {% endif %}
     </div>
   </div>
 
   <div class="project-data">
     <div class="case-study challenge">
-      <h2>Challenge</h2>
-      <p>{{page_data.challenge}}</p>
+      <h2>Biggest Challenge</h2>
+      <p>{{page_data.biggest_challenge}}</p>
 
-      <h2>Process</h2>
-      <p>{{page_data.process}}</p>
+      <h2>What I Learned</h2>
+      <p>{{page_data.best_thing_i_learned}}</p>
 
     {% if page_data.project_image_1 %}
       <div class="project-sketch-images">
@@ -34,8 +46,8 @@ layout: default
       </div>
     {% endif %}
 
-      <h2>Solution</h2>
-      <p>{{page_data.solution}}</p>
+      <h2>Up Next</h2>
+      <p>{{page_data.up_next}}</p>
     </div>
     <div class="project-example center-align">
       <div class="browser browser-window">
@@ -45,7 +57,7 @@ layout: default
       </div>
     </div>
   </div>
-
+  {% if page_data.mobile_image_1 %}
     <div class="center-align mobile-project-example-wrap">
       <div class="mobile-project-example">
         <div class="mobile-project iphone-5s">
@@ -69,14 +81,5 @@ layout: default
         </div>
       </div>
   </div>
-
-<div class="button-block center-align">
-  {% if page_data.live_site %}
-    <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
-  {% endif %}
-  {% if page_data.github_repo %}
-    <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Github Repo</a>
-  {% endif %}
-</div>
-
+{% endif %}
 </section>
