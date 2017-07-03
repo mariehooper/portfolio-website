@@ -1,12 +1,13 @@
 #project info
-name: PolicyMaker
+name: Policymaker
 role:
   - Design Lead
   - Front-End Development
-overview: PolicyMaker participant console redesign.
+overview: Policymaker is a Django application that was developed to facilitate simulation exercises for students at the University of Michigan.
 
 
 #images
+header_img: /img/policymaker-window.png
 browser_url: policymaker.ai.umich.edu
 browser_image: policymaker-dashboard.png
 
@@ -17,6 +18,13 @@ project_image_1: policymaker-site-map.png
 project_image_2: policymaker-schedule-sketch.png
 
 #content
+biggest_challenge: The hardest part about working on this app is designing an interface that can be understood and used by anyone, regardless of their level of knowledge about simulations. While some apps are easier to relate to others, Policymaker is constantly challenging our ability to rely on workflows that users are familiar with.
+
+best_thing_i_learned: I was pushed to step out of my front-end comfort zone on this project and have been working on the backend Python and Django. This has been an exciting (and equally frustrating at times) experience and has really helped to solidify a lot of foundational programming concepts that I was unfamiliar with. I also lead the design and front-end development efforts on this project, which has been great for learning how to manage priorities.
+
+up_next: The next phase of the Policymaker is an overhaul of the simulation editor as we continue to learn more about potential use cases for additional schools at U-M and around the country. We have conducted many interviews and user tests after the conclusion of the in-simulation interface and will continue to iterate on that and our branding and marketing efforts.
+
+
 challenge: PolicyMaker is an application that was developed to facilitate simulation exercises for students in the U-M Ford School of Public Policy. The application was in an MVP state when I began working on it in the fall of 2016. The participant console needed a redesign after focus groups and a July simulation event provided tangible user research to incorporate into the next iteration.
 
 process: I worked with a UX intern and the lead developer on the project to prioritize the feedback from users into a task list that was feasible to design and implement for an upcoming Integrated Policy Exercise (IPE) in January 2017. We decided to rework the main navigation for the site as well as add a modular dashboard homepage and additional pages for groups and roles and schedule as these are integral to the participants' understanding of the simulation context and their upcoming actions in the exercise. We also overhauled the color palette and developed more consistent style guidelines for the application to reduce the visual noise and help participants easily understand the interface and quickly get started in their exercise. I took on the design of the newly added schedule page and determined that a Gantt chart view of the activities could replace the previous calendar/list view toggle and provide participants with a less cluttered visual snapshot of their activities for the day and the decision points that would affect their schedules.

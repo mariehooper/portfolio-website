@@ -1,22 +1,31 @@
 #project info
-name: GradeCraft Site Redesign
+name: Loan Payoff Calculator
+class: loan-payoff
 role: 
   - Visual Design 
   - Front-End Development
-overview: Redesigning the GradeCraft homepage to reflect the playful style of the app was a great first project on the GradeCraft team!
-live_site: http://gradecraft.com/
+overview: The purpose of this app is to encourage people to take control of their financial future by showing the impact of early loan payoff in terms of time and money savings.
+live_site: https://loanpayoff.netlify.com/
+github_repo: https://github.com/mariehooper/loan-payoff-calculator
 
 #images
-browser_url: gradecraft.com
-browser_image: gradecraft-homepage.jpg
+header_img: /img/loan-payoff-window.png
+browser_url: https://loanpayoff.netlify.com/
+browser_image: loan-payoff-1.png
 mobile_image_1: gradecraft-mobile-1.jpg
 mobile_image_2: gradecraft-mobile-2.jpg
 mobile_image_3: gradecraft-mobile-3.jpg
-project_image_1: homepage-requirements.jpg
-project_image_2: gradecraft-sketch.jpg
+project_image_1: loan-payoff-2.png
+project_image_2: loan-payoff-3.png
 
 
 #content
+biggest_challenge: The hardest part about this app is striking a balance between being flexible and declarative. Realizing that the people I want to benefit from this app the most are perhaps the least financially savvy, it's important to find a way to make the interface inviting and impactful.
+
+best_thing_i_learned: I knew I wanted to get familiar with React.js and felt that this was the best project to accomplish that with. Before digging into React, I got more comfortable writing vanilla JavaScript and learned all the new features available in es2015. This project has been a great learning experience and has really pushed the boundaries of my UX, front-end and programming skill set.
+
+up_next: The next phase of the loan payoff calculator can be referenced in <a href="https://github.com/mariehooper/loan-payoff-calculator/projects" target="_blank">Github projects</a>. The largest feature-add will be the ability to show users a cascading effect of loan payoff and results of the two most common approaches to early loan payoff (highest interest rate first vs. lowest balance first). This will require being cognizant of the amount of information I present to the user and how to make sure it's providing the most motivational takeaway.
+
 challenge: GradeCraft is a learning management system designed to support gameful courses that is being developed at the University of Michigan. When I started working with this team, I was thrilled to be tasked with redesigning the public facing website to support the goal of eventually selling the app outside U-M. The website needed a facelift to match the playfulness and style of app itself and also to communicate the goals of gameful learning and GradeCraft as a way to facilitate gameful learning and teaching.
 
 process: After brainstorming necessary pieces of information to include with the lead developer, I considered the intended audience for this site. Although students and instructors who were using GradeCraft on a daily basis at U-M would certainly see the refreshed site before logging in, our target audience was really instructors in both K-12 and higher education who were interested in incorporating elements of good games in their course design. I also thought about what our pricing model might look like and who the decision makers in that process would be to make sure our message was clear and direct no matter who was reviewing the information. With my list of necessary content, I sketched out possible layouts on whiteboards and paper before mocking up the page in Sketch. Putting tangible examples in front of stakeholders and users as soon as possible was extremely helpful in soliciting tangible feedback which I used to refine the designs further before handing off fully annotated documents to the developers.

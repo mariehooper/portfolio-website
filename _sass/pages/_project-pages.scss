@@ -13,6 +13,34 @@
   }
 }
 
+.project-section-header {
+  margin-bottom: 1.5em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5faff;
+
+  @include breakpoint($mq-medium) {
+    margin-bottom: 25px;
+  }
+}
+
+.section-header-col {
+  flex: 1;
+  padding: 1.5rem 2rem;
+}
+
+.section-header-img {
+  max-width: 600px;
+}
+
+.project-overview {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+}
+
 .case-study {
   max-width: 720px;
   margin: 0 auto;

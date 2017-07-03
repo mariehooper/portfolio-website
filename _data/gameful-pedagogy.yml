@@ -1,13 +1,15 @@
 #project info
-name: Gameful Pedagogy Site
+name: Gameful Pedagogy
 role: 
   - Design
   - Information Architecture
   - Front-End Development
-overview: Overview&#58; This site is a resource for anyone who wants to learn more about gameful pedagogy and how to implement elements of good games in their course design.
+overview: This site is a resource for anyone who wants to learn more about gameful pedagogy and how to implement elements of good games in their course design.
 live_site: http://gamefulpedagogy.com/
+github_repo: https://github.com/UM-USElab/gameful-pedagogy
 
 #images
+header_img: /img/gameful-pedagogy-window.png
 browser_url: gamefulpedagogy.com
 browser_image: gameful-pedagogy-desktop.jpg
 mobile_image_1: gameful-pedagogy-mobile.jpg
@@ -17,6 +19,12 @@ project_image_1: gameful-pedagogy-drawing.jpg
 project_image_2: gameful-pedagogy-sketch.jpg
 
 #content
+biggest_challenge: One of the biggest challenges with the gameful pedagogy site was thinking about how to organize the information so that both people who were browsing and people who were looking for a specific answer could find what they needed. This presented an interesting information architecture problem to solve in addition to thinking through how to make text-heavy articles visually-appealing.
+
+best_thing_i_learned: Creating this site was a good way to practice my skills using a static site generator like Jekyll and really served to build my skills in information architecture. I started with simply a list of frequently asked questions and ended up building a site that helped explain the pedagogy behind the GradeCraft application as well as provide resources for instructors that were building gameful courses.
+
+up_next: In the next iteration of the gameful pedagogy site, we will need to update the content to cover features that have been added and improved upon since the site was launched as well as continue to think about what information should exist here and what should be more integrated into the GradeCraft tool itself.
+
 challenge: "The underlying theory of GradeCraft is a pedagogical approach called gameful, which was brought to life by Barry Fishman and Caitlin Holman. Since gameful can indeed exist without GradeCraft (albeit less seamlessly), I was tasked with providing a site that would function as a repository of resources and educational materials for instructors who were interested in incorporating gameful elements into their course design. This would also prove a wonderful resource for instructors who were interested in learning more about how to use GradeCraft to its fullest potential."
 
 process: "The first step in this process was gathering and organizing the materials and resources we currently had and brainstorming what else might be helpful for our intended audience. We then did a card sort to come up with larger categories in which these materials would live and came up with a structure for the site that I hoped would be simple enough to navigate to find an answer to a specific question and inviting enough for people to stay and browse. I then sketched the page designs on a whiteboard and then a more refined version on graph paper before creating high fidelity mockups in Sketch with a final clickable prototype in InVision. I solicited feedback at every interval I could to make sure that our final product was accomplishing the intended goal for use and that it was inline with what my client (project lead) had in mind!"

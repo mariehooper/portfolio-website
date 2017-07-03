@@ -4,14 +4,20 @@ layout: default
 {% assign page_data = site.data[page.slug] %}
 
 <section>
-  <div class="section-header"><h1>{{page_data.name}}</h1>
-    <ul class="project-roles">
-      {% for item in page_data.role %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+  <div class="project-section-header">
+    <div class="section-header-col">
+      <h1>{{page_data.name}}</h1>
+      <ul class="project-roles">
+        {% for item in page_data.role %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <p class="project-overview">{{page_data.overview}}</p>
+    </div>
+    <div class="section-header-col">
+      <img class="section-header-img" src="{{page_data.header_img}}" alt="">
+    </div>
   </div>
-
 
   <div class="project-data">
     <div class="case-study challenge">
@@ -64,9 +70,13 @@ layout: default
       </div>
   </div>
 
-    {% if page_data.live_site %}
-      <div class="wrap-button center-align">
-        <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
-      </div>
-    {% endif %}
+<div class="button-block center-align">
+  {% if page_data.live_site %}
+    <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Live Site</a>
+  {% endif %}
+  {% if page_data.github_repo %}
+    <a class="button live-site" href="{{page_data.live_site}}" target="_blank">View Github Repo</a>
+  {% endif %}
+</div>
+
 </section>

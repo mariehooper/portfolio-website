@@ -117,13 +117,18 @@ h3  {
   text-align: center;
 }
 
-.projects-gradecraft-site-redesign {
-  background-color: #8ED0FF;
-  background-image: url('../img/gradecraft-site.png');
-
+.projects-gradecraft-app {
+  background-color: #B8E986;
+  background-image: url('../img/dashboard.png');
 }
 
-.projects-gameful-pedagogy-site {
+
+.projects-gradecraft-site {
+  background-color: #8ED0FF;
+  background-image: url('../img/gradecraft-site.png');
+}
+
+.projects-gameful-pedagogy {
   background-color: #FEF283;
   background-image: url('../img/pedagogy-site.png');
 }
@@ -133,7 +138,7 @@ h3  {
   background-image: url('../img/grade-predictor.png');
 }
 
-.projects-student-assignment-index {
+.projects-a11y-repo {
   background-color: #FFCF8B;
   background-image: url('../img/student-assignment-index.png');
 }
@@ -141,6 +146,11 @@ h3  {
 .projects-dashboards {
   background-color: #F98795;
   background-image: url('../img/dashboard.png');
+}
+
+.projects-loan-payoff-calculator {
+  background-color: #F98795;
+  background-image: url('../img/loan-payoff-calculator.png');
 }
 
 .projects-gradecraft-poster {
