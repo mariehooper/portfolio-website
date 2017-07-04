@@ -24,3 +24,9 @@ biggest_challenge: The hardest part about this app is striking a balance between
 best_thing_i_learned: I knew I wanted to get familiar with React.js and felt that this was the best project to accomplish that with. Before digging into React, I got more comfortable writing vanilla JavaScript and learned all the new features available in es2015. This project has been a great learning experience and has really pushed the boundaries of my UX, front-end and programming skill set.
 
 up_next: The next phase of the loan payoff calculator can be referenced in <a href="https://github.com/mariehooper/loan-payoff-calculator/projects" target="_blank">Github projects</a>. The largest feature-add will be the ability to show users a cascading effect of loan payoff and results of the two most common approaches to early loan payoff (highest interest rate first vs. lowest balance first). This will require being cognizant of the amount of information I present to the user and how to make sure it's providing the most motivational takeaway.
+
+challenge: Present information to users about impact of early loan repayment in order to motivate them to jumpstart their interest savings.
+
+process: Understand how people think about debt and simplify the message so as not to be overwhelming.
+
+solution: An unintimidating app that allows people to make a plan to tackle their debt in a way that saves time and interest.

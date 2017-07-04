@@ -54,6 +54,23 @@
   width: 100%;
 }
 
+.project-summary {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem 0;
+  .project-summary-item {
+    flex: 1;
+    margin: 0 1rem;
+    padding: 1rem;
+    line-height: 1.6rem;
+    h2 {
+      border-bottom: 1px solid;
+      padding-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
 .project-overview {
   font-size: 1.2rem;
   line-height: 1.6rem;
