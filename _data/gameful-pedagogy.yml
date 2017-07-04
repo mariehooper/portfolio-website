@@ -11,13 +11,14 @@ github_repo: https://github.com/UM-USElab/gameful-pedagogy
 
 #images
 header_img: /img/gameful-pedagogy-window.png
-browser_url: gamefulpedagogy.com
-browser_image: gameful-pedagogy-desktop.jpg
+browser_image: gameful-pedagogy-window.png
 # mobile_image_1: gameful-pedagogy-mobile.jpg
 # mobile_image_2: gameful-pedagogy-mobile-2.jpg
 # mobile_image_3: gameful-pedagogy-mobile-3.jpg
-project_image_1: gameful-pedagogy-drawing.jpg
-project_image_2: gameful-pedagogy-sketch.jpg
+# project_image_1: gameful-pedagogy-drawing.jpg
+project_image_1: leveling-systems.png
+# project_image_2: gameful-pedagogy-sketch.jpg
+project_image_2: assignment-breakdown.png
 
 #content
 biggest_challenge: One of the biggest challenges with the gameful pedagogy site was thinking about how to organize the information so that both people who were browsing and people who were looking for a specific answer could find what they needed. This presented an interesting information architecture problem to solve in addition to thinking through how to make text-heavy articles visually-appealing.

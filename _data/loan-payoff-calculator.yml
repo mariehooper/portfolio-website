@@ -12,10 +12,11 @@ github_repo: https://github.com/mariehooper/loan-payoff-calculator
 
 #images
 header_img: /img/loan-payoff-window.png
-browser_url: https://loanpayoff.netlify.com/
-browser_image: loan-payoff-1.png
-project_image_1: loan-payoff-2.png
-project_image_2: loan-payoff-3.png
+browser_image: loan-payoff-window.png
+# project_image_1: loan-payoff-2.png
+project_image_1: add-loan.png
+# project_image_2: loan-payoff-3.png
+project_image_2: loan-list.png
 
 
 #content

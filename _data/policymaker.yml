@@ -7,12 +7,12 @@ tech:
   - CSS animation
   - SVG
 overview: Policymaker is a Django application that was developed to facilitate simulation exercises for students at the University of Michigan.
+live_site: https://policymaker.ai.umich.edu
 
 
 #images
 header_img: /img/policymaker-window.png
-browser_url: policymaker.ai.umich.edu
-browser_image: policymaker-dashboard.png
+browser_image: policymaker-window.png
 
 # mobile_image_1: policymaker-mobile-1.png
 # mobile_image_2: policymaker-mobile-2.png

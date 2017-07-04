@@ -7,8 +7,8 @@ live_site: https://github.com/mariehooper/accessibility-reference
 #images
 browser_url: https://loanpayoff.netlify.com/
 browser_image: gradecraft-homepage.jpg
-project_image_1: homepage-requirements.jpg
-project_image_2: gradecraft-sketch.jpg
+project_image_1: accessibility-example-1.png
+project_image_2: accessibility-example-2.png
 
 
 #content
