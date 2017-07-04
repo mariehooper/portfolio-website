@@ -46,55 +46,29 @@ layout: default
     </li>
   </ul>
 
-  <div class="project-data">
-    <div class="case-study challenge">
-      <h2>Biggest Challenge</h2>
-      <p>{{page_data.biggest_challenge}}</p>
-
-      <h2>What I Learned</h2>
-      <p>{{page_data.best_thing_i_learned}}</p>
-
-    {% if page_data.project_image_1 %}
-      <div class="project-sketch-images">
-        <img src="/img/{{page_data.project_image_1}}">
-        <img src="/img/{{page_data.project_image_2}}">
+  <div class="project-data-section">
+    <div class="project-data flex-wrapper">
+      <div class="left-side case-study">
+        <h2>Biggest Challenge</h2>
+        <p>{{page_data.biggest_challenge}}</p>
+        <h2>What I Learned</h2>
+        <p>{{page_data.best_thing_i_learned}}</p>
+        <h2>Up Next</h2>
+        <p>{{page_data.up_next}}</p>
       </div>
-    {% endif %}
-
-      <h2>Up Next</h2>
-      <p>{{page_data.up_next}}</p>
-    </div>
-    <div class="project-example center-align">
-      <div class="browser browser-window">
-        <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
-          <div class="browser-top"><p>{{page_data.browser_url}}</p></div>
-          <div class="window-screen"><img src="/img/{{page_data.browser_image}}"></div>
+      <div class="right-side case-study">
+        <div class="project-sketch-images">
+          <img src="/img/{{page_data.project_image_1}}">
+          <img src="/img/{{page_data.project_image_2}}">
+        </div>
       </div>
     </div>
   </div>
-  {% if page_data.mobile_image_1 %}
-    <div class="center-align mobile-project-example-wrap">
-      <div class="mobile-project-example">
-        <div class="mobile-project iphone-5s">
-        <div class="top-phone"></div>
-        <div class="screen"><img src="/img/{{page_data.mobile_image_1}}"></div>
-        <div class="bottom-phone"></div>
-      </div>
-     </div>
-       <div class="mobile-project-example">
-        <div class="mobile-project iphone-5s">
-          <div class="top-phone"></div>
-          <div class="screen"><img src="/img/{{page_data.mobile_image_2}}"></div>
-          <div class="bottom-phone"></div>
-        </div>
-      </div>
-      <div class="mobile-project-example">
-        <div class="mobile-project iphone-5s">
-          <div class="top-phone"></div>
-          <div class="screen"><img src="/img/{{page_data.mobile_image_3}}"></div>
-          <div class="bottom-phone"></div>
-        </div>
-      </div>
+  <div class="project-example center-align">
+    <div class="browser browser-window">
+      <span class="browser-buttons"></span><span class="browser-buttons"></span ><span class="browser-buttons"></span>
+        <div class="browser-top"><p>{{page_data.browser_url}}</p></div>
+        <div class="window-screen"><img src="/img/{{page_data.browser_image}}"></div>
+    </div>
   </div>
-{% endif %}
 </section>

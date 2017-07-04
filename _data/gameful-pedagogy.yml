@@ -13,9 +13,9 @@ github_repo: https://github.com/UM-USElab/gameful-pedagogy
 header_img: /img/gameful-pedagogy-window.png
 browser_url: gamefulpedagogy.com
 browser_image: gameful-pedagogy-desktop.jpg
-mobile_image_1: gameful-pedagogy-mobile.jpg
-mobile_image_2: gameful-pedagogy-mobile-2.jpg
-mobile_image_3: gameful-pedagogy-mobile-3.jpg
+# mobile_image_1: gameful-pedagogy-mobile.jpg
+# mobile_image_2: gameful-pedagogy-mobile-2.jpg
+# mobile_image_3: gameful-pedagogy-mobile-3.jpg
 project_image_1: gameful-pedagogy-drawing.jpg
 project_image_2: gameful-pedagogy-sketch.jpg
 
