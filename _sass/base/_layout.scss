@@ -40,15 +40,3 @@ h1 {
 main {
   padding-top: 3.125em;
 }
-
-.social {
-  ul {
-    float: right;
-  }
-  li {
-    display: inline-block;
-    font-size: 1.25em;
-    font-weight: 400;
-    &:not(:first-child) {padding-left: 20px};
-  }
-}

@@ -56,10 +56,12 @@
 
 .project-summary {
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 1rem 0;
   .project-summary-item {
     flex: 1;
+    min-width: 250px;
     margin: 0 1rem;
     padding: 1rem;
     line-height: 1.6rem;
