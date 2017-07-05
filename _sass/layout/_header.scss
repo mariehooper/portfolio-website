@@ -53,13 +53,12 @@
     margin-right: 0;
   }
   a {
+    font-size: 1rem;
     display: inline-block;
-    padding: 0.75em 0.5em;
+    padding: 1em 0.5em;
     border-bottom: 2px solid transparent;
-    @include breakpoint($mq-small) {
-      padding: 0.75em 0.3em;
-    }
-    &:hover, &.active {
+    &:hover,
+    &.active {
       border-bottom: 2px solid $blue;
     }
   }

@@ -10,7 +10,6 @@ Portfolio Site for Marie Hooper: Front End Developer, UI/UX Designer, UF Alumna,
 #### Fonts
 - [Roboto](https://fonts.google.com/specimen/Roboto)
 - [Lato](https://fonts.google.com/specimen/Lato)
-- [Font Awesome](http://fontawesome.io/)
 
 #### Javascript
 - [jQuery](https://jquery.com/)

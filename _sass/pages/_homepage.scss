@@ -15,6 +15,7 @@
   margin-top: 2.5em;
   @include breakpoint($mq-small) {
     margin-top: 2em;
+    padding: 0 1em;
   }
 }
 
@@ -48,6 +49,13 @@ h3  {
     font-size: 1.1em;
     margin-bottom: 1em;
     line-height: 1.6em;
+  }
+  a {
+    border-bottom: 1px dotted;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+    }
   }
 }
 
@@ -117,40 +125,29 @@ h3  {
   text-align: center;
 }
 
-.projects-gradecraft-site-redesign {
-  background-color: #8ED0FF;
-  background-image: url('../img/gradecraft-site.png');
-
+.projects-gradecraft-app {
+  background-color: #B8E986;
+  background-image: url('../img/dashboard.png');
 }
 
-.projects-gameful-pedagogy-site {
+.projects-gradecraft-site {
+  background-color: #8ED0FF;
+  background-image: url('../img/gradecraft-site.png');
+}
+
+.projects-gameful-pedagogy {
   background-color: #FEF283;
   background-image: url('../img/pedagogy-site.png');
 }
 
-.projects-grade-predictor-refinements {
-  background-color: #DDCDF5;
-  background-image: url('../img/grade-predictor.png');
-}
-
-.projects-student-assignment-index {
+.projects-a11y-repo {
   background-color: #FFCF8B;
   background-image: url('../img/student-assignment-index.png');
 }
 
-.projects-dashboards {
+.projects-loan-payoff-calculator {
   background-color: #F98795;
-  background-image: url('../img/dashboard.png');
-}
-
-.projects-gradecraft-poster {
-  background-color: #B8E986;
-  background-image: url('../img/gradecraft-poster.png');
-}
-
-.projects-student-onboarding {
-  background-color: #8DD6CC;
-  background-image: url('../img/student-onboarding.png');
+  background-image: url('../img/loan-payoff-calculator.png');
 }
 
 .projects-policymaker {
@@ -158,12 +155,8 @@ h3  {
   background-image: url('../img/policymaker.png');
 }
 
-.projects-hooper-wedding {
-  background-color: #B1EDF6;
-  background-image: url('../img/hooper-wedding.png');
-}
-
 .about-wrapper {
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto;
+  text-align: center;
 }
