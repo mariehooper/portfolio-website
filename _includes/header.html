@@ -1,20 +1,20 @@
 <header id="header">
   <div class="grid-container">
     <div class="logo">
-      {% if page.layout == "home" %}
+      {% if page.layout == "default" %}
         <a href="#hero">Marie Hooper</a>
-      {% elsif page.layout == "projects" or page.layout == "default" %}
+      {% else %}
         <a href="/">Marie Hooper</a>
       {% endif %}
     </div>
     <nav class="navigation">
       <ul>
-        {% if page.layout == "home" %}
-          <li><a class="nav-projects" href='#projects'>Projects</a></li>
-          <li><a class="nav-about" href='#about'>About</a></li>
-        {% elsif page.layout == "projects" or page.layout == "default" %}
+        {% if page.layout == "projects" %}
           <li><a href='/projects/{{ page.previous_url }}'>Previous <span>Project</span></a></li>
           <li><a href='/projects/{{ page.next_url }}'>Next <span>Project</span></a></li>
+        {% else %}
+          <li><a class="nav-projects" href='#projects'>Projects</a></li>
+          <li><a class="nav-about" href='#about'>About</a></li>
         {% endif %}
       </ul>
     </nav>

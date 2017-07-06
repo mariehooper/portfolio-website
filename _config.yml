@@ -10,8 +10,6 @@ permalink: pretty
 sass:
   style: :compressed
 collections:
-  home:
-    output: false
   projects:
     output: true
     permalink: /projects/:title/
