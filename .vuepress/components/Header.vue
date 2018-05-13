@@ -12,8 +12,8 @@
             <li><a @click.prevent="scrollTo" class="nav-about" data-target="#about">About</a></li>
           </template>
           <template v-else>
-            <li><a :href='`/projects/${$page.frontmatter.previous_url}`'>Previous<span>Project</span></a></li>
-            <li><a :href='`/projects/${$page.frontmatter.next_url}`'>Next<span>Project</span></a></li>
+            <li><a :href='`/projects/${$page.frontmatter.previous_url}`'>Previous <span>Project</span></a></li>
+            <li><a :href='`/projects/${$page.frontmatter.next_url}`'>Next <span>Project</span></a></li>
           </template>
         </ul>
       </nav>
@@ -40,7 +40,7 @@ export default {
 
 <style scoped lang='scss'>
 header {
-  color: #01579b;
+  color: var(--color-blue);
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -49,8 +49,7 @@ header {
 }
 
 .grid-container {
-  box-shadow: none;
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 0 0.5em 0 1em;
   display: flex;
   flex-direction: row;
@@ -59,7 +58,7 @@ header {
 }
 
 a {
-  color: #01579b;
+  color: var(--color-blue);
 }
 
 .navigation li {
@@ -74,7 +73,7 @@ a {
     border-bottom: 2px solid transparent;
     &:hover,
     &.active {
-      border-bottom: 2px solid #01579b;
+      border-bottom: 2px solid var(--color-blue);
     }
   }
   span {
