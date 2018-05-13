@@ -1,0 +1,16 @@
+{
+  "name": "marie-hooper-portfolio",
+  "version": "1.0.0",
+  "dependencies": {
+    "vue-scrollto": "^2.11.0",
+    "vuepress": "^0.8.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
+  },
+  "scripts": {
+    "start": "vuepress dev",
+    "build": "vuepress build"
+  }
+}

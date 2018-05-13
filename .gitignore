@@ -1,5 +1,4 @@
 .DS_Store
-.sass-cache
-_assets
-_site
-Icon?
+node_modules
+.vuepress/dist
+*.log
