@@ -21,6 +21,14 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --color-blue: #01579b;
+  --color-accent-blue: #0277bd;
+  --color-white: #fff;
+  --color-header-gray: #212121;
+  --color-text-gray: #424242;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -40,7 +48,7 @@ body,
 body {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
-  color: #424242;
+  color: var(--color-text-gray);
   margin: 0;
 
   @media (max-width: 48rem) {
@@ -50,21 +58,21 @@ body {
 
 a {
   text-decoration: none;
-  color: #0277bd;
+  color: var(--color-accent-blue);
 }
 
 h1,
 h2,
 h3 {
   font-family: "Lato", sans-serif;
-  color: #0277bd;
+  color: var(--color-accent-blue);
   font-weight: normal;
   margin: 0;
 }
 
 h1 {
   font-size: 2em;
-  color: #212121;
+  color: var(--color-header-gray);
 }
 
 h2 {
@@ -125,31 +133,31 @@ p {
 .button {
   margin-top: 0;
   padding: 0.5rem 1rem;
-  border: 1px solid #01579b;
+  border: 1px solid var(--color-blue);
   border-radius: 3px;
-  color: #01579b;
+  color: var(--color-blue);
   font-size: 1em;
   text-align: center;
   display: inline-block;
   transition: all 0.5s ease;
   &:hover {
-    background-color: #01579b;
-    color: #fff;
+    background-color: var(--color-blue);
+    color: var(--color-white);
     .touch & {
-      background-color: #fff;
-      color: #01579b;
+      background-color: var(--color-white);
+      color: var(--color-blue);
     }
   }
   &:not(:last-child) {
     margin-right: 0.5rem;
   }
   a {
-    color: #01579b;
+    color: var(--color-blue);
     &:hover {
-      color: #fff;
+      color: var(--color-white);
 
       .touch & {
-        color: #01579b;
+        color: var(--color-blue);
       }
     }
   }

@@ -9,8 +9,8 @@
           </ul>
           <p class="project-overview">{{project.overview}}</p>
           <div class="button-block center-align">
-            <a v-if="project.live_site" class="button live-site" :href="project.live_site" target="_blank">View Live Site</a>
-            <a v-if="project.github_repo" class="button live-site" :href="project.github_repo" target="_blank">View on GitHub</a>
+            <a v-if="project.live_site" class="button" :href="project.live_site" target="_blank">View Live Site</a>
+            <a v-if="project.github_repo" class="button" :href="project.github_repo" target="_blank">View on GitHub</a>
           </div>
         </div>
         <div v-if="project.header_img" class="section-header-col col-2">
@@ -34,7 +34,7 @@
     </ul>
     <div class="project-data-section">
       <div class="project-data flex-wrapper">
-        <div class="left-side case-study">
+        <div class="case-study">
           <h2>Biggest Challenge</h2>
           <p>{{project.biggest_challenge}}</p>
           <h2>What I Learned</h2>
@@ -42,7 +42,7 @@
           <h2>Up Next</h2>
           <p>{{project.up_next}}</p>
         </div>
-        <div class="right-side case-study">
+        <div class="case-study">
           <div class="project-sketch-images">
             <img :src="require(`../../img/${project.project_image_1}`)">
             <img :src="require(`../../img/${project.project_image_2}`)">
@@ -174,7 +174,7 @@ h1 {
   }
   a {
     text-decoration: none;
-    color: #0277bd;
+    color: var(--color-accent-blue);
     border-bottom: 1px dotted;
     &:hover,
     &:focus {
@@ -193,7 +193,7 @@ h1 {
     padding: 0.5em 0.75em;
     border-radius: 3px;
     font-size: 0.8em;
-    color: #424242;
+    color: var(--color-text-gray);
     &:not(:last-child) {
       margin-right: 0.5em;
     }
@@ -204,27 +204,6 @@ h1 {
   }
 }
 
-.overview {
-  margin: 0 auto;
-  max-width: 800px;
-  margin-bottom: 40px;
-}
-
-.project-example {
-  margin: 2rem 0;
-  @media (max-width: 48rem) {
-    margin: 1rem 0;
-  }
-}
-
-.project-img-wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-  img {
-    width: 100%;
-  }
-}
-
 .project-sketch-images {
   img {
     width: 100%;
@@ -232,36 +211,6 @@ h1 {
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(204, 204, 204, 0.16),
       0 3px 6px rgba(204, 204, 204, 0.23);
-  }
-}
-
-.project-photo {
-  max-width: 960px;
-  margin: 0 auto;
-  img {
-    width: 100%;
-  }
-}
-
-.scroll {
-  max-height: 625px;
-  overflow: scroll;
-  img {
-    max-width: 100%;
-  }
-}
-
-.mobile-project-example {
-  display: inline-block;
-  &:not(:last-child) {
-    margin-right: 80px;
-  }
-
-  @media (max-width: 64rem) {
-    width: 30%;
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
   }
 }
 </style>

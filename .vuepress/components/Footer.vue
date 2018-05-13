@@ -87,7 +87,7 @@ footer {
     }
   }
   svg {
-    fill: #424242;
+    fill: var(--color-text-gray);
     width: 20px;
     height: 20px;
     transition: all 0.5s ease;
@@ -95,7 +95,7 @@ footer {
       fill: lighten(#ffa726, 5%);
 
       .touch & {
-        fill: #424242;
+        fill: var(--color-text-gray);
       }
     }
   }
