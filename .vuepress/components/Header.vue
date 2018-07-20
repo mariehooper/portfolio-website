@@ -8,8 +8,8 @@
       <nav class="navigation">
         <ul>
           <template v-if="isHomePage">
-            <li><a @click.prevent="scrollTo" class="nav-projects" data-target="#projects">Projects</a></li>
-            <li><a @click.prevent="scrollTo" class="nav-about" data-target="#about">About</a></li>
+            <li><a href="#projects" @click.prevent="scrollTo" class="nav-projects" data-target="#projects">Projects</a></li>
+            <li><a href="#about" @click.prevent="scrollTo" class="nav-about" data-target="#about">About</a></li>
           </template>
           <template v-else>
             <li><a :href='`/projects/${$page.frontmatter.previous_url}`'>Previous <span>Project</span></a></li>
