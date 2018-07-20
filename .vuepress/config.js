@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Hello VuePress",
-  description: "Just playing around",
+  title: "Marie Hooper",
+  description: "Portfolio site for Marie Hooper",
   markdown: {
     anchor: { permalink: false, permalinkBefore: false, permalinkSymbol: "#" }
   },
