@@ -2,13 +2,12 @@
 previous_url: gradecraft
 next_url: a11y-repo
 name: Gameful Pedagogy
-tech: 
+tech:
   - Jekyll
   - SCSS
   - Materialize.js
   - super-search.js
 overview: This site is a resource for anyone who wants to learn more about gameful pedagogy and how to implement elements of good games in their course design.
-live_site: http://gamefulpedagogy.com/
 github_repo: https://github.com/UM-USElab/gameful-pedagogy
 header_img: gameful-pedagogy-window.png
 project_image_1: leveling-systems.png
