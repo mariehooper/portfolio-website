@@ -1,9 +1,9 @@
 ---
-previous_url: a11y-repo
+previous_url: jstor-forum
 next_url: loan-payoff-calculator
 name: Codework
 class: codework
-tech: 
+tech:
   - React
   - Styled Components
   - Firebase
