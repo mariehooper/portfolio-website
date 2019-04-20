@@ -1,6 +1,6 @@
 ---
 previous_url: policymaker
-next_url: gameful-pedagogy
+next_url: bookshelf
 name: GradeCraft
 tech:
   - Ruby on Rails
