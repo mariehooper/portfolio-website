@@ -17,6 +17,9 @@ exports.createPages = async ({ graphql, actions }) => {
       allProjectsJson {
         edges {
           node {
+            headerImg
+            projectImage1
+            projectImage2
             fields {
               slug
             }
@@ -36,6 +39,9 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: node.fields.slug,
         next: edges[nextIndex].node.fields.slug,
         previous: edges[previousIndex].node.fields.slug,
+        headerImg: node.headerImg,
+        projectImage1: node.projectImage1,
+        projectImage2: node.projectImage2,
       },
     })
   })

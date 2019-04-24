@@ -1,4 +1,5 @@
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import React from "react"
 import Layout from "../components/layout"
 import styles from "../styles/projectpage.module.scss"
@@ -30,10 +31,10 @@ export default function ProjectPage({ data, pageContext }) {
                   View Live Site
                 </a>
               )}
-              {project.github_repo && (
+              {project.githubRepo && (
                 <a
                   className="button"
-                  href={project.github_repo}
+                  href={project.githubRepo}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -42,15 +43,9 @@ export default function ProjectPage({ data, pageContext }) {
               )}
             </div>
           </div>
-          {project.header_img && (
-            <div className={[styles.sectionHeaderCol, styles.col2].join(" ")}>
-              <img
-                className={styles.sectionHeaderImg}
-                src={require(`../images/${project.header_img}`)}
-                alt=""
-              />
-            </div>
-          )}
+          <div className={[styles.sectionHeaderCol, styles.col2].join(" ")}>
+            <Img fluid={data.headerImage.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
       <ul className={styles.summary}>
@@ -71,22 +66,16 @@ export default function ProjectPage({ data, pageContext }) {
         <div className={[styles.flexWrapper, styles.projectData].join(" ")}>
           <div className={styles.caseStudy}>
             <h2>Biggest Challenge</h2>
-            <p>{project.biggest_challenge}</p>
+            <p>{project.biggestChallenge}</p>
             <h2>What I Learned</h2>
-            <p>{project.best_thing_i_learned}</p>
+            <p>{project.bestThingILearned}</p>
             <h2>Up Next</h2>
-            <p>{project.up_next}</p>
+            <p>{project.upNext}</p>
           </div>
           <div className={styles.caseStudy}>
             <div className={styles.projectSketchImages}>
-              <img
-                src={require(`../images/${project.project_image_1}`)}
-                alt=""
-              />
-              <img
-                src={require(`../images/${project.project_image_2}`)}
-                alt=""
-              />
+              <Img fluid={data.projectImage1.childImageSharp.fluid} />
+              <Img fluid={data.projectImage2.childImageSharp.fluid} />
             </div>
           </div>
         </div>
@@ -96,23 +85,46 @@ export default function ProjectPage({ data, pageContext }) {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query(
+    $slug: String!
+    $headerImg: String!
+    $projectImage1: String!
+    $projectImage2: String!
+  ) {
     projectsJson(fields: { slug: { eq: $slug } }) {
       name
       live_site
-      github_repo
+      githubRepo
       overview
       class
       tech
-      header_img
-      project_image_1
-      project_image_2
-      biggest_challenge
-      best_thing_i_learned
-      up_next
+      biggestChallenge
+      bestThingILearned
+      upNext
       challenge
       process
       solution
+    }
+    headerImage: file(relativePath: { eq: $headerImg }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    projectImage1: file(relativePath: { eq: $projectImage1 }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    projectImage2: file(relativePath: { eq: $projectImage2 }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `
