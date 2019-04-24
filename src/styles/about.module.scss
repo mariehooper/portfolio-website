@@ -1,0 +1,20 @@
+.about {
+  p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.6em;
+  }
+  a {
+    border-bottom: 1px dotted;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}

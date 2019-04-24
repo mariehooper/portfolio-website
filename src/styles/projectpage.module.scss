@@ -1,0 +1,153 @@
+.name {
+  text-align: center;
+  font-size: 2.5em;
+
+  @media (max-width: 48rem) {
+    font-size: 2em;
+  }
+}
+
+.projectSectionHeader {
+  padding: 2rem;
+  margin-bottom: 1.5em;
+  text-align: center;
+  background: #83a4d4;
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
+
+  @media (max-width: 48rem) {
+    margin-bottom: 0.5em;
+    padding: 2rem 1rem;
+  }
+}
+
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (max-width: 41.75rem) {
+    display: block;
+  }
+  &.projectData {
+    align-items: flex-start;
+  }
+}
+
+.sectionHeaderCol {
+  flex: 1;
+  padding: 1rem;
+  @media (max-width: 41.75rem) {
+    padding: 0;
+  }
+  &:only-child {
+    padding: 3rem;
+    max-width: 650px;
+    margin: 0 auto;
+    @media (max-width: 41.75rem) {
+      padding: 0;
+    }
+  }
+  &.col2 {
+    max-width: 600px;
+  }
+}
+
+.sectionHeaderImg {
+  width: 100%;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  max-width: 1200px;
+  @media (max-width: 41.75rem) {
+    padding: 0;
+  }
+}
+
+.projectSummaryItem {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  line-height: 1.6rem;
+  h2 {
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+.overview {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.projectDataSection {
+  background: rgba(182, 250, 255, 0.2);
+  @media (max-width: 41.75rem) {
+    padding: 0;
+  }
+}
+
+.caseStudy {
+  flex: 1;
+  padding: 1rem;
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6em;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-accent-blue);
+    border-bottom: 1px dotted;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+.tech {
+  text-align: center;
+  margin-top: 0.5em;
+  li {
+    display: inline-block;
+    background-color: transparentize(#e1f5fe, 0.5);
+    margin: 0.25em;
+    padding: 0.5em 0.75em;
+    border-radius: 3px;
+    font-size: 0.8em;
+    color: var(--color-text-gray);
+    &:not(:last-child) {
+      margin-right: 0.5em;
+    }
+    @media (max-width: 41.75rem) {
+      padding: 0.5em;
+      font-size: 0.75em;
+    }
+  }
+}
+
+.projectSketchImages {
+  img {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(204, 204, 204, 0.16),
+      0 3px 6px rgba(204, 204, 204, 0.23);
+  }
+}
+
+.buttonBlock {
+  margin: 1rem 0;
+}

@@ -1,0 +1,75 @@
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block {
+  opacity: 0.8;
+  margin: 0.5em;
+  max-width: 360px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1 1 360px;
+  @media (max-width: 41.75rem) {
+    margin: 0.5em 0;
+    max-width: inherit;
+  }
+  &:hover {
+    opacity: 1;
+  }
+
+  a {
+    display: block;
+    padding-bottom: 100%;
+    position: relative;
+  }
+}
+
+.gradecraft {
+  background-color: #b8e986;
+  background-image: url(../images/dashboard.png);
+}
+
+.codework {
+  background-color: #8ed0ff;
+  background-image: url(../images/codework-grid.png);
+}
+
+.bookshelf {
+  background-color: #fef283;
+  background-image: url(../images/bookshelf.png);
+}
+
+.forum {
+  background-color: #ffcf8b;
+  background-image: url(../images/jstor-forum-grid.png);
+}
+
+.calculator {
+  background-color: #f98795;
+  background-image: url(../images/loan-payoff-calculator.png);
+}
+
+.policymaker {
+  background-color: #8e8ec7;
+  background-image: url(../images/policymaker.png);
+}
+
+.description {
+  position: absolute;
+  bottom: 0px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  right: 0px;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #3e3e3e;
+  width: 100%;
+}
