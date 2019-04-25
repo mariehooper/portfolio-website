@@ -3,6 +3,7 @@ module.exports = {
     title: `Marie Hooper`,
     description: `Portfolio site for Marie Hooper`,
     author: `@mariehooper`,
+    siteUrl: `https://mariehooper.me`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,18 +16,18 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-default`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     background_color: `#663399`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `marie-hooper-portfolio`,
+        short_name: `marie-hooper-portfolio`,
+        start_url: `/`,
+        background_color: `#01579b`,
+        theme_color: `#01579b`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`,
+      },
+    },
     `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-web-font-loader",
@@ -43,8 +44,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-sitemap`,
     // `gatsby-plugin-offline`,
   ],
 }

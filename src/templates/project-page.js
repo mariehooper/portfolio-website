@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import styles from "../styles/projectpage.module.scss"
 
 export default function ProjectPage({ data, pageContext }) {
@@ -10,6 +11,7 @@ export default function ProjectPage({ data, pageContext }) {
     <Layout
       pagination={{ next: pageContext.next, previous: pageContext.previous }}
     >
+      <SEO title={project.name} />
       <div className={styles.projectSectionHeader}>
         <div className={styles.flexWrapper}>
           <div className={styles.sectionHeaderCol}>
