@@ -4,7 +4,7 @@ import styles from "../styles/hero.module.scss"
 
 export default function Hero() {
   return (
-    <section className={styles.hero} id="hero">
+    <section>
       <div className={styles.description}>
         <img className={styles.img} src={heroImg} alt="" />
         <p>

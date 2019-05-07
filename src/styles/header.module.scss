@@ -21,6 +21,7 @@
 }
 
 .logo {
+  font-size: 1.2rem;
   padding: 1rem 0;
 }
 
@@ -32,7 +33,6 @@
     }
     a {
       font-size: 1rem;
-      display: inline-block;
       padding: 1em 0.5em;
       border-bottom: 2px solid transparent;
       &:hover,
@@ -41,7 +41,6 @@
       }
     }
     span {
-      display: inline-block;
       @media (max-width: 41.75rem) {
         display: none;
       }

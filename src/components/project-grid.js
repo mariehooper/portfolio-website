@@ -19,16 +19,11 @@ export default function ProjectGrid() {
     }
   `)
   return (
-    <section className="projects" id="projects">
-      <div className="section-header">
-        <h1>Projects</h1>
-      </div>
+    <section>
+      <h2 className={styles.sectionHeader}>Projects</h2>
       <ul className={styles.grid}>
         {data.allProjectsJson.edges.map(({ node }) => (
-          <li
-            className={[styles.block, styles[node.class]].join(" ")}
-            key={node.name}
-          >
+          <li className={styles[node.class]} key={node.name}>
             <Link to={node.fields.slug}>
               <p className={styles.description}>{node.name}</p>
             </Link>

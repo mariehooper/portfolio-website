@@ -13,6 +13,16 @@
   }
 }
 
+.sectionHeader {
+  margin-bottom: 1.5em;
+  padding-top: 2.75em;
+  text-align: center;
+
+  @media (max-width: 48rem) {
+    margin-bottom: 25px;
+  }
+}
+
 .wrapper {
   max-width: 720px;
   margin: 0 auto;
