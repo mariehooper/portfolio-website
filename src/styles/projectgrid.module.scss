@@ -1,3 +1,13 @@
+.sectionHeader {
+  margin-bottom: 1.5em;
+  padding-top: 2.75em;
+  text-align: center;
+
+  @media (max-width: 48rem) {
+    margin-bottom: 25px;
+  }
+}
+
 .grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,31 +42,37 @@
 }
 
 .gradecraft {
+  composes: block;
   background-color: #b8e986;
   background-image: url(../images/dashboard.png);
 }
 
 .codework {
+  composes: block;
   background-color: #8ed0ff;
   background-image: url(../images/codework-grid.png);
 }
 
 .bookshelf {
+  composes: block;
   background-color: #fef283;
   background-image: url(../images/bookshelf.png);
 }
 
 .forum {
+  composes: block;
   background-color: #ffcf8b;
   background-image: url(../images/jstor-forum-grid.png);
 }
 
 .calculator {
+  composes: block;
   background-color: #f98795;
   background-image: url(../images/loan-payoff-calculator.png);
 }
 
 .policymaker {
+  composes: block;
   background-color: #8e8ec7;
   background-image: url(../images/policymaker.png);
 }

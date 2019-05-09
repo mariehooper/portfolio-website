@@ -4,6 +4,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "../styles/projectpage.module.scss"
+import buttonStyles from "../styles/buttons.module.scss"
 
 export default function ProjectPage({ data, pageContext }) {
   const project = data.projectsJson
@@ -25,7 +26,7 @@ export default function ProjectPage({ data, pageContext }) {
             <div className={styles.buttonBlock}>
               {project.live_site && (
                 <a
-                  className="button"
+                  className={buttonStyles.primary}
                   href={project.live_site}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -35,7 +36,7 @@ export default function ProjectPage({ data, pageContext }) {
               )}
               {project.githubRepo && (
                 <a
-                  className="button"
+                  className={buttonStyles.primary}
                   href={project.githubRepo}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -45,7 +46,7 @@ export default function ProjectPage({ data, pageContext }) {
               )}
             </div>
           </div>
-          <div className={[styles.sectionHeaderCol, styles.col2].join(" ")}>
+          <div className={styles.col2}>
             <Img fluid={data.headerImage.childImageSharp.fluid} />
           </div>
         </div>

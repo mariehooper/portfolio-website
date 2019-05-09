@@ -1,16 +1,3 @@
-.hero {
-  .grid-container {
-    padding-top: 80px;
-    color: lighten(#333, 5%);
-
-    @media (max-width: 48rem) {
-      padding-top: 50px;
-      height: auto;
-      text-align: center;
-    }
-  }
-}
-
 .img {
   border-radius: 50%;
   height: 100px;

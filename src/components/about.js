@@ -4,10 +4,8 @@ import styles from "../styles/about.module.scss"
 
 export default function About() {
   return (
-    <section className={styles.about} id="about">
-      <div className="section-header">
-        <h1>About</h1>
-      </div>
+    <section className={styles.about}>
+      <h2 className={styles.sectionHeader}>About</h2>
       <div className={styles.wrapper}>
         <p>
           I am a Front End Engineer at{" "}

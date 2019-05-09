@@ -5,11 +5,11 @@ import styles from "../styles/header.module.scss"
 
 export default function Header({ pagination }) {
   return (
-    <header id="header" className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.gridContainer}>
-        <div className={styles.logo}>
+        <h1 className={styles.logo}>
           <Link to="/">Marie Hooper</Link>
-        </div>
+        </h1>
         {pagination && (
           <nav className={styles.navigation}>
             <ul>
