@@ -1,18 +1,20 @@
+@import "variables";
+
 .header {
-  color: var(--color-blue);
+  color: $color-blue;
   position: fixed;
   width: 100%;
   z-index: 100;
   border-bottom: 1px solid #eee;
   font-size: 1.2em;
-  background: var(--color-white);
+  background: $color-white;
   a {
-    color: var(--color-blue);
+    color: $color-blue;
   }
 }
 
 .gridContainer {
-  background-color: var(--color-white);
+  background-color: $color-white;
   padding: 0 0.5em 0 1em;
   display: flex;
   flex-direction: row;
@@ -37,7 +39,7 @@
       border-bottom: 2px solid transparent;
       &:hover,
       &.active {
-        border-bottom: 2px solid var(--color-blue);
+        border-bottom: 2px solid $color-blue;
       }
     }
     span {
