@@ -18,7 +18,7 @@ export default function ProjectPage({ data, pageContext }) {
           <div className={styles.sectionHeaderCol}>
             <h1 className={styles.name}>{project.name}</h1>
             <ul className={styles.tech}>
-              {project.tech.map(item => (
+              {project.tech.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
