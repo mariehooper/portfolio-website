@@ -2,8 +2,8 @@
 
 .primary {
   border-radius: 3px;
-  border: 1px solid $color-blue;
-  color: $color-blue;
+  border: 1px solid $color-accent;
+  color: $color-accent;
   display: inline-block;
   font-size: 1em;
   margin-top: 0;
@@ -11,11 +11,11 @@
   text-align: center;
   transition: all 0.5s ease;
   &:hover {
-    background-color: $color-blue;
+    background-color: $color-accent;
     color: $color-white;
     .touch & {
       background-color: $color-white;
-      color: $color-blue;
+      color: $color-accent;
     }
   }
   &:not(:last-child) {

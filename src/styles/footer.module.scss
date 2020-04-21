@@ -27,15 +27,11 @@
 }
 
 .icon {
-  fill: $color-text-gray;
+  fill: $color-default-text;
   width: 20px;
   height: 20px;
   transition: all 0.5s ease;
   &:hover {
-    fill: lighten(#ffa726, 5%);
-
-    .touch & {
-      fill: $color-text-gray;
-    }
+    fill: $color-accent;
   }
 }
