@@ -13,33 +13,31 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.gridContainer}>
-        <span className={styles.logo}>
-          <a href="#hero" onClick={handleClick}>
-            Marie Hooper
-          </a>
-        </span>
+      <span className={styles.logo}>
+        <a href="#hero" onClick={handleClick}>
+          Marie Hooper
+        </a>
+      </span>
 
-        <nav className={styles.navigation}>
-          <ul>
-            <li>
-              <a href="#about" onClick={handleClick}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#jobs" onClick={handleClick}>
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#work" onClick={handleClick}>
-                Work
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className={styles.navigation}>
+        <ul>
+          <li>
+            <a href="#about" onClick={handleClick}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#jobs" onClick={handleClick}>
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#work" onClick={handleClick}>
+              Work
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

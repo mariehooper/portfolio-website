@@ -59,7 +59,7 @@ export default function Jobs() {
                   {place}
                 </a>
               </h3>
-              <p>{dates}</p>
+              <p className={styles.date}>{dates}</p>
               <ul>
                 {points.map((point, idx) => (
                   <li key={idx}>{point}</li>

@@ -56,7 +56,7 @@ export default function Projects() {
                       {LinkIcon(styles.icon)}
                     </a>
                   )}
-                  <h3>{node.name}</h3>
+                  <h3 className={styles.projectName}>{node.name}</h3>
                   <p>{node.overview}</p>
                 </div>
 

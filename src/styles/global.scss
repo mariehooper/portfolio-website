@@ -16,10 +16,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
   margin: 0;
-
-  @media (max-width: 48rem) {
-    font-size: 90%;
-  }
 }
 
 p {
@@ -59,8 +55,7 @@ main {
 }
 
 section {
-  padding: 1rem;
-  margin-top: 2.5em;
+  padding: 2rem 1rem 1rem 1rem;
   max-width: 960px;
   margin: 0 auto;
   min-height: 100vh;
@@ -68,10 +63,10 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+
   h2 {
     margin-bottom: 2.5rem;
     padding-top: 1.5rem;
-    text-align: center;
     display: flex;
     align-items: center;
     &:after {
@@ -84,13 +79,5 @@ section {
       top: 2px;
       margin-left: 20px;
     }
-
-    @media (max-width: 48rem) {
-      margin-bottom: 25px;
-    }
-  }
-  @media (max-width: 41.75rem) {
-    margin-top: 2em;
-    padding: 0 1em;
   }
 }

@@ -2,10 +2,16 @@
 
 .footer {
   text-align: center;
-  line-height: 1.5em;
-  margin-top: 50px;
-  p {
-    padding-bottom: 1em;
+  padding: 2rem 0;
+}
+
+.social {
+  padding-bottom: 1.25rem;
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
   }
 }
 
@@ -15,21 +21,10 @@
   height: 1rem;
 }
 
-.social {
-  font-size: 1em;
-  padding-bottom: 20px;
-  li {
-    display: inline-block;
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
-  }
-}
-
 .icon {
   fill: $color-default-text;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   transition: all 0.5s ease;
   &:hover {
     fill: $color-accent;

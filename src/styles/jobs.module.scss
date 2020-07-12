@@ -29,21 +29,29 @@
 }
 
 .activePanel {
+  font-size: 1.25rem;
   visibility: visible;
   flex: 1;
   padding: 1rem 1rem 1rem 2rem;
-  min-height: 280px;
+  min-height: 300px;
+  a:hover,
+  a:focus {
+    border-bottom: 1px solid;
+  }
   h3 {
     margin: 0 0 0.5rem 0;
   }
   ul {
     margin: 1rem 0;
     padding-left: 1rem;
-    font-size: 1.25rem;
     li {
       list-style-type: disc;
       margin: 0.5rem 0;
       line-height: 1.5;
     }
   }
+}
+
+.date {
+  font-size: 1rem;
 }

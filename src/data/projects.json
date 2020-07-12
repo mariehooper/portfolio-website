@@ -27,7 +27,7 @@
   },
   {
     "name": "React Tip Calculator",
-    "tech": ["React", "scss"],
+    "tech": ["React", "SCSS"],
     "overview": "Example app to talk through the differences between React and Vue",
     "live_site": "https://react-tip-calc-example.coolthings.dev/",
     "github_link": "https://github.com/mariehooper/react-tip-calculator-example"

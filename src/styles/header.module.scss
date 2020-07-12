@@ -2,17 +2,10 @@
 
 .header {
   color: $color-accent;
+  background-color: $color-body;
   position: fixed;
   width: 100%;
   z-index: 100;
-  font-size: 1.2em;
-  a {
-    color: $color-accent;
-  }
-}
-
-.gridContainer {
-  background-color: $color-body;
   padding: 0 1em;
   display: flex;
   flex-direction: row;
@@ -32,17 +25,11 @@
       margin-right: 0;
     }
     a {
-      font-size: 1rem;
       padding: 1em 0.5em;
       border-bottom: 2px solid transparent;
       &:hover,
       &.active {
         border-bottom: 2px solid $color-accent;
-      }
-    }
-    span {
-      @media (max-width: 41.75rem) {
-        display: none;
       }
     }
   }
