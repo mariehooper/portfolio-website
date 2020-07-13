@@ -15,7 +15,7 @@
     "name": "Codework",
     "tech": ["React", "Styled Components", "Firebase"],
     "overview": "Help people learn JavaScript in a fun and collaborative way.",
-    "live_site": "https://codework.netlify.com/",
+    "live_site": "https://codework.coolthings.dev/",
     "github_link": "https://github.com/hoopr/codework"
   },
   {
@@ -43,7 +43,7 @@
     "name": "Loan Payoff Calculator",
     "tech": ["React", "SCSS", "SVG"],
     "overview": "Encourage people to take control of their financial future by showing the impact of early loan payoff in terms of time and money savings.",
-    "live_site": "https://loanpayoff.netlify.com/",
+    "live_site": "https://loanpayoff.coolthings.dev/",
     "github_link": "https://github.com/mariehooper/loan-payoff-calculator"
   }
 ]
