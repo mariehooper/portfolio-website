@@ -1,17 +1,27 @@
-.img {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-}
+@import "variables";
 
 .description {
-  font-size: 2.5em;
-  line-height: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: 41.75rem) {
-    width: 100%;
-    font-size: 1.75em;
+  h1 {
+    font-size: 6rem;
+  }
+  .subheading {
+    font-size: 3.5rem;
+    font-family: "Lato", sans-serif;
+    opacity: 0.75;
+  }
+  .bio {
+    font-size: 1.25rem;
+    width: 60%;
+    margin-top: 2rem;
+    line-height: 1.5;
+    font-weight: normal;
+    @media (max-width: 48rem) {
+      width: 100%;
+    }
+  }
+  span {
+    font-size: 1rem;
+    display: block;
+    color: $color-accent;
   }
 }

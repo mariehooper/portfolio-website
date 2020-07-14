@@ -1,0 +1,57 @@
+@import "variables";
+
+.tabContainer {
+  display: flex;
+  position: relative;
+  button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    &[aria-selected="true"] {
+      color: $color-accent;
+      border-left: 2px solid $color-accent;
+    }
+  }
+  [role="tablist"] {
+    border-left: 1px solid $color-default-text;
+  }
+}
+
+.panel {
+  visibility: hidden;
+  position: absolute;
+}
+
+.activePanel {
+  font-size: 1.25rem;
+  visibility: visible;
+  flex: 1;
+  padding: 1rem 1rem 1rem 2rem;
+  min-height: 300px;
+  a:hover,
+  a:focus {
+    border-bottom: 1px solid;
+  }
+  h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  ul {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    li {
+      list-style-type: disc;
+      margin: 0.5rem 0;
+      line-height: 1.5;
+    }
+  }
+}
+
+.date {
+  font-size: 1rem;
+}

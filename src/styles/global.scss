@@ -11,14 +11,11 @@ body,
 }
 
 body {
-  color: $color-text-gray;
+  color: $color-default-text;
+  background-color: $color-body;
   font-family: "Roboto", sans-serif;
   font-size: 100%;
   margin: 0;
-
-  @media (max-width: 48rem) {
-    font-size: 90%;
-  }
 }
 
 p {
@@ -27,7 +24,7 @@ p {
 
 a {
   text-decoration: none;
-  color: $color-accent-blue;
+  color: $color-accent;
 }
 
 h1,
@@ -37,18 +34,12 @@ h2 {
   margin: 0;
 }
 
-h1 {
-  font-size: 2em;
-  color: var(--color-header-gray);
+h2 {
+  font-size: 2rem;
 }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-  position: relative;
-  @media (max-width: 41.75rem) {
-    font-size: 1.75em;
-  }
+h3 {
+  font-size: 1.5rem;
 }
 
 ul {
@@ -60,15 +51,33 @@ ul {
 }
 
 main {
-  display: block;
-  flex: 1;
-  padding-top: 3.125rem;
+  padding-top: 3.5rem;
 }
 
 section {
-  margin-top: 2.5em;
-  @media (max-width: 41.75rem) {
-    margin-top: 2em;
-    padding: 0 1em;
+  padding: 2rem 1rem 1rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h2 {
+    margin-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: rgb(48, 60, 85);
+      position: relative;
+      top: 2px;
+      margin-left: 20px;
+    }
   }
 }
