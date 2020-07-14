@@ -3,6 +3,14 @@
 .tabContainer {
   display: flex;
   position: relative;
+  @media (max-width: 48rem) {
+    display: block;
+  }
+  li {
+    @media (max-width: 48rem) {
+      display: inline-block;
+    }
+  }
   button {
     background: none;
     border: none;
@@ -16,10 +24,17 @@
     &[aria-selected="true"] {
       color: $color-accent;
       border-left: 2px solid $color-accent;
+      @media (max-width: 48rem) {
+        border-bottom: 2px solid $color-accent;
+        border-left: none;
+      }
     }
   }
   [role="tablist"] {
     border-left: 1px solid $color-default-text;
+    @media (max-width: 48rem) {
+      border-left: none;
+    }
   }
 }
 
@@ -34,6 +49,9 @@
   flex: 1;
   padding: 1rem 1rem 1rem 2rem;
   min-height: 300px;
+  @media (max-width: 48rem) {
+    padding: 1rem;
+  }
   a:hover,
   a:focus {
     border-bottom: 1px solid;
@@ -44,6 +62,9 @@
   ul {
     margin: 1rem 0;
     padding-left: 1rem;
+    @media (max-width: 48rem) {
+      padding-left: 0;
+    }
     li {
       list-style-type: disc;
       margin: 0.5rem 0;
