@@ -30,11 +30,10 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ["Lato", "Roboto:300"],
-        },
+        fonts: [`lato`, `roboto\:300`],
+        display: "swap",
       },
     },
     `gatsby-transformer-json`,
