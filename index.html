@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Marie Hooper</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Portfolio website for Marie Hooper, Frontend Developer in Ann Arbor, MI."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+        -moz-osx-font-smoothing: grayscale; /* Firefox */
+      }
+
+      body {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.75);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 100%;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0b74d0;
+      }
+
+      header {
+        background: #fff;
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid #eee;
+        z-index: 1;
+      }
+
+      header .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .image {
+        overflow: hidden;
+        border-radius: 50%;
+        width: 5rem;
+        margin-right: 1rem;
+        border: 4px solid aliceblue;
+      }
+
+      .typewriter {
+        font-family: monospace;
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin: 0;
+      }
+
+      .text-1 {
+        animation: text1;
+      }
+
+      .text-2 {
+        animation: text2;
+      }
+
+      .text-1,
+      .text-2 {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 20s;
+        animation-timing-function: steps(25, end);
+        animation-iteration-count: infinite;
+      }
+
+      .text-1::after,
+      .text-2::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+      }
+
+      @keyframes text2 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+
+        60%,
+        90% {
+          width: 14.5em;
+        }
+      }
+
+      @keyframes text1 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 12.5em;
+        }
+      }
+
+      @keyframes caret {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      .inline-list {
+        padding-left: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      .inline-list li {
+        display: inline-block;
+      }
+
+      .inline-list li:not(:last-child) {
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+
+      .wrapper {
+        max-width: 45rem;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      .social svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: rgba(0, 0, 0, 0.75);
+        transition: fill 0.2s;
+      }
+
+      .social svg:hover,
+      .social svg:focus {
+        fill: #0b74d0;
+      }
+
+      .underline {
+        border-bottom: 4px solid #0b74d0;
+        font-weight: 600;
+      }
+
+      .styled-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin-top: 0;
+      }
+
+      .styled-list li {
+        padding: 0.2rem 0;
+      }
+
+      .styled-list li::before {
+        content: "";
+        width: 3px;
+        height: 3px;
+        display: inline-block;
+        background: black;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 0.25rem;
+      }
+
+      .styled-list a,
+      .styled-list span {
+        font-weight: bold;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        height: 6px;
+        width: 15rem;
+        background-color: aliceblue;
+        position: relative;
+        top: -10px;
+        z-index: -1;
+      }
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .image {
+          width: 4rem;
+        }
+        .typewriter {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="github" viewBox="0 0 32 32">
+        <title>GitHub</title>
+        <path
+          d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"
+        />
+      </symbol>
+
+      <symbol id="gitlab" viewBox="0 0 28 28">
+        <title>GitLab</title>
+        <path
+          d="M1.625 11.031l12.375 15.859-13.563-9.844c-0.375-0.281-0.531-0.766-0.391-1.203l1.578-4.813zM8.844 11.031h10.313l-5.156 15.859zM5.75 1.469l3.094 9.562h-7.219l3.094-9.562c0.172-0.484 0.859-0.484 1.031 0zM26.375 11.031l1.578 4.813c0.141 0.438-0.016 0.922-0.391 1.203l-13.563 9.844 12.375-15.859zM26.375 11.031h-7.219l3.094-9.562c0.172-0.484 0.859-0.484 1.031 0z"
+        ></path>
+      </symbol>
+
+      <symbol id="email" viewBox="0 0 28 28">
+        <title>Email</title>
+        <path
+          d="M27.563 0.172c0.328 0.234 0.484 0.609 0.422 1l-4 24c-0.047 0.297-0.234 0.547-0.5 0.703-0.141 0.078-0.313 0.125-0.484 0.125-0.125 0-0.25-0.031-0.375-0.078l-7.078-2.891-3.781 4.609c-0.187 0.234-0.469 0.359-0.766 0.359-0.109 0-0.234-0.016-0.344-0.063-0.391-0.141-0.656-0.516-0.656-0.938v-5.453l13.5-16.547-16.703 14.453-6.172-2.531c-0.359-0.141-0.594-0.469-0.625-0.859-0.016-0.375 0.172-0.734 0.5-0.922l26-15c0.156-0.094 0.328-0.141 0.5-0.141 0.203 0 0.406 0.063 0.562 0.172z"
+        />
+      </symbol>
+
+      <symbol id="linkedin" viewBox="0 0 32 32">
+        <title>LinkedIn</title>
+        <path
+          d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"
+        />
+        <path d="M2 12h6v18h-6v-18z" />
+        <path
+          d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"
+        />
+      </symbol>
+
+      <symbol id="instagram" viewBox="0 0 32 32">
+        <title>Instagram</title>
+        <path
+          d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+        />
+        <path
+          d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+        />
+        <path
+          d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+        />
+      </symbol>
+
+      <symbol id="live-site" viewBox="0 0 28 28">
+        <title>Live Site</title>
+        <path
+          d="M22 14.5v5c0 2.484-2.016 4.5-4.5 4.5h-13c-2.484 0-4.5-2.016-4.5-4.5v-13c0-2.484 2.016-4.5 4.5-4.5h11c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-1.375 0-2.5 1.125-2.5 2.5v13c0 1.375 1.125 2.5 2.5 2.5h13c1.375 0 2.5-1.125 2.5-2.5v-5c0-0.281 0.219-0.5 0.5-0.5h1c0.281 0 0.5 0.219 0.5 0.5zM28 1v8c0 0.547-0.453 1-1 1-0.266 0-0.516-0.109-0.703-0.297l-2.75-2.75-10.187 10.187c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-1.781-1.781c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l10.187-10.187-2.75-2.75c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1z"
+        ></path>
+      </symbol>
+
+      <symbol id="codesandbox" viewBox="0 0 32 32">
+        <title>CodeSandbox</title>
+        <path
+          d="M2.667 8l13.94-8 13.94 8 0.12 15.933-14.060 8.067-13.94-8zM5.451 11.308v6.343l4.46 2.48v4.688l5.296 3.061v-11.029zM27.769 11.308l-9.756 5.543v11.029l5.296-3.061v-4.685l4.46-2.481zM6.845 8.801l9.737 5.525 9.76-5.573-5.161-2.929-4.547 2.593-4.573-2.624z"
+        ></path>
+      </symbol>
+    </svg>
+    <header>
+      <nav class="wrapper">
+        <span><a href="#hero">Marie Hooper</a></span>
+        <ul class="inline-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="wrapper" id="hero">
+        <div class="flex-wrapper">
+          <img class="image" src="./images/marie.jpg" alt="Marie Hooper" />
+          <h1 class="typewriter">
+            <span class="text-1">Frontend Developer</span
+            ><span class="text-2">JavaScript enthusiast</span>
+          </h1>
+        </div>
+      </section>
+      <section class="wrapper" id="about">
+        <h2>About</h2>
+        <h3>
+          I'm passionate about building products that people
+          <span class="underline">love</span> to use.
+        </h3>
+        <p>
+          After realizing I wasn't all that interested in using my Finance
+          degree, I learned everything I could about frontend development using
+          online resources and by building a lot of passion (read: crappy) side
+          projects.
+        </p>
+
+        <p>
+          Since then, I've been a project manager, designer, lead engineer, and
+          a JavaScript instructor. I have led teams of designers and developers
+          and love helping others discover how exciting it is to use technology
+          to design solutions for such a wide breadth of problems. I have
+          experience building production React and Vue.js apps using both REST
+          and GraphQL APIs, utilizing CI/CD pipelines, writing automated tests,
+          and using just about every styling approach you can think of.
+        </p>
+
+        <p>
+          In my spare time, I've led a JavaScript meetup, mentored junior
+          developers, and given several presentations on a range of frontend
+          related technologies to local groups.
+        </p>
+      </section>
+      <section class="wrapper" id="work">
+        <h2>Work</h2>
+        <h3>Production Experience</h3>
+        <ul class="styled-list">
+          <li>
+            <span>Horizon</span> - React + GraphQL app that allows users to
+            manage their wind turbine fleets
+          </li>
+          <li>
+            <span>JSTOR Forum</span> - Vue.js app that allows users to manage
+            and publish digital collections
+          </li>
+          <li>Misc apps while working @ tech incubator at U-M</li>
+        </ul>
+        <h3>Just for fun</h3>
+        <ul class="styled-list">
+          <li>
+            <a
+              href="https://github.com/mariehooper/bookshelf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Bookshelf</a
+            >
+            - maintain and share a list of books you own using the Google books
+            API
+          </li>
+          <li>
+            <a
+              href="https://github.com/hoopr/codework"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Codework</a
+            >
+            - a fun way to solve problem-of-the-days using the CodeWars API
+          </li>
+          <li>
+            <a
+              href="https://codesandbox.io/s/8z0k2kn148"
+              target="_blank"
+              rel="noopener noreferrer"
+              >React Hooks Example</a
+            >
+            - CodeSandbox comparing hooks to HOCs and render props
+          </li>
+          <li>
+            <a
+              href="https://github.com/mariehooper/react-tip-calculator-example"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tip Calculator (React/Vue)</a
+            >
+            - highlight the differences between React and Vue.js
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <ul class="inline-list social">
+          <li>
+            <a
+              href="https://github.com/mariehooper"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="#github" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://gitlab.com/mariehooper"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="#gitlab" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:marie.ashtari@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="#email" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/marie-hooper-2b83b342"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="#linkedin" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/jahletti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg>
+                <use xlink:href="#instagram" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>© 2020 by Marie Hooper</p>
+      </div>
+    </footer>
+  </body>
+</html>
