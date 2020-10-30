@@ -199,12 +199,32 @@
         font-weight: bold;
       }
 
+      h2 {
+        margin-top: 0;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        height: 6px;
+        width: 15rem;
+        background-color: aliceblue;
+        position: relative;
+        top: -10px;
+        z-index: -1;
+      }
+
       h3 {
         margin-bottom: 0.5rem;
       }
 
-      footer {
-        text-align: center;
+      @media only screen and (max-width: 768px) {
+        .image-wrapper {
+          width: 4rem;
+        }
+        .typewriter {
+          font-size: 1.1rem;
+        }
       }
     </style>
   </head>
@@ -270,13 +290,13 @@
       </symbol>
     </svg>
     <header>
-      <div class="wrapper">
-        <span>Marie Hooper</span>
+      <nav class="wrapper">
+        <span><a href="#hero">Marie Hooper</a></span>
         <ul class="inline-list">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="wrapper" id="hero">
@@ -291,7 +311,7 @@
         </div>
       </section>
       <section class="wrapper" id="about">
-        <h2 class="section-header">About</h2>
+        <h2>About</h2>
         <h3>
           I'm passionate about building products that people
           <span class="underline">love</span> to use.
