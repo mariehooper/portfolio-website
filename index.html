@@ -54,8 +54,7 @@
         align-items: center;
       }
 
-      .image-wrapper {
-        display: flex;
+      .image {
         overflow: hidden;
         border-radius: 50%;
         width: 5rem;
@@ -219,7 +218,7 @@
       }
 
       @media only screen and (max-width: 768px) {
-        .image-wrapper {
+        .image {
           width: 4rem;
         }
         .typewriter {
@@ -301,9 +300,7 @@
     <main>
       <section class="wrapper" id="hero">
         <div class="flex-wrapper">
-          <div class="image-wrapper">
-            <img class="image" src="./images/marie.jpg" alt="Marie Hooper" />
-          </div>
+          <img class="image" src="./images/marie.jpg" alt="Marie Hooper" />
           <h1 class="typewriter">
             <span class="text-1">Frontend Developer</span
             ><span class="text-2">JavaScript enthusiast</span>
@@ -322,6 +319,7 @@
           online resources and by building a lot of passion (read: crappy) side
           projects.
         </p>
+
         <p>
           Since then, I've been a project manager, designer, lead engineer, and
           a JavaScript instructor. I have led teams of designers and developers
