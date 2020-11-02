@@ -54,84 +54,16 @@
         align-items: center;
       }
 
+      .intro {
+        font-size: 2rem;
+      }
+
       .image {
         overflow: hidden;
         border-radius: 50%;
-        width: 5rem;
+        width: 8rem;
         margin-right: 1rem;
         border: 4px solid aliceblue;
-      }
-
-      .typewriter {
-        font-family: monospace;
-        font-size: 1.5rem;
-        font-weight: normal;
-        letter-spacing: 1px;
-        margin: 0;
-      }
-
-      .text-1 {
-        animation: text1;
-      }
-
-      .text-2 {
-        animation: text2;
-      }
-
-      .text-1,
-      .text-2 {
-        overflow: hidden;
-        white-space: nowrap;
-        display: inline-block;
-        position: relative;
-        animation-duration: 20s;
-        animation-timing-function: steps(25, end);
-        animation-iteration-count: infinite;
-      }
-
-      .text-1::after,
-      .text-2::after {
-        content: "|";
-        position: absolute;
-        right: 0;
-        animation: caret infinite;
-        animation-duration: 1s;
-        animation-timing-function: steps(1, end);
-      }
-
-      @keyframes text2 {
-        0%,
-        50%,
-        100% {
-          width: 0;
-        }
-
-        60%,
-        90% {
-          width: 14.5em;
-        }
-      }
-
-      @keyframes text1 {
-        0%,
-        50%,
-        100% {
-          width: 0;
-        }
-        10%,
-        40% {
-          width: 12.5em;
-        }
-      }
-
-      @keyframes caret {
-        0%,
-        100% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
       }
 
       .inline-list {
@@ -217,13 +149,13 @@
         margin-bottom: 0.5rem;
       }
 
-      @media only screen and (max-width: 768px) {
-        .image {
-          width: 4rem;
-        }
-        .typewriter {
-          font-size: 1.1rem;
-        }
+      h4 {
+        margin: 0;
+      }
+
+      .date {
+        font-size: 0.875rem;
+        font-style: italic;
       }
     </style>
   </head>
@@ -290,21 +222,14 @@
     </svg>
     <header>
       <nav class="wrapper">
-        <span><a href="#hero">Marie Hooper</a></span>
-        <ul class="inline-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-        </ul>
+        <span>Marie Hooper</span>
       </nav>
     </header>
     <main>
       <section class="wrapper" id="hero">
         <div class="flex-wrapper">
           <img class="image" src="./images/marie.jpg" alt="Marie Hooper" />
-          <h1 class="typewriter">
-            <span class="text-1">Frontend Developer</span
-            ><span class="text-2">JavaScript enthusiast</span>
-          </h1>
+          <span class="intro">👋 Hey, I'm Marie!</span>
         </div>
       </section>
       <section class="wrapper" id="about">
@@ -314,9 +239,10 @@
           <span class="underline">love</span> to use.
         </h3>
         <p>
-          After realizing I wasn't all that interested in using my Finance
-          degree, I learned everything I could about frontend development using
-          online resources and by building a lot of passion (read: crappy) side
+          I graduated with a degree in Finance only to realize I was more
+          interested in helping people work more efficiently using technology,
+          so I learned everything I could about frontend development using
+          online resources and by building a lot of side (read: crappy)
           projects.
         </p>
 
@@ -337,19 +263,56 @@
         </p>
       </section>
       <section class="wrapper" id="work">
-        <h2>Work</h2>
-        <h3>Production Experience</h3>
+        <h2>Experience</h2>
+        <h3>Work</h3>
+        <h4>Senior Software Engineer @ SkySpecs</h4>
+        <span class="date">Feb 2020 - Present</span>
         <ul class="styled-list">
           <li>
-            <span>Horizon</span> - React + GraphQL app that allows users to
-            manage their wind turbine fleets
+            Build React apps that interact with various GraphQL and REST APIs
           </li>
           <li>
-            <span>JSTOR Forum</span> - Vue.js app that allows users to manage
-            and publish digital collections
+            Plan and coordinate epics as Engineering Lead to ensure features are
+            delivered on time
           </li>
-          <li>Misc apps while working @ tech incubator at U-M</li>
+          <li>
+            Identify areas of code improvement as well as user workflows for new
+            features
+          </li>
         </ul>
+        <h4>Frontend Engineer @ ITHAKA</h4>
+        <span class="date">Jan 2018 - Feb 2020</span>
+        <ul class="styled-list">
+          <li>
+            Architected and implemented Vue.js frontend of JSTOR Forum web
+            application
+          </li>
+          <li>
+            Collaborated with multi-disciplinary, distributed agile development
+            team
+          </li>
+          <li>
+            Developed code sandboxes and presentations for bi-weekly frontend
+            meetup
+          </li>
+        </ul>
+        <h4>UI Designer/Developer @ U-M Academic Innovation</h4>
+        <span class="date">Sept 2015 - Jan 2018</span>
+        <ul class="styled-list">
+          <li>
+            Led design and frontend development on several web apps in project
+            portfolio
+          </li>
+          <li>
+            Championed weekly JavaScript working group for staff, interns, and
+            collaborators
+          </li>
+          <li>
+            Led UX design interns including hiring and management of project
+            team interns
+          </li>
+        </ul>
+
         <h3>Just for fun</h3>
         <ul class="styled-list">
           <li>
