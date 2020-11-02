@@ -148,6 +148,24 @@
       .bio p {
         font-size: 1.5rem;
       }
+
+      @media only screen and (max-width: 1024px) {
+        .bio {
+          max-width: inherit;
+        }
+
+        .grid-list li {
+          width: 50%;
+          max-width: 40vw;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .grid-list li {
+          width: 100%;
+          max-width: inherit;
+        }
+      }
     </style>
   </head>
   <body>
