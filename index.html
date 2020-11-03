@@ -41,21 +41,26 @@
       }
 
       .social a {
-        display: inline-flex;
-        align-items: center;
-        border-bottom: 4px solid transparent;
+        display: inline-block;
       }
 
-      .social a:hover {
+      .social a::after {
+        content: "";
+        display: block;
+        width: 0%;
+        padding-top: 0.25rem;
         border-bottom: 4px solid #0b74d0;
+        transition: 0.25s;
+      }
+
+      .social a:hover::after {
+        width: 100%;
       }
 
       .social svg {
         width: 1.25rem;
         height: 1.25rem;
         fill: rgba(0, 0, 0, 0.75);
-        transition: fill 0.2s;
-        margin-right: 0.5rem;
       }
 
       .underline {
@@ -71,7 +76,7 @@
 
       .styled-list li {
         padding: 0.2rem 0;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
       }
 
       .styled-list a,
@@ -100,14 +105,6 @@
         max-width: 27vw;
       }
 
-      .grid-list li:hover h3 {
-        border-bottom: 4px solid #0b74d0;
-      }
-
-      .grid-list li:hover p {
-        color: rgba(0, 0, 0, 0.75);
-      }
-
       .grid-list a {
         display: block;
       }
@@ -115,6 +112,24 @@
       .grid-list p {
         font-size: 1.5rem;
         color: rgba(0, 0, 0, 0.45);
+        transition: color 0.25s;
+      }
+
+      .grid-list h3:after {
+        content: "";
+        display: block;
+        width: 0%;
+        padding-top: 0.25rem;
+        border-bottom: 4px solid #0b74d0;
+        transition: 0.25s;
+      }
+
+      .grid-list li:hover h3:after {
+        width: 100%;
+      }
+
+      .grid-list li:hover p {
+        color: rgba(0, 0, 0, 0.75);
       }
 
       h2 {
@@ -129,7 +144,6 @@
         display: inline-block;
         font-size: 2rem;
         font-weight: normal;
-        border-bottom: 4px solid transparent;
         margin: 0.5rem 0;
       }
 
@@ -253,7 +267,7 @@
         </p>
 
         <p>
-          I'm originally from Tampa, FL and currently live in Ann Arbor,
+          I'm originally from Tampa, Florida and currently live in Ann Arbor,
           Michigan. When I'm not glued to my MacBook, you can find me hiking,
           biking, playing rec sports, or yelling at college football games.
         </p>
